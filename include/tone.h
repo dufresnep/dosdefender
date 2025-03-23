@@ -1,3 +1,6 @@
+#ifndef TONE_H
+#define TONE_H
+
 #include "port.h"
 
 static void tone_on()
@@ -16,3 +19,5 @@ static void tone(unsigned frequency)
     outportb(0x42, period & 0xff);
     outportb(0x42, period >> 8);
 }
+
+#endif

@@ -1,20 +1,24 @@
-CC      = gcc
+CC      = i586-pc-msdosdjgpp-gcc
 DOS     = dosbox
-CFLAGS  = -std=gnu99 -Wall -Wextra -Os -nostdlib -m32 -march=i386 \
-  -Wno-unused-function \
-  -ffreestanding -fomit-frame-pointer -fwrapv -fno-strict-aliasing \
-  -fno-leading-underscore -fno-pic -fno-stack-protector \
-  -Wl,--nmagic,-static,-Tcom.ld
+CFLAGS  = -std=gnu99 -Wall -Wextra -Os  \
+          -Wno-unused-function  \
+          -fno-stack-protector -Iinclude  # Corrected include path
+LDFLAGS =   # Separate linker flags
 
-dosdef.com : dosdef.c *.h
+OBJS = src/joystick.o src/rand.o src/alloc.o src/kb.o src/time.o src/vga.o src/vga_font.o src/bullet.o src/particle.o src/ship.o src/powerup.o src/burn.o src/game.o src/speaker.o src/dosdef.o
 
 .PHONY : all clean test
 
-clean :
-	$(RM) *.com
+all: dosdef.exe
 
-test : dosdef.com
+clean :
+	$(RM) *.exe $(OBJS)
+
+test : dosdef.exe
 	$(DOS) $^
 
-%.com : %.c
-	$(CC) -o $@ $(CFLAGS) $<
+dosdef.exe : $(OBJS)
+	$(CC) $(LDFLAGS) -o $@ $(OBJS)
+
+src/%.o: src/%.c
+	$(CC) $(CFLAGS) -c -o $@ $<

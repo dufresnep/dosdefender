@@ -1,19 +1,54 @@
-#include "init.h"
-#include "print.h"
-#include "joystick.h"
+// dosdef.c (Corrected)
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h> // For abs(), free()
 #include "vga.h"
+#include "joystick.h"
 #include "rand.h"
-#include "time.h"
-#include "alloc.h"
-#include "keyboard.h"
 #include "speaker.h"
+#include "alloc.h"
+#include "bullet.h"
+#include "particle.h"
+#include "ship.h"
+#include "powerup.h"
+#include "time.h"
+#include "kb.h"
 
-#define SCALE              1000
+static size_t bullets_max = 32;
+static size_t particles_max = 64;
+static size_t ships_max = 12;
+static size_t powerups_max = 8;
+
+#define SCALE 1000
+
+// Declare the pointer variables here:
+extern struct bullet *bullets;
+extern struct particle *particles;
+extern struct ship *ships;
+extern struct powerup *powerups;
+int32_t score = 0;
+
+void bullet_step() //Forward Declaration
+{
+    bullet_step(bullets, bullets_max, ships, ships_max);
+}
+
 #define BACKGROUND         17
 #define PLAYER             14
 #define BULLET_SPEED       3
 #define PARTICLE_MAX_AGE   50
 #define MAX_PLAYERS        2
+
+// Inline min and max (if not in a separate header)
+static inline int min(int a, int b) {
+    return (a < b) ? a : b;
+}
+
+static inline int max(int a, int b) {
+    return (a > b) ? a : b;
+}
+
+
 
 typedef unsigned int tick_t;
 typedef void (*ai_t)(int id);
@@ -45,19 +80,6 @@ struct ship {
     };
 };
 
-struct bullet {
-    int32_t x, y, dx, dy;
-    tick_t birthtick;
-    uint8_t color;
-    uint8_t damage;
-    bool alive;
-};
-
-struct particle {
-    int32_t x, y;
-    tick_t birthtick;
-    bool alive;
-};
 
 struct powerup {
     int32_t x, y;
@@ -67,6 +89,7 @@ struct powerup {
     uint8_t color;
 };
 
+/*
 static struct bullet *bullets;
 static size_t bullets_max = 32;
 
@@ -78,6 +101,7 @@ static size_t ships_max = 12;
 
 static struct powerup *powerups;
 static size_t powerups_max = 8;
+*/
 
 static bool joystick_detected()
 {
@@ -88,21 +112,7 @@ static bool joystick_detected()
 
 static void burn(int32_t x, int32_t y);
 static void ship_draw(int id, bool clear);
-static void powerup_random(int id);
-
-static void bullet_draw(int i, bool clear)
-{
-    struct point c = {bullets[i].x / SCALE, bullets[i].y / SCALE};
-    vga_pixel(c, clear ? BACKGROUND : bullets[i].color);
-}
-
-static bool bullet_in_ship(int bi, int si)
-{
-    return bullets[bi].x >= ships[si].x - (SCALE * ships[si].radius) &&
-           bullets[bi].y >= ships[si].y - (SCALE * ships[si].radius) &&
-           bullets[bi].x <= ships[si].x + (SCALE * ships[si].radius) &&
-           bullets[bi].y <= ships[si].y + (SCALE * ships[si].radius);
-}
+static void powerup_random(size_t id);
 
 static bool is_game_over()
 {
@@ -113,45 +123,13 @@ static bool is_game_over()
     return true;
 }
 
-static void bullet_step(int i)
-{
-    bullets[i].x += bullets[i].dx;
-    bullets[i].y += bullets[i].dy;
-    if (bullets[i].x < 0 || bullets[i].x > VGA_PWIDTH * SCALE ||
-        bullets[i].y < 0 || bullets[i].y > VGA_PHEIGHT * SCALE)
-        bullets[i].alive = false;
-    for (int id = 0; id < ships_max; id++) {
-        if (ships[id].hp > 0 && ships[id].color_b != bullets[i].color) {
-            if (bullet_in_ship(i, id)) {
-                if (ships[id].hp >= bullets[i].damage)
-                    ships[id].hp -= bullets[i].damage;
-                else
-                    ships[id].hp = 0;
-                bullets[i].alive = false; // absorb
-                if (ships[id].hp == 0) {
-                    for (int j = 0; j < 10; j++)
-                        burn(ships[id].x, ships[id].y);
-                    ship_draw(id, true);
-                    if (!is_game_over())
-                        score += ships[id].score;
-                    powerup_random(id);
-                    speaker_play(&speaker, &fx_explode);
-                } else if (ships[id].is_player) {
-                    speaker_play(&speaker, &fx_hit);
-                }
-                break;
-            }
-        }
-    }
-}
-
 static int ship_fire(int i)
 {
     if (ships[i].last_fire + ships[i].fire_delay > ticks)
         return -1;
     ships[i].last_fire = ticks;
     int choice = 0;
-    for (int i = 0; i < bullets_max; i++) {
+    for (size_t i = 0; i < bullets_max; i++) {
         if (!bullets[i].alive) {
             choice = i;
             break;
@@ -160,7 +138,7 @@ static int ship_fire(int i)
         }
     }
     if (bullets[choice].alive)
-        bullet_draw(choice, true);
+        bullet_draw(&bullets[choice], true);
     bullets[choice].x = ships[i].x + ships[i].dx / 100;
     bullets[choice].y = ships[i].y + ships[i].dy / 100;
     bullets[choice].dx = ships[i].dx * BULLET_SPEED;
@@ -181,8 +159,8 @@ static void particle_draw(int i, bool clear)
     } else {
         int age = ticks - particles[i].birthtick;
         vga_pixel(c, age > PARTICLE_MAX_AGE * 3 / 4
-                  ? (randn(5) + 24)    // smoke
-                  : (randn(5) + 40));  // fire
+                  ? (randn_max(5) + 24)    // smoke
+                  : (randn_max(5) + 40));  // fire
     }
 }
 
@@ -193,15 +171,15 @@ static void particle_step(int i)
         particle_draw(i, true);
     } else {
         int speed = 2;
-        particles[i].x += randn(SCALE * speed) - (SCALE * speed / 2);
-        particles[i].y += randn(SCALE * speed) - (SCALE * speed / 2);
+        particles[i].x += randn_max(SCALE * speed) - (SCALE * speed / 2);
+        particles[i].y += randn_max(SCALE * speed) - (SCALE * speed / 2);
     }
 }
 
 static void burn(int32_t x, int32_t y)
 {
     int choice = 0;
-    for (int i = 0; i < particles_max; i++) {
+    for (size_t i = 0; i < particles_max; i++) {
         if (!particles[i].alive) {
             choice = i;
             break;
@@ -243,7 +221,7 @@ static void ship_step(int i)
     ships[i].dx = (ships[i].dx * 99) / 100;
     ships[i].dy = (ships[i].dy * 99) / 100;
     if (ships[i].hp < ships[i].hp_max / 2) {
-        if ((randn(ships[i].hp < 1 ? 1 : ships[i].hp) < 10))
+        if ((randn_max(ships[i].hp < 1 ? 1 : ships[i].hp) < 10))
             burn(ships[i].x, ships[i].y);
     }
 }
@@ -288,27 +266,9 @@ static void powerup_step(int i)
     }
 }
 
-static int powerup_drop(int32_t x, int32_t y)
-{
-    int choice = -1;
-    for (int i = 0; i < powerups_max; i++) {
-        if (!powerups[i].alive) {
-            choice = i;
-            break;
-        }
-    }
-    if (choice >= 0) {
-        powerups[choice].x = x;
-        powerups[choice].y = y;
-        powerups[choice].birthtick = ticks;
-        powerups[choice].alive = true;
-    }
-    return choice;
-}
-
 static void power_heal(int id)
 {
-    ships[id].hp = min(ships[id].hp + randn(25) + 25, ships[id].hp_max);
+    ships[id].hp = min(ships[id].hp + randn_max(25) + 25, ships[id].hp_max);
 }
 
 static void power_resurrect(int id)
@@ -323,6 +283,33 @@ static void power_resurrect(int id)
     }
 }
 
+void powerup_random(size_t id) // Use size_t, as in powerup.h
+{
+    if (ships[id].drop_rate > 0 && randn() % ships[id].drop_rate == 0) {
+        int p = powerup_drop(ships[id].x, ships[id].y);
+        if (p >= 0) {
+            int select = randn() % 100;
+            if (select < 25)
+                powerups[p].power = POWER_RESURRECT;
+            else if (select < 50)
+                powerups[p].power = POWER_HEAL;
+            else if (select < 70)
+                powerups[p].power = POWER_FIRE_DELAY_DOWN;
+            else if (select < 90)
+                powerups[p].power = POWER_FIRE_DAMAGE_UP;
+             else if (select < 95)
+                powerups[p].power = POWER_RADIUS_UP;
+             else if (select < 99)
+                powerups[p].power = POWER_RADIUS_DOWN;
+            else
+                powerups[p].power = POWER_TELEPORT;
+
+            powerups[p].color = PINK;  // Use a defined color constant
+        }
+    }
+}
+
+
 static void power_fire_delay_down(int id)
 {
     ships[id].fire_delay = max(8, ships[id].fire_delay * 3 / 4);
@@ -336,8 +323,8 @@ static void power_fire_damage_up(int id)
 static void power_teleport(int id)
 {
     ship_draw(id, true);
-    ships[id].x = (randn(VGA_PWIDTH - 40) + 20) * SCALE;
-    ships[id].y = (randn(VGA_PHEIGHT - 40) + 20) * SCALE;
+    ships[id].x = (randn_max(VGA_PWIDTH - 40) + 20) * SCALE;
+    ships[id].y = (randn_max(VGA_PHEIGHT - 40) + 20) * SCALE;
     ships[id].dx = 0;
     ships[id].dy = 0;
 }
@@ -356,10 +343,10 @@ static void power_radius_down(int id)
 
 static void powerup_random(int id)
 {
-    if (ships[id].drop_rate > 0 && randn(ships[id].drop_rate) == 0) {
+    if (ships[id].drop_rate > 0 && randn_max(ships[id].drop_rate) == 0) {
         int p = powerup_drop(ships[id].x, ships[id].y);
         if (p >= 0) {
-            int select = randn(100);
+            int select = randn_max(100);
             if (select < 5 && ships[1].is_player) {
                 powerups[p].power = power_resurrect;
                 powerups[p].color = 43;
@@ -374,7 +361,7 @@ static void powerup_random(int id)
                 powerups[p].color = LIGHT_RED;
             } else if (select < 97) {
                 powerups[p].power = power_radius_up;
-                powerups[p].color = LIGHT_MAGENTA;
+                powerups[p].color = PINK; // was LIGHT_MAGENTA; not existing
             } else if (select < 99) {
                 powerups[p].power = power_radius_down;
                 powerups[p].color = WHITE;
@@ -393,9 +380,9 @@ static void print_game_over()
 
 static void print_exit_help()
 {
-    vga_print((struct point){76, 160}, LIGHT_GRAY,
+    vga_print((struct point){76, 160}, LIGHT_GREY,
               "PRESS ANY KEY TO EXIT TO DOS");
-    vga_print((struct point){100, 150}, LIGHT_GRAY,
+    vga_print((struct point){100, 150}, LIGHT_GREY,
               "HOLD FIRE TO RESTART");
 }
 
@@ -420,7 +407,7 @@ static void ship_check_bounds(int i)
 int spawn(int hp)
 {
     int choice = -1;
-    for (int i = 1; i < ships_max; i++) {
+    for (size_t i = 1; i < ships_max; i++) {
         if (!ships[i].is_player && ships[i].hp == 0) {
             choice = i;
             break;
@@ -430,12 +417,12 @@ int spawn(int hp)
         ships[choice].is_player = false;
         ships[choice].hp = hp;
         ships[choice].dx = ships[choice].dy = 0;
-        if (randn(2)) {
-            ships[choice].x = randn(2) * VGA_PWIDTH * SCALE;
-            ships[choice].y = randn(VGA_PHEIGHT * SCALE);
+        if (randn_max(2)) {
+            ships[choice].x = randn_max(2) * VGA_PWIDTH * SCALE;
+            ships[choice].y = randn_max(VGA_PHEIGHT * SCALE);
         } else {
-            ships[choice].x = randn(VGA_PWIDTH * SCALE);
-            ships[choice].y = randn(2) * VGA_PHEIGHT * SCALE;
+            ships[choice].x = randn_max(VGA_PWIDTH * SCALE);
+            ships[choice].y = randn_max(2) * VGA_PHEIGHT * SCALE;
         }
     }
     return choice;
@@ -453,7 +440,7 @@ static void ai_player(int i)
         ships[i].dx += ((joy.axis[o + 0] - c->center[o + 0]) * 100) / xrange;
         ships[i].dy += ((joy.axis[o + 1] - c->center[o + 1]) * 100) / yrange;
         /* mix input into random state */
-        rand_seed ^= joy.axis[o + 0] - joy.axis[o + 1];
+        seed ^= joy.axis[o + 0] - joy.axis[o + 1];
         if (joy.button[o + 0])
             ship_fire(i);
     }
@@ -467,14 +454,14 @@ static void ai_dummy(int i)
     bool near_target = abs(ships[i].x - ships[i].target_position.x) < dist &&
                        abs(ships[i].y - ships[i].target_position.y) < dist;
     if (no_target || near_target) {
-        ships[i].target_position.x = randn(VGA_PWIDTH * SCALE);
-        ships[i].target_position.y = randn(VGA_PHEIGHT * SCALE);
+        ships[i].target_position.x = randn_max(VGA_PWIDTH * SCALE);
+        ships[i].target_position.y = randn_max(VGA_PHEIGHT * SCALE);
     }
     int32_t tx = ships[i].target_position.x;
     int32_t ty = ships[i].target_position.y;
     ships[i].dx = (tx - ships[i].x) / 200;
     ships[i].dy = (ty - ships[i].y) / 200;
-    if (randn(250) == 0)
+    if (randn_max(250) == 0)
         ship_fire(i);
 }
 
@@ -492,8 +479,8 @@ static void ai_seeker(int i)
     }
     int dx = ships[target].x - ships[i].x;
     int dy = ships[target].y - ships[i].y;
-    ships[i].dx = dx / 250 + randn(noise) - noise / 2;
-    ships[i].dy = dy / 250 + randn(noise) - noise / 2;
+    ships[i].dx = dx / 250 + randn_max(noise) - noise / 2;
+    ships[i].dy = dy / 250 + randn_max(noise) - noise / 2;
     ship_fire(i);
 }
 
@@ -501,13 +488,17 @@ static bool ending_played = false;
 
 static void clear(int nplayers)
 {
-    free();
-    bullets = sbrk(bullets_max * sizeof(bullets[0]));
-    particles = sbrk(particles_max * sizeof(particles[0]));
-    ships = sbrk(ships_max * sizeof(ships[0]));
-    powerups = sbrk(powerups_max * sizeof(powerups[0]));
+    bullets = calloc(bullets_max, sizeof(bullets[0]));
+    particles = calloc(particles_max, sizeof(particles[0]));
+    ships = calloc(ships_max, sizeof(ships[0]));
+    powerups = calloc(powerups_max, sizeof(powerups[0]));
 
-    rand_seed += get_tick();
+    if (!bullets || !particles || !ships || !powerups) {
+        exit(1);
+    }
+
+
+    seed += get_tick();
     for (int i = 0; i < nplayers; i++) {
         ships[i] = (struct ship) {
             .x = VGA_PWIDTH / 2 * SCALE,
@@ -537,7 +528,7 @@ static void clear(int nplayers)
 
 static bool ship_exists(uint8_t color)
 {
-    for (int i = 0; i < ships_max; i++)
+    for (size_t i = 0; i < ships_max; i++)
         if (ships[i].color_a == color)
             return true;
     return false;
@@ -552,9 +543,9 @@ static int ui_nplayers(void)
     do {
         vga_vsync();
         speaker_step(&speaker);
-        vga_print((struct point){130, 90},  nplayers == 1 ? WHITE : DARK_GRAY,
+        vga_print((struct point){130, 90},  nplayers == 1 ? WHITE : DARK_GREY,
                   "ONE PLAYER");
-        vga_print((struct point){127, 103}, nplayers == 2 ? WHITE : DARK_GRAY,
+        vga_print((struct point){127, 103}, nplayers == 2 ? WHITE : DARK_GREY,
                   "TWO PLAYERS");
         joystick_read(&joystick);
         int scaled = (joystick.axis[1] - joystick_config.min[1]) * 100
@@ -583,7 +574,7 @@ static void try_spawn()
     int id = spawn(0);
     if (id <= 0)
         return;
-    int select = randn(100) + ticks / 1000;
+    int select = randn_max(100) + ticks / 1000;
     if (select < 65) {
         ships[id].color_a = BROWN;
         ships[id].color_b = LIGHT_RED;
@@ -595,7 +586,7 @@ static void try_spawn()
         ships[id].hp_max = 10;
         ships[id].score = 100;
         ships[id].ai = ai_seeker;
-        ships[id].target_ship = randn(MAX_PLAYERS);
+        ships[id].target_ship = randn_max(MAX_PLAYERS);
         ships[id].fx_fire = &fx_fire1;
     } else if (select < 92) {
         ships[id].color_a = GREEN;
@@ -620,7 +611,7 @@ static void try_spawn()
         ships[id].hp_max = 1;
         ships[id].score = 500;
         ships[id].ai = ai_seeker;
-        ships[id].target_ship = randn(MAX_PLAYERS);
+        ships[id].target_ship = randn_max(MAX_PLAYERS);
         ships[id].fx_fire = &fx_fire1;
     } else if (select < 96) {
         ships[id].color_a = RED;
@@ -633,10 +624,10 @@ static void try_spawn()
         ships[id].hp_max = 50;
         ships[id].score = 250;
         ships[id].ai = ai_seeker;
-        ships[id].target_ship = randn(MAX_PLAYERS);
+        ships[id].target_ship = randn_max(MAX_PLAYERS);
         ships[id].fx_fire = &fx_fire2;
     } else if (select < 110) {
-        ships[id].color_a = LIGHT_MAGENTA;
+        ships[id].color_a = PINK; // was non existent LIGHT_MAGENTA;
         ships[id].color_b = LIGHT_CYAN;
         ships[id].radius = 5;
         ships[id].fire_delay = 120;
@@ -646,7 +637,7 @@ static void try_spawn()
         ships[id].hp_max = 100;
         ships[id].score = 1000;
         ships[id].ai = ai_seeker;
-        ships[id].target_ship = randn(MAX_PLAYERS);
+        ships[id].target_ship = randn_max(MAX_PLAYERS);
         ships[id].fx_fire = &fx_fire3;
     } else if (!ship_exists(LIGHT_GREEN)) {
         ships[id].color_a = LIGHT_GREEN;
@@ -659,7 +650,7 @@ static void try_spawn()
         ships[id].hp_max = 1000;
         ships[id].score = 10000;
         ships[id].ai = ai_seeker;
-        ships[id].target_ship = randn(MAX_PLAYERS);
+        ships[id].target_ship = randn_max(MAX_PLAYERS);
         ships[id].fx_fire = &fx_fire3;
         speaker_play(&speaker, &fx_boss);
     } else {
@@ -667,7 +658,7 @@ static void try_spawn()
     }
 }
 
-int dosmain(void)
+int main(void)
 {
     if (!joystick_detected()) {
         print("A joystick is required to play DOS Defender!$");
@@ -681,7 +672,7 @@ int dosmain(void)
     clear(nplayers);
     for (;;) {
         speaker_step(&speaker);
-        if (randn(50) == 0)
+        if (randn_max(50) == 0)
             try_spawn();
         if (ticks < 120)
             print_title(false);
@@ -711,7 +702,7 @@ int dosmain(void)
         }
 
         vga_vsync();
-        for (int i = 0; i < particles_max; i++) {
+        for (size_t i = 0; i < particles_max; i++) {
             if (particles[i].alive) {
                 particle_draw(i, true);
                 particle_step(i);
@@ -719,7 +710,7 @@ int dosmain(void)
                     particle_draw(i, false);
             }
         }
-        for (int i = 0; i < powerups_max; i++) {
+        for (size_t i = 0; i < powerups_max; i++) {
             if (powerups[i].alive) {
                 powerup_draw(i, true);
                 powerup_step(i);
@@ -727,7 +718,7 @@ int dosmain(void)
                     powerup_draw(i, false);
             }
         }
-        for (int i = 0; i < ships_max; i++) {
+        for (size_t i = 0; i < ships_max; i++) {
             if (ships[i].hp > 0 || ships[i].is_player) {
                 ship_draw(i, true);
                 ship_step(i);
@@ -738,12 +729,12 @@ int dosmain(void)
         }
         for (int i = 0; i < nplayers; i++)
             ship_check_bounds(i);
-        for (int i = 0; i < bullets_max; i++) {
-            bullet_draw(i, true);
+        for (size_t i = 0; i < bullets_max; i++) {
+            bullet_draw(&bullets[i], true);
             if (bullets[i].alive) {
                 bullet_step(i);
                 if (bullets[i].alive)
-                    bullet_draw(i, false);
+                    bullet_draw(&bullets[i], false);
             }
         }
         ticks++;
