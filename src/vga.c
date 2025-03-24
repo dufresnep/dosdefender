@@ -86,17 +86,25 @@ void vga_on() {
     regs.x.ax = 0x0013;  //  AH=0 (set mode), AL=0x13 (mode 13h)
     __dpmi_int(0x10, &regs); // Call BIOS interrupt 0x10
 }
-
+/*
 void vga_off()
 {
     asm volatile ("mov   $0x0003, %%ax\n"
                   "int   $0x10\n"
                   "mov   $0xA000, %%dx\n"
                   "mov   %%dx, %%es\n"
-                  : /* no outputs */
-                  : /* no inputs */
+                  : 
+                  : 
                   : "ax", "dx");
 }
+*/
+void vga_off()
+{
+    __dpmi_regs regs;
+    regs.x.ax = 0x0003; //  AH = 0 (set mode), AL = 0x03 (text mode)
+    __dpmi_int(0x10, &regs);
+}
+
 void print(const char *message)
 {
      for(int i=0; message[i] != '\0'; i++){
