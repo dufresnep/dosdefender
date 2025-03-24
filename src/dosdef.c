@@ -22,7 +22,7 @@ size_t particles_max = 64; //Uncomment
 //size_t ships_max = 12;   // Defined as MAX_PLAYERS in ship.h
 size_t powerups_max = 8; //Uncomment
 
-struct bullet *bullets;
+struct bullet bullets[32];
 struct particle *particles;
 struct ship *ships;
 struct powerup *powerups;
@@ -42,13 +42,18 @@ void try_spawn(void); // Corrected
 void print_exit_help();
 // --- Main Game Logic ---
 
+
 int main() {
- //...
+    printf("begin\n");
+    clear();
     for (size_t i = 0; i < bullets_max; i++) {
+        printf("in loop\n");
         if (bullets[i].alive) {
+            printf("in if\n");
             bullet_draw(&bullets[i], false);
             bullet_step(bullets, bullets_max, ships, MAX_PLAYERS); //Call it directly
             bullet_draw(&bullets[i], true);
+            printf("end if\n");
         }
     }
 //...
@@ -57,7 +62,7 @@ return 0;
 // --- Function Definitions ---
 void clear()
 {
-//...
+    printf("in clear\n");
 }
 void powerup_random(size_t id) // Use size_t, as in powerup.h
 {
