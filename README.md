@@ -8,6 +8,9 @@ The structure is now much more classic.
 The result is dosdef.exe (copied to bin directory).
 And that needs DPMI (does not works in DOSBOX).
 
+Here is a youtube video about this game:
+https://www.youtube.com/watch?v=6UjuFnZYkG4
+
 DOS Defender is an x86 real mode DOS game for [Ludum Dare #31][ld]
 (December, 2014). Since few DOS machines still exist, the target
 platform is actually [DOSBox][db], though it should work to some
