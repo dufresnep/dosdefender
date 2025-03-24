@@ -5,7 +5,7 @@
 #include <stdbool.h>
 #include <stddef.h>
 
-//Declare all needed structures.
+// Declare all needed structures.
 struct bullet;
 struct particle;
 struct ship;
@@ -31,8 +31,6 @@ void handle_input(void); // If you have this function
 void update_game(void);  // If you have this function
 void draw_game(void);    // If you have this function
 void powerup_random(size_t id);
-void try_spawn(void);
+void try_spawn(void); // Corrected
 void print_exit_help();
 //void bullet_step(struct bullet *bullets, size_t num_bullets, struct ship *ships, size_t num_ships); // Defined in bullet.c
-
-// No #endif here

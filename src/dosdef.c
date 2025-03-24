@@ -1,4 +1,4 @@
-// dosdef.c (Corrected - Full)
+// src/dosdef.c
 #include <stddef.h>
 #include <stdint.h>
 #include <stdlib.h>
@@ -15,6 +15,7 @@
 #include "kb.h"
 #include "game.h" //Include game.h
 #include "burn.h" //Include burn.h
+#include "dosdef.h" // Include its own header!
 
 // Global Variables (Definitions)
 size_t bullets_max = 32;
@@ -29,36 +30,32 @@ struct powerup *powerups;
 int32_t score = 0; // Use int32_t for consistency
 bool running; //Add declaration
 extern volatile tick_t ticks; // Defined in time.c
-// --- Function Prototypes (Declarations) ---
-//    (Make sure these match the definitions later)
 
-// Functions from dosdef.c itself:
-void clear(void);
-void init_game(void);
-void handle_input(void);
-void update_game(void);
-void draw_game(void);
-void powerup_random(size_t id);  // Corrected prototype
-void try_spawn(void); // Corrected
-void print_exit_help();
 // --- Main Game Logic ---
 
 int main() {
- //...
-    clear(); // Must be called first, to allocate bullets array.
+    init_game();  // Initialize the game (sets up VGA, etc.)
+    running = true;
 
-    for (size_t i = 0; i < bullets_max; i++) {
-        if (bullets[i].alive) {  //This test is useless, because bullets is initialized to zero by clear
-            bullet_draw(&bullets[i], false);
-            bullet_step(bullets, bullets_max, ships, MAX_PLAYERS); //Call it directly
-            bullet_draw(&bullets[i], true);
+    while (running) {
+        //vga_vsync();   // Wait for vertical retrace (optional, for smoother animation)
+
+        handle_input();   // Get input from the joystick/keyboard
+        update_game();  // Update game state (move bullets, ships, etc.)
+        draw_game();    // Draw everything to the screen
+
+        if (kbhit() && getch() == 27) {  // Check for Escape key
+            running = false; // Exit the game loop
         }
     }
-//...
-return 0;
+
+    vga_off(); // Restore text mode
+    return 0; // Return 0 for success
 }
+
 // --- Function Definitions ---
-void clear()
+
+void clear(void)
 {
     bullets = calloc(bullets_max, sizeof(bullets[0])); //Use calloc
     particles = calloc(particles_max, sizeof(particles[0]));//Use calloc
@@ -85,33 +82,30 @@ void clear()
     ticks = 0;
     running = true;
 }
-void powerup_random(size_t /*id*/) // Use size_t, as in powerup.h
-{
-//...
-}
 
-// Placeholder functions for now.  Implement these!
+// --- Function Definitions ---
+
 void init_game(void) {
-     vga_on();
-     clear();
-    // Other initialization as needed
+    vga_on();        // Switch to VGA Mode 13h
+    clear();          // Initialize game variables
 }
 
 void handle_input(void) {
-    // TODO: Implement input handling (joystick, keyboard)
+// TODO
 }
 
 void update_game(void) {
-    // TODO: Implement game logic (moving ships, particles, etc.)
      bullet_step(bullets, bullets_max, ships, MAX_PLAYERS);
-
 }
 
 void draw_game(void) {
-// TODO: Implement drawing (ships, bullets, particles, background, UI)
     for (size_t i = 0; i < bullets_max; i++)
-      bullet_draw(&bullets[i], false); //No need of if, because calloc initialized to 0 (so false)
+        bullet_draw(&bullets[i], false);
 
 }
 
-// ... (Define other functions from dosdef.c here) ...
+void powerup_random(size_t /*id*/) {
+}
+
+void try_spawn(void) {}
+void print_exit_help() {}

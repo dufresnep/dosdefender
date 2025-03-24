@@ -1,6 +1,7 @@
 // vga.c
 #include "vga.h"
 #include "vga_font.h"
+#include <dpmi.h>
 
 void vga_clear(uint8_t color) {
     // ... (your vga_clear implementation) ...
@@ -76,16 +77,14 @@ void vga_print(struct point p, uint8_t color, const char *text)
         p.x += 6;
     }
 }
-/* Switch to VGA mode 13 and set ES. */
-void vga_on()
-{
-    asm volatile ("mov   $0x0013, %%ax\n"
-                  "int   $0x10\n"
-                  "mov   $0xA000, %%ax\n"
-                  "mov   %%ax, %%es\n"
-                  : /* no outputs */
-                  : /* no inputs */
-                  : "ax");
+
+// src/vga.c
+void vga_on() {
+    __dpmi_regs regs;  // Structure to hold register values
+
+    // Set the video mode to 0x13 (320x200, 256 colors)
+    regs.x.ax = 0x0013;  //  AH=0 (set mode), AL=0x13 (mode 13h)
+    __dpmi_int(0x10, &regs); // Call BIOS interrupt 0x10
 }
 
 void vga_off()
