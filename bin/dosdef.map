@@ -1,0 +1,1319 @@
+Archive member included to satisfy reference by file (symbol)
+
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a(unwind-dw2-fde.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o (__register_frame_info)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(puts.o)
+                              src/dosdef.o (puts)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(abort.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a(unwind-dw2-fde.o) (abort)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(nmalloc.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a(unwind-dw2-fde.o) (malloc)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(memcpy.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(nmalloc.o) (memcpy)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(memmove.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(nmalloc.o) (memmove)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(memset.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(nmalloc.o) (memset)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strchr.o)
+                              src/vga_font.o (strchr)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strlen.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a(unwind-dw2-fde.o) (strlen)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o (__crt1_startup)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getdos_v.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (_get_dos_version)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osflavor.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getdos_v.o) (_os_flavor)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osmajor.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (_osmajor)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osminor.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (_osminor)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_write.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(abort.o) (_write)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fd_props.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_write.o) (__fd_properties)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_use_lfn.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (_use_lfn)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0000.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (__dpmi_allocate_ldt_descriptors)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0006.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (__dpmi_get_segment_base_address)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0008.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (__dpmi_set_segment_limit)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0300_z.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (__dpmi_int)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0400.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (__dpmi_get_version)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(npxsetup.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (_npxsetup)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fpu.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(npxsetup.o) (_detect_80387)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fsext.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_write.o) (__FSEXT_get_function)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(npxsetup.o) (signal)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(exceptn.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o) (exception_stack)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(infostrc.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o (_go32_info_block)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(clear87.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o) (_clear87)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(cntrl87.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(npxsetup.o) (_control87)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stat87.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o) (_status87)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(djmd.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(memcpy.o) (__dj_movedata)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(djmdr.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(memmove.o) (__dj_movedata_rev)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dmp.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_write.o) (__dosmemput)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(md.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (__movedata)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(lfilelen.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_write.o) (__lfilelength)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(isatty.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o) (__isatty)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stub0023.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(nmalloc.o) (write)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(id_c.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o (__libc_ident_string)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(ct_lower.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_use_lfn.o) (__dj_ctype_tolower)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(ct_upper.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_use_lfn.o) (__dj_ctype_toupper)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(errno.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (errno)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(longjmp.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(npxsetup.o) (longjmp)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(setjmp.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o) (setjmp)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(frlist.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (__setup_file_rec_list)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putchar.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(puts.o) (putchar)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(remove.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fd_props.o) (remove)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdaux.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(frlist.o) (__dj_stdaux)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stderr.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(frlist.o) (__dj_stderr)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdin.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(frlist.o) (__dj_stdin)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdout.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(frlist.o) (__dj_stdout)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdprn.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(frlist.o) (__dj_stdprn)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(exit.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(nmalloc.o) (exit)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getenv.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_use_lfn.o) (getenv)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcpy.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (strcpy)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putenv.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (__putenv)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stricmp.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fd_props.o) (__stricmp)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(llseek.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_write.o) (__llseek)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(sdirlink.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(remove.o) (__solve_dir_symlinks)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(xsymlink.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(sdirlink.o) (__solve_symlinks)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_main.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (__main)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1args.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (__crt0_setup_arguments)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1loadef.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o) (__crt0_load_environment_file)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1pglob.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1args.o) (__crt0_glob_function)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d_getdrv.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_use_lfn.o) (_dos_getdrive)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getdinfo.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_write.o) (_get_dev_info)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(truename.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fd_props.o) (_truename)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(doserr2e.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_write.o) (__doserr_to_errno)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(doserrno.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(doserr2e.o) (_doserrno)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_chmod.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(remove.o) (_chmod)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_close.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fd_props.o) (_close)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_open.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1args.o) (_open)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_read.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1args.o) (_read)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dosio.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fsext.o) (__file_handle_set)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putpath.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_use_lfn.o) (_put_path)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(setmode.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(exit.o) (__setmode)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0200.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o) (__dpmi_get_real_mode_interrupt_vector)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0201.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o) (__dpmi_set_real_mode_interrupt_vector)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0202.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o) (__dpmi_get_processor_exception_handler_vector)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0203.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o) (__dpmi_set_processor_exception_handler_vector)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0204.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o) (__dpmi_get_protected_mode_interrupt_vector)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0205.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o) (__dpmi_set_protected_mode_interrupt_vector)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0303.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o) (__dpmi_allocate_real_mode_callback)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0304.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o) (__dpmi_free_real_mode_callback)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0600.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o) (__dpmi_lock_linear_region)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0e01.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(npxsetup.o) (__dpmi_set_coprocessor_emulation)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmi_lsl.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o) (__dpmi_get_segment_limit)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dxeload.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(npxsetup.o) (_dxe_load)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fse_open.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(remove.o) (__FSEXT_call_open_handlers)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dmg.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(xsymlink.o) (__dosmemget)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(glob.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1pglob.o) (__glob)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(writhook.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putchar.o) (__libc_write_termios_hook)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(lseek.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1args.o) (__lseek)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(write.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stub0023.o) (__write)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(ct_flags.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1args.o) (__dj_ctype_flags)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(flsbuf.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putchar.o) (_flsbuf)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdiohk.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(exit.o) (__stdio_cleanup_proc)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(qsort.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(glob.o) (qsort)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcat.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(xsymlink.o) (strcat)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcmp.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putenv.o) (strcmp)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncat.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1args.o) (strncat)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncmp.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putenv.o) (strncmp)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncpy.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1args.o) (strncpy)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strpbrk.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(xsymlink.o) (strpbrk)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stpcpy.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(glob.o) (stpcpy)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_irdlink.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(xsymlink.o) (__internal_readlink)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(basename.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(sdirlink.o) (__basename)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(findfirs.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(glob.o) (__findfirst)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(findnext.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(glob.o) (__findnext)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fexistp.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(glob.o) (__file_exists)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(tell.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_irdlink.o) (__tell)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fncase.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(glob.o) (_preserve_fncase)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(is_dos83.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(glob.o) (_is_DOS83)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fnmatch.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(glob.o) (__fnmatch)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(filelen.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_irdlink.o) (__filelength)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(close.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_irdlink.o) (__close)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fclose.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdiohk.o) (fclose)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fflush.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdiohk.o) (fflush)
+/usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fwalk.o)
+                              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdiohk.o) (_fwalk)
+
+Allocating common symbols
+Common symbol       size              file
+
+_go32_info_block    0x30              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(infostrc.o)
+__djgpp_stack_limit
+                    0x4               /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o
+__dpmi_int_sp       0x2               /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0300_z.o)
+__dpmi_int_ss       0x2               /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0300_z.o)
+__djgpp_stack_top   0x4               /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o
+__djgpp_memory_handle_size
+                    0x400             /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o
+_doserrno           0x10              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(doserrno.o)
+__emu387_load_hook  0x10              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(npxsetup.o)
+_osmajor            0x10              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osmajor.o)
+__crt0_argc         0x10              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o)
+_stklen             0x4               /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o
+__djgpp_base_address
+                    0x4               /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o
+__setmode_stdio_hook
+                    0x10              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(setmode.o)
+__crt0_argv         0x10              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o)
+_os_flavor          0x10              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osflavor.o)
+__djgpp_memory_handle_list
+                    0x800             /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o
+_osminor            0x10              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osminor.o)
+_8087               0x10              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(npxsetup.o)
+__dos_argv0         0x10              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o)
+exception_stack     0x1f40            /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(exceptn.o)
+__djgpp_selector_limit
+                    0x4               /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o
+__djgpp_ds_alias    0x2               /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o
+errno               0x10              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(errno.o)
+_os_trueversion     0x10              /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o)
+_crt0_startup_flags
+                    0x4               /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o
+_stubinfo           0x4               /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o
+__dpmi_error        0x2               /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0000.o)
+__dpmi_int_flags    0x2               /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0300_z.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o
+LOAD src/joystick.o
+LOAD src/rand.o
+LOAD src/alloc.o
+LOAD src/kb.o
+LOAD src/time.o
+LOAD src/vga.o
+LOAD src/vga_font.o
+LOAD src/bullet.o
+LOAD src/particle.o
+LOAD src/ship.o
+LOAD src/powerup.o
+LOAD src/burn.o
+LOAD src/game.o
+LOAD src/speaker.o
+LOAD src/dosdef.o
+LOAD /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a
+LOAD /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a
+LOAD /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a
+
+.text           0x00000000000019e8     0xd618
+ *(.text)
+ *fill*         0x00000000000019e8        0x8 
+ .text          0x00000000000019f0      0x520 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o
+                0x00000000000019f0                start
+                0x0000000000001c00                __exit
+                0x0000000000001ce0                __sbrk
+                0x0000000000001cf8                __brk
+                0x0000000000001f06                _crt0_init_mcount
+ .text          0x0000000000001f10       0x70 src/joystick.o
+                0x0000000000001f10                joystick_read
+                0x0000000000001f78                joystick_calibrate
+ .text          0x0000000000001f80       0x30 src/rand.o
+                0x0000000000001f80                randn
+                0x0000000000001f98                randn_max
+ .text          0x0000000000001fb0       0x20 src/alloc.o
+                0x0000000000001fb0                sbrk
+ .text          0x0000000000001fd0       0x20 src/kb.o
+                0x0000000000001fd0                kbhit
+                0x0000000000001fe4                getch
+ .text          0x0000000000001ff0       0x30 src/time.o
+                0x0000000000001ff0                get_tick
+                0x0000000000002007                get_time
+ .text          0x0000000000002020      0x390 src/vga.o
+                0x0000000000002020                vga_clear
+                0x000000000000203d                vga_pixel
+                0x000000000000207b                vga_line
+                0x0000000000002146                vga_rect
+                0x0000000000002193                vga_crosshair
+                0x00000000000021db                vga_print
+                0x00000000000022f2                vga_on
+                0x00000000000022ff                vga_off
+                0x000000000000230c                print
+                0x0000000000002325                printl
+                0x000000000000238e                vga_vsync
+ .text          0x00000000000023b0      0x120 src/vga_font.o
+                0x00000000000023b0                vga_font_line
+ .text          0x00000000000024d0       0x70 src/bullet.o
+                0x00000000000024d0                bullet_create
+                0x0000000000002503                bullet_update
+                0x0000000000002504                bullet_draw
+                0x0000000000002505                bullet_in_ship
+                0x0000000000002508                bullet_step
+ .text          0x0000000000002540        0x0 src/particle.o
+ .text          0x0000000000002540       0xd0 src/ship.o
+                0x0000000000002540                ship_draw
+ .text          0x0000000000002610       0x50 src/powerup.o
+                0x0000000000002610                powerup_drop
+ .text          0x0000000000002660       0x50 src/burn.o
+                0x0000000000002660                burn
+ .text          0x00000000000026b0       0x30 src/game.o
+                0x00000000000026b0                is_game_over
+ .text          0x00000000000026e0      0x3e0 src/speaker.o
+                0x00000000000026f9                speaker_play
+                0x000000000000271d                speaker_step
+ .text          0x0000000000002ac0       0x40 src/dosdef.o
+                0x0000000000002ac9                clear
+                0x0000000000002af9                powerup_random
+ .text          0x0000000000002b00     0x16a0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a(unwind-dw2-fde.o)
+                0x0000000000003d90                __register_frame_info_bases
+                0x0000000000003dd0                __register_frame_info
+                0x0000000000003e20                __register_frame
+                0x0000000000003e70                __register_frame_info_table_bases
+                0x0000000000003eb0                __register_frame_info_table
+                0x0000000000003ef0                __register_frame_table
+                0x0000000000003f40                __deregister_frame_info_bases
+                0x0000000000004010                __deregister_frame_info
+                0x0000000000004020                __deregister_frame
+                0x0000000000004050                _Unwind_Find_FDE
+ .text          0x00000000000041a0       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(puts.o)
+                0x00000000000041a0                puts
+ .text          0x00000000000041e0       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(abort.o)
+                0x00000000000041e0                abort
+ .text          0x0000000000004220      0xcc0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(nmalloc.o)
+                0x0000000000004760                _sysmalloc
+                0x00000000000047a0                malloc
+                0x0000000000004940                free
+                0x00000000000049e0                realloc
+                0x0000000000004dd0                calloc
+                0x0000000000004e30                memalign
+ .text          0x0000000000004ee0       0x20 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(memcpy.o)
+                0x0000000000004ee0                memcpy
+ .text          0x0000000000004f00       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(memmove.o)
+                0x0000000000004f00                memmove
+ .text          0x0000000000004f30       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(memset.o)
+                0x0000000000004f30                memset
+ .text          0x0000000000004f70       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strchr.o)
+                0x0000000000004f70                strchr
+ .text          0x0000000000004fa0       0x20 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strlen.o)
+                0x0000000000004fa0                strlen
+ .text          0x0000000000004fc0      0x4c0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o)
+                0x0000000000005160                __crt1_startup
+ .text          0x0000000000005480      0x210 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getdos_v.o)
+                0x0000000000005490                _get_dos_version
+ .text          0x0000000000005690        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osflavor.o)
+ .text          0x0000000000005690        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osmajor.o)
+ .text          0x0000000000005690        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osminor.o)
+ .text          0x0000000000005690      0x3c0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_write.o)
+                0x00000000000056c0                _write_int
+                0x0000000000005860                _write_fill_seek_gap
+                0x00000000000059a0                _write
+ .text          0x0000000000005a50      0x340 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fd_props.o)
+                0x0000000000005aa0                __set_fd_properties
+                0x0000000000005c20                __dup_fd_properties
+                0x0000000000005c50                __clear_fd_properties
+ .text          0x0000000000005d90      0x3c0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_use_lfn.o)
+                0x0000000000005d90                _get_volume_info
+                0x0000000000005f80                _use_lfn
+ .text          0x0000000000006150       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0000.o)
+                0x0000000000006150                __dpmi_allocate_ldt_descriptors
+ .text          0x0000000000006180       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0006.o)
+                0x0000000000006180                __dpmi_get_segment_base_address
+ .text          0x00000000000061b0       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0008.o)
+                0x00000000000061b0                __dpmi_set_segment_limit
+ .text          0x00000000000061e0       0x90 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0300_z.o)
+                0x00000000000061e0                __dpmi_int
+ .text          0x0000000000006270       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0400.o)
+                0x0000000000006270                __dpmi_get_version
+ .text          0x00000000000062b0      0x310 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(npxsetup.o)
+                0x0000000000006390                _npxsetup
+ .text          0x00000000000065c0       0x50 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fpu.o)
+                0x00000000000065c0                _detect_80387
+ .text          0x0000000000006610      0x370 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fsext.o)
+                0x0000000000006730                __FSEXT_set_function
+                0x0000000000006770                __FSEXT_alloc_fd
+                0x0000000000006890                __FSEXT_get_function
+                0x00000000000068f0                __FSEXT_set_data
+                0x0000000000006920                __FSEXT_get_data
+ .text          0x0000000000006980     0x1440 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o)
+                0x0000000000006ca0                signal
+                0x0000000000006ce0                __djgpp_exception_toggle
+                0x0000000000006ec0                __djgpp_set_sigint_key
+                0x0000000000006f10                __djgpp_set_sigquit_key
+                0x0000000000006f60                __djgpp_exception_setup
+                0x0000000000007110                __djgpp_set_ctrl_c
+                0x0000000000007140                __maybe_fix_w2k_ntvdm_bug
+                0x0000000000007180                _exit
+                0x0000000000007a50                __djgpp_traceback_exit
+                0x0000000000007b10                raise
+                0x0000000000007bb0                __djgpp_exception_processor
+ .text          0x0000000000007dc0      0x3d0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(exceptn.o)
+                0x0000000000007dc0                __djgpp_exception_table
+                0x0000000000007f40                __djgpp_save_interrupt_regs
+                0x0000000000007fb8                __djgpp_hw_lock_start
+                0x0000000000007fc0                __djgpp_cbrk_count
+                0x0000000000007fc4                __djgpp_timer_countdown
+                0x0000000000007fc8                __djgpp_our_DS
+                0x0000000000007fca                __djgpp_app_DS
+                0x0000000000007fcc                __djgpp_dos_sel
+                0x0000000000007fce                __djgpp_hwint_flags
+                0x0000000000007fd0                __djgpp_sigint_key
+                0x0000000000007fd2                __djgpp_sigint_mask
+                0x0000000000007fd4                __djgpp_sigquit_key
+                0x0000000000007fd6                __djgpp_sigquit_mask
+                0x0000000000007fd8                __djgpp_old_kbd
+                0x0000000000007fe0                __djgpp_old_timer
+                0x0000000000007fe8                __djgpp_exception_state_ptr
+                0x000000000000802c                __excep_ds_alias
+                0x0000000000008030                __djgpp_npx_hdlr
+                0x0000000000008045                __djgpp_kbd_hdlr
+                0x00000000000080a6                __djgpp_kbd_hdlr_pc98
+                0x00000000000080e4                __djgpp_timer_hdlr
+                0x0000000000008120                __djgpp_cbrk_hdlr
+                0x000000000000814c                __djgpp_i24
+                0x000000000000814e                __djgpp_iret
+                0x0000000000008150                __djgpp_hw_exception
+                0x000000000000818a                __djgpp_hw_lock_end
+ .text          0x0000000000008190        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(infostrc.o)
+ .text          0x0000000000008190       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(clear87.o)
+                0x0000000000008190                _clear87
+ .text          0x00000000000081a0       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(cntrl87.o)
+                0x00000000000081a0                _control87
+ .text          0x00000000000081d0       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stat87.o)
+                0x00000000000081d0                _status87
+ .text          0x00000000000081e0       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(djmd.o)
+                0x00000000000081e0                __dj_movedata
+ .text          0x0000000000008210       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(djmdr.o)
+                0x0000000000008210                __dj_movedata_rev
+ .text          0x0000000000008250       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dmp.o)
+                0x0000000000008250                __dosmemput
+ .text          0x0000000000008290       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(md.o)
+                0x0000000000008290                __movedata
+ .text          0x00000000000082c0      0x1e0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(lfilelen.o)
+                0x00000000000082c0                __lfilelength
+ .text          0x00000000000084a0       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(isatty.o)
+                0x00000000000084a0                __isatty
+ .text          0x00000000000084e0       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stub0023.o)
+                0x00000000000084e0                write
+ .text          0x00000000000084f0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(id_c.o)
+ .text          0x00000000000084f0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(ct_lower.o)
+ .text          0x00000000000084f0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(ct_upper.o)
+ .text          0x00000000000084f0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(errno.o)
+ .text          0x00000000000084f0       0x70 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(longjmp.o)
+                0x00000000000084f0                longjmp
+ .text          0x0000000000008560       0x60 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(setjmp.o)
+                0x0000000000008560                setjmp
+ .text          0x00000000000085c0       0xf0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(frlist.o)
+                0x00000000000085c0                __setup_file_rec_list
+ .text          0x00000000000086b0      0x110 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putchar.o)
+                0x00000000000086b0                putchar
+ .text          0x00000000000087c0      0x1c0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(remove.o)
+                0x00000000000087f0                remove
+ .text          0x0000000000008980        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdaux.o)
+ .text          0x0000000000008980        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stderr.o)
+ .text          0x0000000000008980        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdin.o)
+ .text          0x0000000000008980        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdout.o)
+ .text          0x0000000000008980        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdprn.o)
+ .text          0x0000000000008980       0xb0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(exit.o)
+                0x0000000000008990                exit
+ .text          0x0000000000008a30       0x70 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getenv.o)
+                0x0000000000008a30                getenv
+ .text          0x0000000000008aa0       0x20 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcpy.o)
+                0x0000000000008aa0                strcpy
+ .text          0x0000000000008ac0      0x390 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putenv.o)
+                0x0000000000008ac0                __putenv
+ .text          0x0000000000008e50       0x50 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stricmp.o)
+                0x0000000000008e50                __stricmp
+ .text          0x0000000000008ea0      0x240 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(llseek.o)
+                0x0000000000008ed0                __llseek
+ .text          0x00000000000090e0      0x180 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(sdirlink.o)
+                0x00000000000090e0                __solve_dir_symlinks
+ .text          0x0000000000009260      0x4e0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(xsymlink.o)
+                0x0000000000009310                __solve_symlinks
+ .text          0x0000000000009740       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_main.o)
+                0x0000000000009740                __main
+ .text          0x0000000000009780      0xf00 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1args.o)
+                0x0000000000009f30                __crt0_setup_arguments
+ .text          0x000000000000a680      0x650 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1loadef.o)
+                0x000000000000a6a0                __crt0_load_environment_file
+ .text          0x000000000000acd0       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1pglob.o)
+                0x000000000000acd0                __crt0_glob_function
+ .text          0x000000000000ad10       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d_getdrv.o)
+                0x000000000000ad10                _dos_getdrive
+ .text          0x000000000000ad40       0x60 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getdinfo.o)
+                0x000000000000ad40                _get_dev_info
+ .text          0x000000000000ada0      0x340 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(truename.o)
+                0x000000000000b0b0                _truename
+                0x000000000000b0d0                _truename_sfn
+ .text          0x000000000000b0e0      0x130 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(doserr2e.o)
+                0x000000000000b0e0                __doserr_to_errno
+ .text          0x000000000000b210        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(doserrno.o)
+ .text          0x000000000000b210       0xd0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_chmod.o)
+                0x000000000000b210                _chmod
+ .text          0x000000000000b2e0       0xe0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_close.o)
+                0x000000000000b310                _close
+ .text          0x000000000000b3c0      0x310 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_open.o)
+                0x000000000000b3f0                _open
+ .text          0x000000000000b6d0      0x180 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_read.o)
+                0x000000000000b700                _read
+ .text          0x000000000000b850       0xf0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dosio.o)
+                0x000000000000b850                __file_handle_set
+ .text          0x000000000000b940      0x4a0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putpath.o)
+                0x000000000000b960                _put_path2
+                0x000000000000bdc0                _put_path
+ .text          0x000000000000bde0       0xe0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(setmode.o)
+                0x000000000000bde0                __setmode
+ .text          0x000000000000bec0       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0200.o)
+                0x000000000000bec0                __dpmi_get_real_mode_interrupt_vector
+ .text          0x000000000000bef0       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0201.o)
+                0x000000000000bef0                __dpmi_set_real_mode_interrupt_vector
+ .text          0x000000000000bf20       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0202.o)
+                0x000000000000bf20                __dpmi_get_processor_exception_handler_vector
+ .text          0x000000000000bf50       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0203.o)
+                0x000000000000bf50                __dpmi_set_processor_exception_handler_vector
+ .text          0x000000000000bf80       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0204.o)
+                0x000000000000bf80                __dpmi_get_protected_mode_interrupt_vector
+ .text          0x000000000000bfb0       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0205.o)
+                0x000000000000bfb0                __dpmi_set_protected_mode_interrupt_vector
+ .text          0x000000000000bfe0       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0303.o)
+                0x000000000000bfe0                __dpmi_allocate_real_mode_callback
+ .text          0x000000000000c020       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0304.o)
+                0x000000000000c020                __dpmi_free_real_mode_callback
+ .text          0x000000000000c050       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0600.o)
+                0x000000000000c050                __dpmi_lock_linear_region
+ .text          0x000000000000c090       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0e01.o)
+                0x000000000000c090                __dpmi_set_coprocessor_emulation
+ .text          0x000000000000c0c0       0x20 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmi_lsl.o)
+                0x000000000000c0c0                __dpmi_get_segment_limit
+ .text          0x000000000000c0e0      0x100 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dxeload.o)
+                0x000000000000c0e0                _dxe_load
+ .text          0x000000000000c1e0       0x90 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fse_open.o)
+                0x000000000000c1e0                __FSEXT_add_open_handler
+                0x000000000000c220                __FSEXT_call_open_handlers
+ .text          0x000000000000c270       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dmg.o)
+                0x000000000000c270                __dosmemget
+ .text          0x000000000000c2b0      0xcb0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(glob.o)
+                0x000000000000cce0                __glob
+ .text          0x000000000000cf60        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(writhook.o)
+ .text          0x000000000000cf60       0xd0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(lseek.o)
+                0x000000000000cf90                __lseek
+ .text          0x000000000000d030      0x270 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(write.o)
+                0x000000000000d060                __write
+ .text          0x000000000000d2a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(ct_flags.o)
+ .text          0x000000000000d2a0      0x260 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(flsbuf.o)
+                0x000000000000d2a0                _flsbuf
+ .text          0x000000000000d500       0x50 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdiohk.o)
+                0x000000000000d500                __stdio_cleanup_proc
+ .text          0x000000000000d550      0x510 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(qsort.o)
+                0x000000000000da30                qsort
+ .text          0x000000000000da60       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcat.o)
+                0x000000000000da60                strcat
+ .text          0x000000000000da90       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcmp.o)
+                0x000000000000da90                strcmp
+ .text          0x000000000000dad0       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncat.o)
+                0x000000000000dad0                strncat
+ .text          0x000000000000db10       0x50 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncmp.o)
+                0x000000000000db10                strncmp
+ .text          0x000000000000db60       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncpy.o)
+                0x000000000000db60                strncpy
+ .text          0x000000000000dba0       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strpbrk.o)
+                0x000000000000dba0                strpbrk
+ .text          0x000000000000dbe0       0x20 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stpcpy.o)
+                0x000000000000dbe0                stpcpy
+ .text          0x000000000000dc00      0x2e0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_irdlink.o)
+                0x000000000000dc60                __internal_readlink
+ .text          0x000000000000dee0       0x60 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(basename.o)
+                0x000000000000dee0                __basename
+ .text          0x000000000000df40      0x2f0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(findfirs.o)
+                0x000000000000df40                __findfirst
+ .text          0x000000000000e230      0x2a0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(findnext.o)
+                0x000000000000e230                __findnext
+ .text          0x000000000000e4d0       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fexistp.o)
+                0x000000000000e4d0                __file_exists
+ .text          0x000000000000e510       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(tell.o)
+                0x000000000000e510                __tell
+ .text          0x000000000000e540       0x50 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fncase.o)
+                0x000000000000e550                _preserve_fncase
+ .text          0x000000000000e590       0x90 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(is_dos83.o)
+                0x000000000000e590                _is_DOS83
+ .text          0x000000000000e620      0x3d0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fnmatch.o)
+                0x000000000000e630                __fnmatch
+ .text          0x000000000000e9f0      0x1b0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(filelen.o)
+                0x000000000000e9f0                __filelength
+ .text          0x000000000000eba0       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(close.o)
+                0x000000000000eba0                __close
+ .text          0x000000000000ebb0      0x100 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fclose.o)
+                0x000000000000ebb0                fclose
+ .text          0x000000000000ecb0      0x170 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fflush.o)
+                0x000000000000ecb0                fflush
+ .text          0x000000000000ee20       0x50 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fwalk.o)
+                0x000000000000ee20                _fwalk
+ *(.text.*)
+ .text.startup  0x000000000000ee70       0xa8 src/dosdef.o
+                0x000000000000ee70                main
+ .text.unlikely
+                0x000000000000ef18       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a(unwind-dw2-fde.o)
+ *(.gnu.linkonce.t*)
+ *(.const*)
+ *(.ro*)
+ *(.gnu.linkonce.r*)
+                0x000000000000ef48                etext = .
+                [!provide]                        PROVIDE (_etext = .)
+                0x000000000000f000                . = ALIGN (0x200)
+ *fill*         0x000000000000ef48       0xb8 
+
+.data           0x000000000000f000     0x3200
+                0x000000000000f000                djgpp_first_ctor = .
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctor)
+ *(.ctors)
+                0x000000000000f000                djgpp_last_ctor = .
+                0x000000000000f000                djgpp_first_dtor = .
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtor)
+ *(.dtors)
+                0x000000000000f000                djgpp_last_dtor = .
+                0x000000000000f000                __environ = .
+                [!provide]                        PROVIDE (_environ = .)
+                0x000000000000f000        0x4 LONG 0x0
+ *(.data)
+ *fill*         0x000000000000f004        0xc 
+ .data          0x000000000000f010       0xd0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o
+ .data          0x000000000000f0e0       0x20 src/joystick.o
+                0x000000000000f0e0                joystick_config
+ .data          0x000000000000f100       0x10 src/rand.o
+                0x000000000000f100                seed
+ .data          0x000000000000f110       0x10 src/alloc.o
+ .data          0x000000000000f120        0x0 src/kb.o
+ .data          0x000000000000f120        0x0 src/time.o
+ .data          0x000000000000f120        0x0 src/vga.o
+ .data          0x000000000000f120        0x0 src/vga_font.o
+ .data          0x000000000000f120        0x0 src/bullet.o
+ .data          0x000000000000f120        0x0 src/particle.o
+ .data          0x000000000000f120        0x0 src/ship.o
+ .data          0x000000000000f120        0x0 src/powerup.o
+ .data          0x000000000000f120        0x0 src/burn.o
+ .data          0x000000000000f120        0x0 src/game.o
+ .data          0x000000000000f120       0x90 src/speaker.o
+                0x000000000000f120                fx_menu_toggle
+                0x000000000000f12c                fx_menu_select
+                0x000000000000f138                fx_end_music
+                0x000000000000f144                fx_intro_music
+                0x000000000000f150                fx_fire3
+                0x000000000000f15c                fx_fire2
+                0x000000000000f168                fx_fire1
+                0x000000000000f174                fx_fire0
+                0x000000000000f180                fx_powerup
+                0x000000000000f18c                fx_boss
+                0x000000000000f198                fx_hit
+                0x000000000000f1a4                fx_explode
+ .data          0x000000000000f1b0       0x10 src/dosdef.o
+                0x000000000000f1b0                powerups_max
+                0x000000000000f1b4                particles_max
+                0x000000000000f1b8                bullets_max
+ .data          0x000000000000f1c0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a(unwind-dw2-fde.o)
+ .data          0x000000000000f1c0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(puts.o)
+ .data          0x000000000000f1c0       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(abort.o)
+ .data          0x000000000000f1d0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(nmalloc.o)
+ .data          0x000000000000f1d0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(memcpy.o)
+ .data          0x000000000000f1d0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(memmove.o)
+ .data          0x000000000000f1d0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(memset.o)
+ .data          0x000000000000f1d0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strchr.o)
+ .data          0x000000000000f1d0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strlen.o)
+ .data          0x000000000000f1d0       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o)
+                0x000000000000f1d0                __PROXY_LEN
+                0x000000000000f1d4                __PROXY
+                0x000000000000f1dc                __bss_count
+ .data          0x000000000000f1e0       0xd0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getdos_v.o)
+ .data          0x000000000000f2b0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osflavor.o)
+ .data          0x000000000000f2b0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osmajor.o)
+ .data          0x000000000000f2b0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osminor.o)
+ .data          0x000000000000f2b0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_write.o)
+ .data          0x000000000000f2b0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fd_props.o)
+ .data          0x000000000000f2b0       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_use_lfn.o)
+ .data          0x000000000000f2c0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0000.o)
+ .data          0x000000000000f2c0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0006.o)
+ .data          0x000000000000f2c0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0008.o)
+ .data          0x000000000000f2c0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0300_z.o)
+ .data          0x000000000000f2c0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0400.o)
+ .data          0x000000000000f2c0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(npxsetup.o)
+ .data          0x000000000000f2c0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fpu.o)
+ .data          0x000000000000f2c0       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fsext.o)
+ .data          0x000000000000f2d0       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o)
+ .data          0x000000000000f2e0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(exceptn.o)
+ .data          0x000000000000f2e0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(infostrc.o)
+ .data          0x000000000000f2e0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(clear87.o)
+ .data          0x000000000000f2e0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(cntrl87.o)
+ .data          0x000000000000f2e0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stat87.o)
+ .data          0x000000000000f2e0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(djmd.o)
+ .data          0x000000000000f2e0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(djmdr.o)
+ .data          0x000000000000f2e0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dmp.o)
+ .data          0x000000000000f2e0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(md.o)
+ .data          0x000000000000f2e0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(lfilelen.o)
+ .data          0x000000000000f2e0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(isatty.o)
+ .data          0x000000000000f2e0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stub0023.o)
+ .data          0x000000000000f2e0       0x80 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(id_c.o)
+                0x000000000000f2e0                __libc_ident_string
+                0x000000000000f320                __libc_sccs_ident
+ .data          0x000000000000f360      0x110 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(ct_lower.o)
+                0x000000000000f360                __dj_ctype_tolower
+ .data          0x000000000000f470      0x110 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(ct_upper.o)
+                0x000000000000f470                __dj_ctype_toupper
+ .data          0x000000000000f580        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(errno.o)
+ .data          0x000000000000f580        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(longjmp.o)
+ .data          0x000000000000f580        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(setjmp.o)
+ .data          0x000000000000f580       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(frlist.o)
+                0x000000000000f580                __file_rec_list
+ .data          0x000000000000f590        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putchar.o)
+ .data          0x000000000000f590        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(remove.o)
+ .data          0x000000000000f590       0x20 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdaux.o)
+                0x000000000000f590                __dj_stdaux
+ .data          0x000000000000f5b0       0x20 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stderr.o)
+                0x000000000000f5b0                __dj_stderr
+ .data          0x000000000000f5d0       0x20 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdin.o)
+                0x000000000000f5d0                __dj_stdin
+ .data          0x000000000000f5f0       0x20 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdout.o)
+                0x000000000000f5f0                __dj_stdout
+ .data          0x000000000000f610       0x20 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdprn.o)
+                0x000000000000f610                __dj_stdprn
+ .data          0x000000000000f630        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(exit.o)
+ .data          0x000000000000f630        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getenv.o)
+ .data          0x000000000000f630        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcpy.o)
+ .data          0x000000000000f630       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putenv.o)
+                0x000000000000f630                __environ_changed
+ .data          0x000000000000f640        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stricmp.o)
+ .data          0x000000000000f640        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(llseek.o)
+ .data          0x000000000000f640        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(sdirlink.o)
+ .data          0x000000000000f640        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(xsymlink.o)
+ .data          0x000000000000f640       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_main.o)
+ .data          0x000000000000f650        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1args.o)
+ .data          0x000000000000f650        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1loadef.o)
+ .data          0x000000000000f650        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1pglob.o)
+ .data          0x000000000000f650        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d_getdrv.o)
+ .data          0x000000000000f650        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getdinfo.o)
+ .data          0x000000000000f650        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(truename.o)
+ .data          0x000000000000f650        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(doserr2e.o)
+ .data          0x000000000000f650        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(doserrno.o)
+ .data          0x000000000000f650        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_chmod.o)
+ .data          0x000000000000f650        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_close.o)
+ .data          0x000000000000f650        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_open.o)
+ .data          0x000000000000f650        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_read.o)
+ .data          0x000000000000f650       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dosio.o)
+                0x000000000000f650                __file_handle_modes
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putpath.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(setmode.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0200.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0201.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0202.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0203.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0204.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0205.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0303.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0304.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0600.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0e01.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmi_lsl.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dxeload.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fse_open.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dmg.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(glob.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(writhook.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(lseek.o)
+ .data          0x000000000000f680        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(write.o)
+ .data          0x000000000000f680      0x210 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(ct_flags.o)
+                0x000000000000f680                __dj_ctype_flags
+ .data          0x000000000000f890        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(flsbuf.o)
+ .data          0x000000000000f890       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdiohk.o)
+                0x000000000000f890                __stdio_cleanup_hook
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(qsort.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcat.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcmp.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncat.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncmp.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncpy.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strpbrk.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stpcpy.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_irdlink.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(basename.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(findfirs.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(findnext.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fexistp.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(tell.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fncase.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(is_dos83.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fnmatch.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(filelen.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(close.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fclose.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fflush.o)
+ .data          0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fwalk.o)
+ *(.data.*)
+ *(.bss.*)
+ *(.gcc_exc*)
+                0x000000000000f8a0                ___EH_FRAME_BEGIN__ = .
+ *(.eh_fram*)
+ .eh_frame      0x000000000000f8a0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o
+ .eh_frame      0x000000000000f8a0      0x508 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a(unwind-dw2-fde.o)
+ .eh_frame      0x000000000000fda8       0x38 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(puts.o)
+ .eh_frame      0x000000000000fde0       0x2c /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(abort.o)
+ .eh_frame      0x000000000000fe0c      0x314 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(nmalloc.o)
+ .eh_frame      0x0000000000010120       0x2c /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strchr.o)
+ .eh_frame      0x000000000001014c       0x2c /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strlen.o)
+ .eh_frame      0x0000000000010178       0x6c /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o)
+ .eh_frame      0x00000000000101e4       0x70 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getdos_v.o)
+ .eh_frame      0x0000000000010254      0x10c /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_write.o)
+ .eh_frame      0x0000000000010360       0xbc /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fd_props.o)
+ .eh_frame      0x000000000001041c       0xa4 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_use_lfn.o)
+ .eh_frame      0x00000000000104c0       0x70 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(npxsetup.o)
+ .eh_frame      0x0000000000010530      0x128 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fsext.o)
+ .eh_frame      0x0000000000010658      0x244 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o)
+ .eh_frame      0x000000000001089c       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dmp.o)
+ .eh_frame      0x00000000000108cc       0x64 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(lfilelen.o)
+ .eh_frame      0x0000000000010930       0x38 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(isatty.o)
+ .eh_frame      0x0000000000010968       0x34 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(frlist.o)
+ .eh_frame      0x000000000001099c       0x48 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putchar.o)
+ .eh_frame      0x00000000000109e4       0x7c /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(remove.o)
+ .eh_frame      0x0000000000010a60       0x38 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(exit.o)
+ .eh_frame      0x0000000000010a98       0x54 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getenv.o)
+ .eh_frame      0x0000000000010aec       0x34 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcpy.o)
+ .eh_frame      0x0000000000010b20       0x70 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putenv.o)
+ .eh_frame      0x0000000000010b90       0x48 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stricmp.o)
+ .eh_frame      0x0000000000010bd8       0x88 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(llseek.o)
+ .eh_frame      0x0000000000010c60       0x74 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(sdirlink.o)
+ .eh_frame      0x0000000000010cd4       0xc0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(xsymlink.o)
+ .eh_frame      0x0000000000010d94       0x44 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_main.o)
+ .eh_frame      0x0000000000010dd8      0x258 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1args.o)
+ .eh_frame      0x0000000000011030       0x48 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1loadef.o)
+ .eh_frame      0x0000000000011078       0x38 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1pglob.o)
+ .eh_frame      0x00000000000110b0       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d_getdrv.o)
+ .eh_frame      0x00000000000110e0       0x34 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getdinfo.o)
+ .eh_frame      0x0000000000011114       0xc8 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(truename.o)
+ .eh_frame      0x00000000000111dc       0x2c /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(doserr2e.o)
+ .eh_frame      0x0000000000011208       0x34 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_chmod.o)
+ .eh_frame      0x000000000001123c       0x60 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_close.o)
+ .eh_frame      0x000000000001129c       0x88 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_open.o)
+ .eh_frame      0x0000000000011324       0x9c /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_read.o)
+ .eh_frame      0x00000000000113c0       0x48 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dosio.o)
+ .eh_frame      0x0000000000011408       0x60 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putpath.o)
+ .eh_frame      0x0000000000011468       0x48 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(setmode.o)
+ .eh_frame      0x00000000000114b0       0x58 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dxeload.o)
+ .eh_frame      0x0000000000011508       0x8c /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fse_open.o)
+ .eh_frame      0x0000000000011594       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dmg.o)
+ .eh_frame      0x00000000000115c4      0x178 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(glob.o)
+ .eh_frame      0x000000000001173c       0x8c /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(lseek.o)
+ .eh_frame      0x00000000000117c8       0xa0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(write.o)
+ .eh_frame      0x0000000000011868       0x70 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(flsbuf.o)
+ .eh_frame      0x00000000000118d8       0x5c /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdiohk.o)
+ .eh_frame      0x0000000000011934       0xec /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(qsort.o)
+ .eh_frame      0x0000000000011a20       0x34 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcat.o)
+ .eh_frame      0x0000000000011a54       0x2c /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcmp.o)
+ .eh_frame      0x0000000000011a80       0x3c /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncat.o)
+ .eh_frame      0x0000000000011abc       0x48 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncmp.o)
+ .eh_frame      0x0000000000011b04       0x48 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncpy.o)
+ .eh_frame      0x0000000000011b4c       0x54 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strpbrk.o)
+ .eh_frame      0x0000000000011ba0       0x2c /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stpcpy.o)
+ .eh_frame      0x0000000000011bcc       0xb8 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_irdlink.o)
+ .eh_frame      0x0000000000011c84       0x48 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(basename.o)
+ .eh_frame      0x0000000000011ccc       0x70 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(findfirs.o)
+ .eh_frame      0x0000000000011d3c       0x64 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(findnext.o)
+ .eh_frame      0x0000000000011da0       0x38 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fexistp.o)
+ .eh_frame      0x0000000000011dd8       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(tell.o)
+ .eh_frame      0x0000000000011e08       0x34 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fncase.o)
+ .eh_frame      0x0000000000011e3c       0x4c /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(is_dos83.o)
+ .eh_frame      0x0000000000011e88       0x70 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fnmatch.o)
+ .eh_frame      0x0000000000011ef8       0x58 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(filelen.o)
+ .eh_frame      0x0000000000011f50       0x2c /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(close.o)
+ .eh_frame      0x0000000000011f7c       0x50 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fclose.o)
+ .eh_frame      0x0000000000011fcc       0x58 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fflush.o)
+ .eh_frame      0x0000000000012024       0x4c /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fwalk.o)
+                0x0000000000012070                ___EH_FRAME_END__ = .
+                0x0000000000012070        0x4 LONG 0x0
+ *(.gnu.linkonce.d*)
+                0x0000000000012074                edata = .
+                [!provide]                        PROVIDE (_edata = .)
+                0x0000000000012200                . = ALIGN (0x200)
+ *fill*         0x0000000000012074      0x18c 
+
+.bss            0x0000000000012200     0x3a00
+ *(.bss .gnu.linkonce.b.*)
+ .bss           0x0000000000012200       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o
+ .bss           0x0000000000012210        0x0 src/joystick.o
+ .bss           0x0000000000012210        0x0 src/rand.o
+ .bss           0x0000000000012210        0x0 src/alloc.o
+ .bss           0x0000000000012210        0x0 src/kb.o
+ .bss           0x0000000000012210        0x4 src/time.o
+                0x0000000000012210                ticks
+ .bss           0x0000000000012214        0x0 src/vga.o
+ .bss           0x0000000000012214        0x0 src/vga_font.o
+ .bss           0x0000000000012214        0x0 src/bullet.o
+ .bss           0x0000000000012214        0x0 src/particle.o
+ .bss           0x0000000000012214        0x0 src/ship.o
+ .bss           0x0000000000012214        0x0 src/powerup.o
+ .bss           0x0000000000012214        0x0 src/burn.o
+ .bss           0x0000000000012214        0x0 src/game.o
+ .bss           0x0000000000012214       0x10 src/speaker.o
+                0x0000000000012214                speaker
+ .bss           0x0000000000012224      0x390 src/dosdef.o
+                0x0000000000012224                score
+                0x0000000000012228                powerups
+                0x000000000001222c                ships
+                0x0000000000012230                particles
+                0x0000000000012234                bullets
+ .bss           0x00000000000125b4        0xc /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a(unwind-dw2-fde.o)
+ .bss           0x00000000000125c0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(puts.o)
+ .bss           0x00000000000125c0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(abort.o)
+ .bss           0x00000000000125c0      0x230 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(nmalloc.o)
+ .bss           0x00000000000127f0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(memcpy.o)
+ .bss           0x00000000000127f0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(memmove.o)
+ .bss           0x00000000000127f0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(memset.o)
+ .bss           0x00000000000127f0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strchr.o)
+ .bss           0x00000000000127f0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strlen.o)
+ .bss           0x00000000000127f0        0x4 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o)
+ .bss           0x00000000000127f4        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getdos_v.o)
+ .bss           0x00000000000127f4        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osflavor.o)
+ .bss           0x00000000000127f4        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osmajor.o)
+ .bss           0x00000000000127f4        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osminor.o)
+ .bss           0x00000000000127f4        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_write.o)
+ .bss           0x00000000000127f4       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fd_props.o)
+                0x00000000000127f4                __fd_properties
+ .bss           0x0000000000012804        0x8 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_use_lfn.o)
+ .bss           0x000000000001280c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0000.o)
+ .bss           0x000000000001280c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0006.o)
+ .bss           0x000000000001280c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0008.o)
+ .bss           0x000000000001280c        0x4 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0300_z.o)
+ .bss           0x0000000000012810        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0400.o)
+ .bss           0x0000000000012810        0x4 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(npxsetup.o)
+ .bss           0x0000000000012814        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fpu.o)
+ .bss           0x0000000000012814        0x8 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fsext.o)
+ .bss           0x000000000001281c      0x600 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(exceptn.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(infostrc.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(clear87.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(cntrl87.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stat87.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(djmd.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(djmdr.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dmp.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(md.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(lfilelen.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(isatty.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stub0023.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(id_c.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(ct_lower.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(ct_upper.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(errno.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(longjmp.o)
+ .bss           0x0000000000012e1c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(setjmp.o)
+ .bss           0x0000000000012e1c       0x60 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(frlist.o)
+ .bss           0x0000000000012e7c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putchar.o)
+ .bss           0x0000000000012e7c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(remove.o)
+ .bss           0x0000000000012e7c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdaux.o)
+ .bss           0x0000000000012e7c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stderr.o)
+ .bss           0x0000000000012e7c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdin.o)
+ .bss           0x0000000000012e7c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdout.o)
+ .bss           0x0000000000012e7c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdprn.o)
+ .bss           0x0000000000012e7c        0xc /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(exit.o)
+                0x0000000000012e7c                __fd_properties_cleanup_hook
+                0x0000000000012e80                __FSEXT_exit_hook
+                0x0000000000012e84                __atexit_ptr
+ .bss           0x0000000000012e88        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getenv.o)
+ .bss           0x0000000000012e88        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcpy.o)
+ .bss           0x0000000000012e88        0x4 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putenv.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stricmp.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(llseek.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(sdirlink.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(xsymlink.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_main.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1args.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1loadef.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1pglob.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d_getdrv.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getdinfo.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(truename.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(doserr2e.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(doserrno.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_chmod.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_close.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_open.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_read.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dosio.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putpath.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(setmode.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0200.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0201.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0202.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0203.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0204.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0205.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0303.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0304.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0600.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0e01.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmi_lsl.o)
+ .bss           0x0000000000012e8c        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dxeload.o)
+ .bss           0x0000000000012e8c        0x4 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fse_open.o)
+ .bss           0x0000000000012e90        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dmg.o)
+ .bss           0x0000000000012e90       0x20 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(glob.o)
+ .bss           0x0000000000012eb0        0x4 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(writhook.o)
+                0x0000000000012eb0                __libc_write_termios_hook
+ .bss           0x0000000000012eb4        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(lseek.o)
+ .bss           0x0000000000012eb4        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(write.o)
+ .bss           0x0000000000012eb4        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(ct_flags.o)
+ .bss           0x0000000000012eb4        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(flsbuf.o)
+ .bss           0x0000000000012eb4        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdiohk.o)
+ .bss           0x0000000000012eb4        0xc /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(qsort.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcat.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcmp.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncat.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncmp.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncpy.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strpbrk.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stpcpy.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_irdlink.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(basename.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(findfirs.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(findnext.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fexistp.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(tell.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fncase.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(is_dos83.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fnmatch.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(filelen.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(close.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fclose.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fflush.o)
+ .bss           0x0000000000012ec0        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fwalk.o)
+ *(COMMON)
+ COMMON         0x0000000000012ec0      0xc20 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/crt0.o
+                0x0000000000012ec0                __djgpp_stack_limit
+                0x0000000000012ec4                __djgpp_stack_top
+                0x0000000000012ec8                __djgpp_memory_handle_size
+                0x00000000000132c8                _stklen
+                0x00000000000132cc                __djgpp_base_address
+                0x00000000000132d0                __djgpp_memory_handle_list
+                0x0000000000013ad0                __djgpp_selector_limit
+                0x0000000000013ad4                __djgpp_ds_alias
+                0x0000000000013ad8                _crt0_startup_flags
+                0x0000000000013adc                _stubinfo
+ COMMON         0x0000000000013ae0       0x40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o)
+                0x0000000000013ae0                __crt0_argc
+                0x0000000000013af0                __crt0_argv
+                0x0000000000013b00                __dos_argv0
+                0x0000000000013b10                _os_trueversion
+ COMMON         0x0000000000013b20       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osflavor.o)
+                0x0000000000013b20                _os_flavor
+ COMMON         0x0000000000013b30       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osmajor.o)
+                0x0000000000013b30                _osmajor
+ COMMON         0x0000000000013b40       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osminor.o)
+                0x0000000000013b40                _osminor
+ COMMON         0x0000000000013b50        0x2 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0000.o)
+                0x0000000000013b50                __dpmi_error
+ *fill*         0x0000000000013b52        0x2 
+ COMMON         0x0000000000013b54        0x6 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d0300_z.o)
+                0x0000000000013b54                __dpmi_int_sp
+                0x0000000000013b56                __dpmi_int_ss
+                0x0000000000013b58                __dpmi_int_flags
+ *fill*         0x0000000000013b5a        0x2 
+ COMMON         0x0000000000013b5c       0x20 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(npxsetup.o)
+                0x0000000000013b5c                __emu387_load_hook
+                0x0000000000013b6c                _8087
+ COMMON         0x0000000000013b7c     0x1f40 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(exceptn.o)
+                0x0000000000013b7c                exception_stack
+ COMMON         0x0000000000015abc       0x30 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(infostrc.o)
+                0x0000000000015abc                _go32_info_block
+ COMMON         0x0000000000015aec       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(errno.o)
+                0x0000000000015aec                errno
+ COMMON         0x0000000000015afc        0x0 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(exit.o)
+ COMMON         0x0000000000015afc       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(doserrno.o)
+                0x0000000000015afc                _doserrno
+ COMMON         0x0000000000015b0c       0x10 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(setmode.o)
+                0x0000000000015b0c                __setmode_stdio_hook
+                0x0000000000015b1c                end = .
+                [!provide]                        PROVIDE (_end = .)
+                0x0000000000015c00                . = ALIGN (0x200)
+ *fill*         0x0000000000015b1c       0xe4 
+
+/DISCARD/
+ *(gnu.lto_*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x0000000000000000       0x28
+ *(.debug_aranges)
+ .debug_aranges
+                0x0000000000000000       0x28 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a(unwind-dw2-fde.o)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x0000000000000000     0x3b5d
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x0000000000000000     0x3b5d /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a(unwind-dw2-fde.o)
+
+.debug_abbrev   0x0000000000000000      0x690
+ *(.debug_abbrev)
+ .debug_abbrev  0x0000000000000000      0x690 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a(unwind-dw2-fde.o)
+
+.debug_line     0x0000000000000000     0x1a2b
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x0000000000000000     0x1a2b /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a(unwind-dw2-fde.o)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str      0x0000000000000000       0xe4
+ *(.debug_str)
+ .debug_str     0x0000000000000000       0xe4 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a(unwind-dw2-fde.o)
+
+.debug_loc      0x0000000000000000     0x3772
+ *(.debug_loc)
+ .debug_loc     0x0000000000000000     0x3772 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a(unwind-dw2-fde.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x0000000000000000      0x7ea
+ *(.debug_ranges)
+ .debug_ranges  0x0000000000000000      0x7e8 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a(unwind-dw2-fde.o)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_addr
+ *(.debug_addr)
+OUTPUT(dosdef.exe coff-go32-exe)
+
+.comment        0x0000000000000000      0x820
+ .comment       0x0000000000000000       0x14 src/joystick.o
+ .comment       0x0000000000000014       0x14 src/rand.o
+ .comment       0x0000000000000028       0x14 src/alloc.o
+ .comment       0x000000000000003c       0x14 src/kb.o
+ .comment       0x0000000000000050       0x14 src/time.o
+ .comment       0x0000000000000064       0x14 src/vga.o
+ .comment       0x0000000000000078       0x14 src/vga_font.o
+ .comment       0x000000000000008c       0x14 src/bullet.o
+ .comment       0x00000000000000a0       0x14 src/particle.o
+ .comment       0x00000000000000b4       0x14 src/ship.o
+ .comment       0x00000000000000c8       0x14 src/powerup.o
+ .comment       0x00000000000000dc       0x14 src/burn.o
+ .comment       0x00000000000000f0       0x14 src/game.o
+ .comment       0x0000000000000104       0x14 src/speaker.o
+ .comment       0x0000000000000118       0x14 src/dosdef.o
+ .comment       0x000000000000012c       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/libgcc.a(unwind-dw2-fde.o)
+ .comment       0x0000000000000140       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(puts.o)
+ .comment       0x0000000000000154       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(abort.o)
+ .comment       0x0000000000000168       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(nmalloc.o)
+ .comment       0x000000000000017c       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strchr.o)
+ .comment       0x0000000000000190       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strlen.o)
+ .comment       0x00000000000001a4       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(crt1.o)
+ .comment       0x00000000000001b8       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getdos_v.o)
+ .comment       0x00000000000001cc       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osflavor.o)
+ .comment       0x00000000000001e0       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osmajor.o)
+ .comment       0x00000000000001f4       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(osminor.o)
+ .comment       0x0000000000000208       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_write.o)
+ .comment       0x000000000000021c       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fd_props.o)
+ .comment       0x0000000000000230       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_use_lfn.o)
+ .comment       0x0000000000000244       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(npxsetup.o)
+ .comment       0x0000000000000258       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fsext.o)
+ .comment       0x000000000000026c       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dpmiexcp.o)
+ .comment       0x0000000000000280       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(infostrc.o)
+ .comment       0x0000000000000294       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dmp.o)
+ .comment       0x00000000000002a8       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(lfilelen.o)
+ .comment       0x00000000000002bc       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(isatty.o)
+ .comment       0x00000000000002d0       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(id_c.o)
+ .comment       0x00000000000002e4       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(ct_lower.o)
+ .comment       0x00000000000002f8       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(ct_upper.o)
+ .comment       0x000000000000030c       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(errno.o)
+ .comment       0x0000000000000320       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(frlist.o)
+ .comment       0x0000000000000334       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putchar.o)
+ .comment       0x0000000000000348       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(remove.o)
+ .comment       0x000000000000035c       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdaux.o)
+ .comment       0x0000000000000370       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stderr.o)
+ .comment       0x0000000000000384       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdin.o)
+ .comment       0x0000000000000398       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdout.o)
+ .comment       0x00000000000003ac       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdprn.o)
+ .comment       0x00000000000003c0       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(exit.o)
+ .comment       0x00000000000003d4       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getenv.o)
+ .comment       0x00000000000003e8       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcpy.o)
+ .comment       0x00000000000003fc       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putenv.o)
+ .comment       0x0000000000000410       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stricmp.o)
+ .comment       0x0000000000000424       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(llseek.o)
+ .comment       0x0000000000000438       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(sdirlink.o)
+ .comment       0x000000000000044c       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(xsymlink.o)
+ .comment       0x0000000000000460       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_main.o)
+ .comment       0x0000000000000474       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1args.o)
+ .comment       0x0000000000000488       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1loadef.o)
+ .comment       0x000000000000049c       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(c1pglob.o)
+ .comment       0x00000000000004b0       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(d_getdrv.o)
+ .comment       0x00000000000004c4       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(getdinfo.o)
+ .comment       0x00000000000004d8       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(truename.o)
+ .comment       0x00000000000004ec       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(doserr2e.o)
+ .comment       0x0000000000000500       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(doserrno.o)
+ .comment       0x0000000000000514       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_chmod.o)
+ .comment       0x0000000000000528       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_close.o)
+ .comment       0x000000000000053c       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_open.o)
+ .comment       0x0000000000000550       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_read.o)
+ .comment       0x0000000000000564       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dosio.o)
+ .comment       0x0000000000000578       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(putpath.o)
+ .comment       0x000000000000058c       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(setmode.o)
+ .comment       0x00000000000005a0       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dxeload.o)
+ .comment       0x00000000000005b4       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fse_open.o)
+ .comment       0x00000000000005c8       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(dmg.o)
+ .comment       0x00000000000005dc       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(glob.o)
+ .comment       0x00000000000005f0       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(writhook.o)
+ .comment       0x0000000000000604       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(lseek.o)
+ .comment       0x0000000000000618       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(write.o)
+ .comment       0x000000000000062c       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(ct_flags.o)
+ .comment       0x0000000000000640       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(flsbuf.o)
+ .comment       0x0000000000000654       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stdiohk.o)
+ .comment       0x0000000000000668       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(qsort.o)
+ .comment       0x000000000000067c       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcat.o)
+ .comment       0x0000000000000690       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strcmp.o)
+ .comment       0x00000000000006a4       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncat.o)
+ .comment       0x00000000000006b8       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncmp.o)
+ .comment       0x00000000000006cc       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strncpy.o)
+ .comment       0x00000000000006e0       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(strpbrk.o)
+ .comment       0x00000000000006f4       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(stpcpy.o)
+ .comment       0x0000000000000708       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(_irdlink.o)
+ .comment       0x000000000000071c       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(basename.o)
+ .comment       0x0000000000000730       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(findfirs.o)
+ .comment       0x0000000000000744       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(findnext.o)
+ .comment       0x0000000000000758       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fexistp.o)
+ .comment       0x000000000000076c       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(tell.o)
+ .comment       0x0000000000000780       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fncase.o)
+ .comment       0x0000000000000794       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(is_dos83.o)
+ .comment       0x00000000000007a8       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fnmatch.o)
+ .comment       0x00000000000007bc       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(filelen.o)
+ .comment       0x00000000000007d0       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(close.o)
+ .comment       0x00000000000007e4       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fclose.o)
+ .comment       0x00000000000007f8       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fflush.o)
+ .comment       0x000000000000080c       0x14 /usr/local/djgpp/lib/gcc/i586-pc-msdosdjgpp/12.2.0/../../../../i586-pc-msdosdjgpp/lib/libc.a(fwalk.o)
