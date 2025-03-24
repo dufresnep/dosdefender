@@ -85,7 +85,7 @@ void clear()
     ticks = 0;
     running = true;
 }
-void powerup_random(size_t id) // Use size_t, as in powerup.h
+void powerup_random(size_t /*id*/) // Use size_t, as in powerup.h
 {
 //...
 }

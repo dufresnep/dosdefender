@@ -29,24 +29,24 @@ struct bullet bullet_create(int32_t x, int32_t y, int32_t dx, int32_t dy, uint8_
     return b; // Add return statement
 }
 
-void bullet_update(struct bullet *b) {
+void bullet_update(struct bullet * /*b*/) {
     // ... (implementation of bullet_update, if any) ...
   //TO BE IMPLEMENTED
 }
-void bullet_draw(struct bullet *b, bool clear) {
+void bullet_draw(struct bullet * /*b*/, bool /*clear*/) {
 	 //struct point c = {b->x / SCALE, b->y / SCALE}; //Commented because unused
 	 //if(clear)
 		//  vga_pixel(c, BLACK);
     //TO BE IMPLEMENTED
 }
 
-bool bullet_in_ship(struct bullet *b, struct ship *s)
+bool bullet_in_ship(struct bullet * /*b*/, struct ship * /*s*/)
 {
     //TO BE IMPLEMENTED
     return false; //Temporary, for compilation
 }
 
-void bullet_step(struct bullet *bullets, size_t num_bullets, struct ship *ships, size_t num_ships)
+void bullet_step(struct bullet *bullets, size_t num_bullets, struct ship *ships, size_t /*num_ships*/)
 {
     for (size_t i = 0; i < num_bullets; i++) {
         if(bullets[i].alive) {
