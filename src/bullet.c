@@ -1,7 +1,8 @@
+// src/bullet.c
 #include "rand.h"
 #include "bullet.h"
 #include "particle.h"
-//#include "ship.h"
+#include "ship.h"
 #include "powerup.h"
 #include "vga.h"
 #include "game.h"
@@ -41,11 +42,8 @@ void bullet_step(struct bullet *b, size_t id)
 
 void bullet_draw(struct bullet *b)
 {
-        struct point p;
-        p.x = b->x;
-        p.y = b->y;
         if(!b->active)
                 return;
 
-        vga_pixel(p, 15);
+        vga_pixel(b->x, b->y, 15);
 }
