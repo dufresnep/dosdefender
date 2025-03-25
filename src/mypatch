@@ -1,0 +1,47 @@
+--- a/src/bullet.c
++++ b/src/bullet.c
+@@ -10,8 +10,6 @@
+ 
+ #include <stdlib.h>
+ 
+-#define BULLET_SPEED 4
+-
+ void bullet_new(struct bullet *b, int32_t x, int32_t y, enum bullet_direction dir)
+ {
+         b->x = x;
+@@ -20,41 +18,6 @@
+         b->alive = 1;
+ }
+ 
+-void bullet_step(struct bullet *b, size_t id, int32_t x, int32_t y)
+-{
+-        if(!b->alive)
+-                return;
+-
+-        //if(b->dir == bullet_left) Removed dir because does not exists anymore
+-        //      b->x -= BULLET_SPEED;
+-        //else
+-        //      b->x += BULLET_SPEED;
+-
+-        // Out of bounds?
+-        if(b->x < 0 || b->x > 319)
+-        {
+-                b->alive = 0;
+-
+-                // 1/16 chance of powerup drop
+-                if(rand_number() > 64000) // You have powerup_random definition.
+-                        powerup_drop(x, y); // You have powerup_random definition.
+-        }
+-}
+-
+-void bullet_draw(struct bullet *b)
+-{
+-        if(!b->alive)
+-                return;
+-
+-        struct point p;
+-        p.x = b->x;
+-        p.y = b->y;
+-        vga_pixel(p, 15);
+-}
+-

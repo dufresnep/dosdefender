@@ -1,0 +1,27 @@
+# Makefile for DJGPP Dosdefender
+
+# Compiler and linker settings
+CC = i586-pc-msdosdjgpp-gcc
+CFLAGS = -Wall -O2 -g -Iinclude # -Wall enables all warnings, -O2 optimizes the code, -g adds debugging info, -Iinclude specifies the include directory
+LDFLAGS = -lalleg -m32 # -lalleg links the Allegro library, -m32 force 32 bits code
+
+# Source files
+SRC = src/defender.c src/keyboard.c src/game.c src/bullet.c src/burn.c src/joystick.c src/particle.c src/powerup.c src/ship.c src/speaker.c src/time.c src/vga.c src/vga_font.c # Add other .c files here
+OBJ = $(SRC:.c=.o)
+EXE = defender.exe
+
+# Rule to create the executable
+$(EXE): $(OBJ)
+	$(CC) $(LDFLAGS) $(OBJ) -o $(EXE) -Wl,-Map,defender.map
+
+# Rule to create object files from C source files
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Phony targets
+.PHONY: all clean
+
+all: $(EXE)
+
+clean:
+	rm -f $(OBJ) $(EXE) defender.map
