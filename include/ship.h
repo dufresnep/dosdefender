@@ -7,6 +7,7 @@
 #include "time.h"
 
 #define MAX_PLAYERS 12
+#define SCALE 1000
 
 // Define the AI types (using an enum is a good way to do this)
 typedef enum {

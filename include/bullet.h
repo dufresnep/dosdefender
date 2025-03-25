@@ -1,24 +1,25 @@
-// include/bullet.h
-#pragma once
+//Here is bullet.h. Use that
+#ifndef BULLET_H
+#define BULLET_H
 
 #include <stdint.h>
 #include <stdbool.h>
-#include "vga.h"
-#include "ship.h"    // For struct ship
+#include <stddef.h>
+
+enum bullet_direction {
+    bullet_left,
+    bullet_right
+};
 
 struct bullet {
     int32_t x;
     int32_t y;
-    int32_t dx;
-    int32_t dy;
-    uint8_t color;
-    bool alive;
-    uint32_t birthtick;
-    int32_t damage;
+    enum bullet_direction dir; // <-- Check if exists
+    bool active; // <--- Check if exists, if the names does not match, the computer will complain
 };
 
-struct bullet bullet_create(int32_t x, int32_t y, int32_t dx, int32_t dy, uint8_t color);
-void bullet_update(struct bullet *b);
-void bullet_draw(struct bullet *b, bool clear);
-void bullet_step(struct bullet *bullets, size_t num_bullets, struct ship *ships, size_t num_ships);
-bool bullet_in_ship(struct bullet *b, struct ship *s);
+void bullet_new(struct bullet *b, int32_t x, int32_t y, enum bullet_direction dir);
+void bullet_step(struct bullet *b, size_t id);
+void bullet_draw(struct bullet *b);
+
+#endif

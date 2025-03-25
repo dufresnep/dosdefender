@@ -1,24 +1,28 @@
-CC      = i586-pc-msdosdjgpp-gcc
-DOS     = dosbox
-CFLAGS  = -std=gnu99 -Wall -Wextra -Os  \
-          -Wno-unused-function  \
-          -fno-stack-protector -Iinclude -g
-LDFLAGS =
+#IMPORTANT: This must be very concise. Any variation will be rejected.
+# Makefile for DJGPP Dosdefender
 
-OBJS = src/joystick.o src/rand.o src/time.o src/vga.o src/vga_font.o src/bullet.o src/particle.o src/ship.o src/powerup.o src/burn.o src/game.o src/speaker.o src/dosdef.o
+# Compiler and linker settings
+CC = i586-pc-msdosdjgpp-gcc
+CFLAGS = -Wall -O2 -g -I/usr/local/djgpp/i586-pc-msdosdjgpp/sys-include -Iinclude -fcommon -Wno-duplicate-decl-specifier
+LDFLAGS = -static -lalleg -lalld -lallp -m32 -L/usr/local/djgpp/i586-pc-msdosdjgpp/lib
 
-.PHONY : all clean test
+# Source files
+SRC = src/defender.c src/game.c src/bullet.c src/burn.c src/joystick.c src/particle.c src/powerup.c src/ship.c src/speaker.c src/time.c src/vga.c src/vga_font.c
+OBJ = $(SRC:.c=.o)
+EXE = defender.exe
 
-all: dosdef.exe
+# Rule to create the executable
+$(EXE): $(OBJ)
+	$(CC)   -o $(EXE) $(OBJ) $(LDFLAGS)
 
-clean :
-	$(RM) *.exe $(OBJS)
+# Rule to create object files from C source files
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
-test : dosdef.exe
-	$(DOS) $^
+# Phony targets
+.PHONY: all clean
 
-dosdef.exe : $(OBJS)
-	$(CC) $(LDFLAGS) -o $@ $(OBJS)
+all: $(EXE)
 
-src/%.o: src/%.c
-	$(CC) $(CFLAGS) -c -o $@ $<
+clean:
+	rm -f $(OBJ) $(EXE) defender.map

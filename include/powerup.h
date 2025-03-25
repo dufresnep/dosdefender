@@ -4,6 +4,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "vga.h"
+#include <stddef.h> // for size_t
 
 typedef enum {
     POWER_NONE,
@@ -25,6 +26,6 @@ struct powerup {
     uint32_t birthtick;
 };
 
+extern size_t powerups_max = 50;
 //void powerup_random(size_t id); // Defined in dosdef.c
 int powerup_drop(int32_t x, int32_t y);
-

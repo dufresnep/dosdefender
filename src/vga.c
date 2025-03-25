@@ -6,6 +6,8 @@
 #include <go32.h>     // _dos_ds
 #include <dpmi.h>     // __dpmi_int, __dpmi_regs
 #include <pc.h>    // inportb, outportb  <-- CORRECTED!
+#include <stdio.h>
+
 
 void vga_clear(uint8_t color) {
     // Fill the entire video memory (320 * 200 bytes) with the given color

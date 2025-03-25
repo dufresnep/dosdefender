@@ -1,25 +1,28 @@
-// src/powerup.c
+//src/powerup.c
 #include "powerup.h"
+#include "rand.h" //Adding Rand
+#include <stddef.h> //Adding This
 #include "vga.h"
-#include "rand.h"
-#include "ship.h"
-#include "time.h"
+#include "game.h"
+#include <stdio.h> //I forgot
 
-extern struct ship *ships;
-extern size_t ships_max;
-extern struct powerup *powerups;
-extern size_t powerups_max;
+struct powerup powerups[50];
 
-int powerup_drop(int32_t x, int32_t y)
+int powerup_drop(int32_t x, int32_t y) //Enforcing same, also int32_t
 {
-    for (size_t i = 0; i < powerups_max; i++) {
-        if (!powerups[i].alive) {
-            powerups[i].x = x;
-            powerups[i].y = y;
-            powerups[i].birthtick = get_tick();
-            powerups[i].alive = true;
-            return i;
+        // Find an inactive powerup.
+        for(size_t i=0; i<powerups_max; i++)
+        {
+                if(!powerups[i].alive) //enforcing alive
+                {
+                        powerups[i].x = x;
+                        powerups[i].y = y;
+                        powerups[i].power = rand() % 2 + 1; // shield or gun
+                        powerups[i].birthtick = 1;
+                        powerups[i].alive = 1;
+                        return 1;
+                }
         }
-    }
-    return -1;
+
+        return 0;
 }
