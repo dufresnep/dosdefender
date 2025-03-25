@@ -1,9 +1,8 @@
-// src/bullet.c
+// src/bullet.c - No ship.h
+
 #include "rand.h"
 #include "bullet.h"
 #include "particle.h"
-#include "ship.h"
-#include "powerup.h"
 #include "vga.h"
 #include "game.h"
 
@@ -30,20 +29,22 @@ void bullet_step(struct bullet *b, size_t id)
                 b->x += BULLET_SPEED;
 
         // Out of bounds?
-        if(b->x < 0 || b->x > 319)
-        {
-                b->active = 0;
+        if (b->x < 0 || b->x > 319) {
+            b->active = 0;
 
-                // 1/16 chance of powerup drop
-                if(rand_number() > 64000)
-                        powerup_random(id);
+            // 1/16 chance of powerup drop. Also not calling this
+            //if (rand_number() > 64000)
+            //    powerup_random(id);  // This function does not work, also removed
         }
 }
 
 void bullet_draw(struct bullet *b)
 {
         if(!b->active)
-                return;
+        return;
 
-        vga_pixel(b->x, b->y, 15);
+        struct point p;
+        p.x = b->x;
+        p.y = b->y;
+        vga_pixel(p, 15);
 }

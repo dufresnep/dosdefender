@@ -1,8 +1,9 @@
-// include/powerup.h
-#pragma once
+#ifndef POWERUP_H
+#define POWERUP_H
 
 #include <stdint.h>
 #include <stdbool.h>
+#include "rand.h"
 #include "vga.h"
 
 typedef enum {
@@ -25,5 +26,7 @@ struct powerup {
     uint32_t birthtick;
 };
 
-//void powerup_random(size_t id); // Defined in dosdef.c
+extern int32_t powerups_max;
+
 int powerup_drop(int32_t x, int32_t y);
+#endif

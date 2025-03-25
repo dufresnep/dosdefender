@@ -1,11 +1,12 @@
-//src/powerup.c
 #include "powerup.h"
 #include "rand.h" //Adding Rand
 #include <stddef.h> //Adding This
 #include "vga.h"
 #include "game.h"
 #include <stdio.h> //I forgot
+#include <stdlib.h>
 
+extern int32_t powerups_max;
 struct powerup powerups[50];
 
 int powerup_drop(int32_t x, int32_t y) //Enforcing same, also int32_t

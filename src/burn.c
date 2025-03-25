@@ -1,7 +1,9 @@
-//src/burn.c
+// src/burn.c
 #include "particle.h"
 #include <stddef.h> // Added
 #include <powerup.h> // Added
+#include "particle.h" //ADD THE DEPENDENCY TO THE FUNCTION
+
 void burn(int32_t x, int32_t y)
 {
         // TODO: Replace with something better.

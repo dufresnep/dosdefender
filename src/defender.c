@@ -1,9 +1,9 @@
 // src/defender.c
-
 #include <allegro.h>
 #include <stdio.h>
-#include "defender.h" // <--- Change HERE
-#include "time.h"   // ADDED - include time.h
+#include "defender.h"
+#include "time.h"
+#include "game.h" //THIS ONE!
 
 // Define global variables
 struct ship *ships;
