@@ -1,9 +1,11 @@
-// dosdef.c (Corrected - Full)
+// src/dosdef.c
 #include <stddef.h>
 #include <stdint.h>
 #include <stdlib.h>
 #include <string.h> //For memset
-#include <conio.h> // Add this for kbhit and getch
+#include <conio.h>  //For kbhit and getch
+#include <stdio.h>  // Add this for printf
+#include <dpmi.h>   // Add this for __dpmi_regs and __dpmi_int
 #include "vga.h"
 #include "joystick.h"
 #include "rand.h"
@@ -34,14 +36,8 @@ extern volatile tick_t ticks; // Defined in time.c
 //    (Make sure these match the definitions later)
 
 // Functions from dosdef.c itself:
-void clear(void);
-void init_game(void);
-void handle_input(void);
-void update_game(void);
-void draw_game(void);
-void powerup_random(size_t id);  // Corrected prototype
-void try_spawn(void); // Corrected
-void print_exit_help();
+// Moved to dosdef.h
+
 // --- Main Game Logic ---
 
 int main() {
@@ -49,7 +45,7 @@ int main() {
     running = true;
 
     while (running) {
-        //vga_vsync();   // Wait for vertical retrace (optional, for smoother animation)
+        vga_vsync();   // Wait for vertical retrace (optional, for smoother animation)
 
         handle_input();   // Get input from the joystick/keyboard
         update_game();  // Update game state (move bullets, ships, etc.)
@@ -61,7 +57,8 @@ int main() {
     }
 
     vga_off(); // Restore text mode
-    return 0; // Return 0 for success
+    vga_clear(BLACK); //Clear screen
+    return 0;
 }
 
 // --- Function Definitions ---
@@ -93,16 +90,9 @@ void clear()
     ticks = 0;
     running = true;
 }
-void powerup_random(size_t /*id*/) // Use size_t, as in powerup.h
-{
-//...
-}
-
-// Placeholder functions for now.  Implement these!
 void init_game(void) {
-     vga_on();
-     clear();
-    // Other initialization as needed
+     vga_on();  // Switch to VGA Mode 13h
+     clear();   // Initialize game variables
 }
 
 void handle_input(void) {
@@ -116,11 +106,16 @@ void update_game(void) {
 }
 
 void draw_game(void) {
-// TODO: Implement drawing (ships, bullets, particles, background, UI)
-    for (size_t i = 0; i < bullets_max; i++)
-      bullet_draw(&bullets[i], false); //No need of if, because calloc initialized to 0 (so false)
-
+  //  ship_draw(0, false);
+    vga_line((struct point){10, 20}, (struct point){40, 20}, RED); // Horizontal line
+    vga_line((struct point){20, 30}, (struct point){20, 60}, GREEN); // Vertical line
+    vga_line((struct point){30, 40}, (struct point){70, 80}, BLUE);   // Diagonal line
 }
 
-void try_spawn(void){} //TODO
-void print_exit_help(){}//TODO
+void powerup_random(size_t /*id*/) // Use size_t, as in powerup.h
+{
+//...
+}
+
+void try_spawn(void) {} //TODO
+void print_exit_help(){} //TODO
