@@ -107,9 +107,10 @@ void update_game(void) {
 
 void draw_game(void) {
   //  ship_draw(0, false);
-    vga_line((struct point){10, 20}, (struct point){40, 20}, RED); // Horizontal line
-    vga_line((struct point){20, 30}, (struct point){20, 60}, GREEN); // Vertical line
-    vga_line((struct point){30, 40}, (struct point){70, 80}, BLUE);   // Diagonal line
+  //  vga_line((struct point){10, 20}, (struct point){40, 20}, RED); // Horizontal line
+  //  vga_line((struct point){20, 30}, (struct point){20, 60}, GREEN); // Vertical line
+  //  vga_line((struct point){30, 40}, (struct point){70, 80}, BLUE);   // Diagonal line
+  ship_draw(0, false);
 }
 
 void powerup_random(size_t /*id*/) // Use size_t, as in powerup.h
