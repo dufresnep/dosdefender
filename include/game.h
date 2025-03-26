@@ -27,6 +27,8 @@ extern unsigned long score; // Use unsigned long as decided before
 int  init_game();
 void update_game();
 void draw_game();
+void shutdown_game();
+int is_game_running();
 
 extern volatile int game_running;
 

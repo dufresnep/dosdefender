@@ -8,7 +8,7 @@
 #include "../include/bullet.h"
 #include "../include/particle.h"
 #include "../include/ship.h"
-
+#include <allegro.h>
 
 // Define global variables
 struct ship *ships = NULL;
@@ -22,7 +22,7 @@ size_t powerups_max = 50;          // Define size here
 
 unsigned long score = 0;
 
-static volatile int game_running = 1;
+volatile int game_running = 1;
 
 void  stop_game(){
     game_running = 0;
@@ -69,15 +69,6 @@ void draw_game() {
     // Implement game drawing code here later
     // For now, just print a message
     printf("Drawing game...\n");
-}
-
-// Initialization function (call this from main)
-int init_game() {
-    // Install keyboard interrupt handler
-    LOCK_FUNCTION(stop_game);
-    install_int_ex(stop_game, BPS_TO_TIMER(100)); // Call stop_game function at about 100 times per second
-
-    return 0; // Return 0 if initialization is successful
 }
 
 // Shutdown function (call this from main before exiting)

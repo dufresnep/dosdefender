@@ -53,7 +53,6 @@ extern unsigned long score;
 
 // --- Function Prototypes ---
 
-int  init_game();
 void update_game();
 void draw_game();
 void deinit_game();
