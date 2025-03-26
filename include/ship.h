@@ -3,8 +3,10 @@
 
 #include <stdint.h>
 #include <stdbool.h>
+#include <stddef.h> // for size_t
 #include "vga.h"
-#include "time.h"
+#include "timemy.h"
+
 
 #define MAX_PLAYERS 12
 #define SCALE 1000

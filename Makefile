@@ -8,7 +8,7 @@ CFLAGS = -O2 -g -Iinclude -fcommon
 LDFLAGS = -static -lalleg -lalld -lallp -m32 -L/usr/local/djgpp/i586-pc-msdosdjgpp/lib -Wl,--allow-multiple-definition
 
 # Source files
-SRC = src/defender.c src/game.c src/bullet.c src/burn.c src/joystick.c src/particle.c src/powerup.c src/ship.c src/speaker.c src/time.c src/vga.c src/vga_font.c
+SRC = src/defender.c src/game.c src/bullet.c src/burn.c src/joystick.c src/particle.c src/powerup.c src/ship.c src/speaker.c src/timemy.c src/vga.c src/vga_font.c
 OBJ = $(SRC:.c=.o)
 EXE = defender.exe
 
