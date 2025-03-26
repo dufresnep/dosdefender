@@ -24,6 +24,28 @@ unsigned long score = 0;
 
 volatile int game_running = 1;
 
+// Player's ship
+struct ship player_ship; // Add this line
+
+// Function to initialize the ship
+void init_ship(struct ship *ship) { // Add this function
+    ship->x = 10;
+    ship->y = 10;
+    ship->dx = 0;
+    ship->dy = 0;
+    ship->hp = 100;
+    ship->hp_max = 100;
+    ship->radius = 3;
+    ship->color_a = 15; // White
+    ship->color_b = 0;  // Black
+    ship->is_player = true;
+    ship->score = 0;
+    ship->fire_damage = 10;
+    ship->fire_delay = 20;
+    ship->drop_rate = 10;
+    ship->last_fire = 0;
+    //Other non-graphic initialisation
+}
 
 // Function to set the game_running flag to 0 on key press (e.g., ESC)
 //Interrupt routine.
@@ -45,24 +67,44 @@ int init_game() {
     }
 
     install_keyboard();
+    init_ship(&player_ship);
     return 0; // Return 0 if initialization is successful
 }
 
 // Placeholder functions to resolve linker errors
 void update_game() {
-    if (keypressed()){
-        int key_code = readkey() & 0xFF; // removes the scan code
-        printf("Key pressed: %d\n", key_code);
-        if (key_code == 27){
-           stop_game();
-        }
+    if (key[KEY_ESC]) {
+       stop_game();
     }
+    if (key[KEY_LEFT]) {
+        player_ship.x--;
+    }
+
+    if (key[KEY_RIGHT]) {
+        player_ship.x++;
+    }
+    if (key[KEY_UP]) {
+        player_ship.y--;
+    }
+    if (key[KEY_DOWN]) {
+        player_ship.y++;
+    }
+    if (key[KEY_SPACE]) {
+        printf("Space key pressed\n");
+        // Add code to fire
+    }
+
+    // Delay to avoid CPU hogging
     rest(10);
 }
 
 void draw_game() {
-    // Implement game drawing code here later
-    // For now, just print a message
+    // Clear the screen (crude way, will be replaced by Allegro functions later)
+    clear_screen();
+
+    // Draw the ship
+    gotoxy(player_ship.x, player_ship.y);
+    putchar('*');
 }
 // Shutdown function (call this from main before exiting)
 void shutdown_game() {
@@ -74,3 +116,10 @@ int is_game_running() {
     return game_running;
 }
 
+void clear_screen() {
+    // This is a very basic way to clear the screen in text mode
+    for (int i = 0; i < 25; i++) {
+        printf("\n");
+    }
+    gotoxy(1,1);
+}

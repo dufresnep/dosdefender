@@ -4,6 +4,8 @@
 
 #include <stdint.h>
 #include <stddef.h> // Add this for size_t
+#include "ship.h"
+#include <allegro.h>
 
 // Forward declare structs to avoid full includes if only pointers are needed
 struct ship;
@@ -29,6 +31,7 @@ void update_game();
 void draw_game();
 void shutdown_game();
 int is_game_running();
+void clear_screen();
 
 extern volatile int game_running;
 
