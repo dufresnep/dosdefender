@@ -38,4 +38,12 @@ void init_game() {
     // ... rest of init_game ...
 }
 
-// ... update_game, draw_game ...
+// Placeholder functions to resolve linker errors
+void update_game() {
+    // Implement game logic updates here later
+}
+
+void draw_game() {
+    // Implement game drawing code here later
+}
+
