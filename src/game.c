@@ -28,9 +28,10 @@ volatile int game_running = 1;
 struct ship player_ship; // Add this line
 
 // Last pressed direction
-int last_x_direction = 0; // Add this line
-int last_y_direction = 0; // Add this line
-#define MAX_SPEED 5
+int desired_dx = 0; // Add this line
+int desired_dy = 0; // Add this line
+#define MAX_VELOCITY 5
+#define ACCELERATION 1
 
 // Function to initialize the ship
 void init_ship(struct ship *ship) { // Add this function
@@ -75,6 +76,7 @@ int init_game() {
     return 0; // Return 0 if initialization is successful
 }
 
+
 // Placeholder functions to resolve linker errors
 void update_game() {
     // Check for key presses
@@ -85,19 +87,43 @@ void update_game() {
 
     // Update ship velocity based on arrow keys
     if (key[KEY_LEFT]) {
-        player_ship.dx = -MAX_SPEED; // Set horizontal velocity to left
-    } else if (key[KEY_RIGHT]) {
-        player_ship.dx = MAX_SPEED; // Set horizontal velocity to right
-    } else {
-        player_ship.dx = 0; // Stop horizontal movement
+        player_ship.dx -= ACCELERATION;
+        if (player_ship.dx < -MAX_VELOCITY) {
+            player_ship.dx = -MAX_VELOCITY;
+        }
+    }
+
+    if (key[KEY_RIGHT]) {
+        player_ship.dx += ACCELERATION;
+        if (player_ship.dx > MAX_VELOCITY) {
+            player_ship.dx = MAX_VELOCITY;
+        }
     }
 
     if (key[KEY_UP]) {
-        player_ship.dy = -MAX_SPEED; // Set vertical velocity to up
-    } else if (key[KEY_DOWN]) {
-        player_ship.dy = MAX_SPEED; // Set vertical velocity to down
-    } else {
-        player_ship.dy = 0; // Stop vertical movement
+        player_ship.dy -= ACCELERATION;
+        if (player_ship.dy < -MAX_VELOCITY) {
+            player_ship.dy = -MAX_VELOCITY;
+        }
+    }
+
+    if (key[KEY_DOWN]) {
+        player_ship.dy += ACCELERATION;
+        if (player_ship.dy > MAX_VELOCITY) {
+            player_ship.dy = MAX_VELOCITY;
+        }
+    }
+
+    // Damping
+    if (!key[KEY_LEFT] && !key[KEY_RIGHT])
+    {
+     if (player_ship.dx > 0) player_ship.dx-=ACCELERATION;
+     if (player_ship.dx < 0) player_ship.dx+=ACCELERATION;
+    }
+     if (!key[KEY_UP] && !key[KEY_DOWN])
+    {
+     if (player_ship.dy > 0) player_ship.dy-=ACCELERATION;
+     if (player_ship.dy < 0) player_ship.dy+=ACCELERATION;
     }
 
     // Update ship position based on velocity
