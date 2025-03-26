@@ -1,9 +1,9 @@
-// src/defender.c
-#include <allegro.h>
+/*src/defender.c*/
 #include <stdio.h>
 #include "defender.h"
-#include "time.h"
-#include "game.h" //THIS ONE!
+#include <allegro.h>
+#include "timemy.h"
+#include "game.h" 
 
 // Define global variables
 struct ship *ships;
@@ -17,7 +17,7 @@ size_t powerups_max = 50;
 
 int32_t score = 0;
 
-// A timer to count milliseconds
+/* A timer to count milliseconds */
 volatile int game_time = 0;
 void increment_game_time() {
     game_time++;
@@ -31,22 +31,22 @@ int main() {
     LOCK_FUNCTION(increment_game_time);
     install_int_ex(increment_game_time, BPS_TO_TIMER(1000));
     set_color_depth(8);
+/*
     if (set_gfx_mode(GFX_AUTODETECT, 320, 200, 0, 0) != 0) {
         allegro_message("Error setting graphics mode: %s\n", allegro_error);
         allegro_exit();
         return 1;
     }
+*/
     install_keyboard();
     install_mouse();
 
-    // Your game initialization code here
-    init_game(); // Call your game initialization function
+    init_game();
 
-    // Main game loop (replace with your actual game loop)
     while (!keypressed()) {
         update_game();
         draw_game();
-        rest(10); // Delay for 10 milliseconds
+        rest(10); /* in miliseconds */
     }
 
     allegro_exit();

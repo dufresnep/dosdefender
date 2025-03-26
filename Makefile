@@ -3,7 +3,8 @@
 
 # Compiler and linker settings
 CC = i586-pc-msdosdjgpp-gcc
-CFLAGS = -w -O1 -g -I/usr/local/djgpp/i586-pc-msdosdjgpp/sys-include -Iinclude -fcommon -Wno-duplicate-decl-specifier
+#CFLAGS = -Wall -O1 -g -Iinclude -fcommon
+CFLAGS = -O2 -g -Iinclude -fcommon
 LDFLAGS = -static -lalleg -lalld -lallp -m32 -L/usr/local/djgpp/i586-pc-msdosdjgpp/lib -Wl,--allow-multiple-definition
 
 # Source files

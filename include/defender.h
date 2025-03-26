@@ -2,7 +2,7 @@
 
 #pragma once 
 
-#include <stdint.h>
+//#include <stdint.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <pc.h> // DJGPP specific header for hardware access
