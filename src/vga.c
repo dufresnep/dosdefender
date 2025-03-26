@@ -1,12 +1,12 @@
 // src/vga.c
-#include "vga.h"
-#include "vga_font.h"
+#include <stdio.h>
+#include <go32.h>     // _dos_ds
 #include <string.h> //memset
 #include <sys/farptr.h> //_farpokeb, _farpeekb, _dos_ds
-#include <go32.h>     // _dos_ds
 #include <dpmi.h>     // __dpmi_int, __dpmi_regs
 #include <pc.h>    // inportb, outportb  <-- CORRECTED!
-#include <stdio.h>
+#include "../include/vga.h"
+#include "../include/vga_font.h"
 
 
 void vga_clear(uint8_t color) {

@@ -1,6 +1,6 @@
 // speaker.c
-#include "speaker.h"
-#include "tone.h" // Include for tone_on and tone_off
+#include "../include/speaker.h"
+#include "../include/tone.h" // Include for tone_on and tone_off
 
 // Define AND initialize the 'speaker' variable:
 struct speaker speaker = {0, NULL, false, 0}; //Add step initialization

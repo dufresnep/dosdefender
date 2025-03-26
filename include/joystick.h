@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include "vga.h"
+#include "include/vga.h"
 
 struct joystick {
     uint16_t axis[4];

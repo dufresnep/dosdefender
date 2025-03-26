@@ -3,8 +3,8 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include "rand.h"
-#include "vga.h"
+#include "include/rand.h"
+#include "include/vga.h"
 
 typedef enum {
     POWER_NONE,

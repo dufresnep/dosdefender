@@ -1,29 +1,18 @@
-#IMPORTANT: This must be very concise. Any variation will be rejected.
-# Makefile for DJGPP Dosdefender
+# Makefile for DOSDefender
 
-# Compiler and linker settings
 CC = i586-pc-msdosdjgpp-gcc
-#CFLAGS = -Wall -O1 -g -Iinclude -fcommon
-CFLAGS = -O2 -g -Iinclude -fcommon
-LDFLAGS = -static -lalleg -lalld -lallp -m32 -L/usr/local/djgpp/i586-pc-msdosdjgpp/lib -Wl,--allow-multiple-definition
+CFLAGS = -Wall -O2 -g  -fcommon  # Restore -fcommon
 
-# Source files
-SRC = src/defender.c src/game.c src/bullet.c src/burn.c src/joystick.c src/particle.c src/powerup.c src/ship.c src/speaker.c src/timemy.c src/vga.c src/vga_font.c
-OBJ = $(SRC:.c=.o)
-EXE = defender.exe
+LD = i586-pc-msdosdjgpp-gcc
+LDFLAGS = -lalleg -mdos -Wl,--allow-multiple-definition # Add -Wl,--allow-multiple-definition
 
-# Rule to create the executable
-$(EXE): $(OBJ)
-	$(CC) $(CFLAGS) -o $(EXE) $(OBJ) $(LDFLAGS)
+OBJS = src/defender.o src/game.o src/bullet.o src/burn.o src/joystick.o src/particle.o src/powerup.o src/ship.o src/speaker.o src/timemy.o src/vga.o src/vga_font.o
 
-# Rule to create object files from C source files
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-# Phony targets
-.PHONY: all clean
-
-all: $(EXE)
+defender.exe: $(OBJS)
+	$(LD) -o defender.exe $(OBJS) $(LDFLAGS)
 
 clean:
-	rm -f $(OBJ) $(EXE) defender.map
+	rm -f *.o defender.exe defender.map

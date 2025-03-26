@@ -1,6 +1,6 @@
 // particle.c
-#include "particle.h" // Include the header file!
 #include <stdlib.h>  // For malloc
+#include "../include/particle.h" // Include the header file!
 
 Particle* particle_new() {
   Particle* p = (Particle*)malloc(sizeof(Particle)); // Allocate memory dynamically

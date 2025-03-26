@@ -1,7 +1,8 @@
 // src/ship.c
-#include "ship.h"
-#include "vga.h"
 #include <stdio.h> // For printf (debugging)
+#include "../include/ship.h"
+#include "../include/vga.h"
+#include "../include/game.h"
 
 extern struct ship *ships; // Declare ships as extern
 

@@ -1,6 +1,6 @@
 // src/rand.c
-#include "rand.h"
 #include <stdlib.h>
+#include "../include/rand.h"
 
 uint32_t seed = 1;
 int randn(void)

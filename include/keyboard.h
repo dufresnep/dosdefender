@@ -1,7 +1,7 @@
 #ifndef KEYBOARD_H
 #define KEYBOARD_H
 
-#include "int.h"
+#include "include/int.h"
 
 static bool kbhit()
 {

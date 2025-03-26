@@ -49,7 +49,7 @@ extern struct bullet *bullets;
 extern struct particle *particles;
 extern struct ship *ships;
 extern struct powerup *powerups;
-extern int32_t score;
+extern unsigned long score;
 
 // --- Function Prototypes ---
 

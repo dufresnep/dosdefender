@@ -1,9 +1,10 @@
 // src/joystick.c
-#include "joystick.h"
-#include "vga.h"
-#include "vga_font.h"
 #include <stdbool.h>
 #include <limits.h>
+
+#include "../include/joystick.h"
+#include "../include/vga.h"
+#include "../include/vga_font.h"
 
 struct joystick_config joystick_config = {
     .min = {UINT16_MAX, UINT16_MAX, UINT16_MAX, UINT16_MAX},

@@ -1,25 +1,40 @@
-// game.c
-#include "game.h"
-#include "particle.h" // Include particle.h to make Particle known
-#include <allegro.h>
+// src/game.c
+#include <stdio.h>
+#include <stdlib.h>  // For malloc (if you allocate memory for these)
+#include "../include/game.h" // Include the header file!
 
+// Define global variables
+struct ship *ships = NULL;    // Initialize to NULL to be safe
+struct bullet *bullets = NULL;  // Initialize to NULL to be safe
+struct particle *particles = NULL; // Initialize to NULL to be safe
+struct powerup *powerups = NULL;   // Initialize to NULL to be safe
+
+size_t bullets_max = 100;
+size_t particles_max = 200;
+size_t powerups_max = 50;
+
+unsigned long  score = 0;
+
+// Implement your functions here (init_game, update_game, draw_game)
 void init_game() {
-    allegro_init(); // Initialize Allegro itself!  CRITICAL STEP
-    set_gfx_mode(GFX_AUTODETECT, 640, 480, 0, 0); // Set a graphics mode (corrected function name)
+    // Initialize the game
+    // Example: allocate memory for the arrays
+    ships = malloc(sizeof(struct ship) * 1); // Assuming 1 ship for now
+    bullets = malloc(sizeof(struct bullet) * bullets_max);
+    particles = malloc(sizeof(struct particle) * particles_max);
+    powerups = malloc(sizeof(struct powerup) * powerups_max);
+    if (!ships || !bullets || !particles || !powerups) {
+        // Handle memory allocation error
+        fprintf(stderr, "Memory allocation failed!\n");
+        exit(1);
+    }
+    //Initialize ships
 }
 
 void update_game() {
-    // Your game update logic here
+    // Update the game state
 }
 
 void draw_game() {
-    // Your game drawing code here
+    // Draw the game on the screen
 }
-
-// Assuming particle_new belongs in particle.c, REMOVE it from here unless you have a VERY good reason to define it in both places.
-/*
-Particle* particle_new() {
-    // Your particle creation logic here
-    return NULL; // Or return the new particle
-}
-*/

@@ -1,10 +1,11 @@
-#include "powerup.h"
-#include "rand.h" //Adding Rand
 #include <stddef.h> //Adding This
-#include "vga.h"
-#include "game.h"
 #include <stdio.h> //I forgot
 #include <stdlib.h>
+
+#include "../include/powerup.h"
+#include "../include/rand.h" //Adding Rand
+#include "../include/vga.h"
+#include "../include/game.h"
 
 extern int32_t powerups_max;
 struct powerup powerups[50];

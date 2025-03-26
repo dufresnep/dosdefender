@@ -1,6 +1,6 @@
 //vga_font.c
-#include "vga_font.h"
 #include <string.h>
+#include "../include/vga_font.h"
 
 int vga_font_line(int c, int row) {
     if (row < 0 || row > 6)

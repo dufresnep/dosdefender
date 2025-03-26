@@ -1,12 +1,10 @@
 // src/bullet.c - No ship.h
-
-#include "rand.h"
-#include "bullet.h"
-#include "particle.h"
-#include "vga.h"
-#include "game.h"
-
 #include <stdlib.h>
+#include "../include/rand.h"
+#include "../include/bullet.h"
+#include "../include/particle.h"
+#include "../include/vga.h"
+#include "../include/game.h"
 
 #define BULLET_SPEED 4
 

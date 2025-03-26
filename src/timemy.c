@@ -1,12 +1,11 @@
 // src/time.c
-
-#include "timemy.h"
 #include <time.h>
+#include "../include/timemy.h"
 
 volatile tick_t ticks = 0; // Definition
 
-clock_t get_tick(void) { // Corrected return type
-    return clock();
+tick_t get_tick(void) { // Corrected return type
+    return (tick_t) clock();
 }
 
 uint32_t get_time(void) { // Corrected return type
