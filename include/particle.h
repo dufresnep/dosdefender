@@ -1,16 +1,13 @@
-// include/particle.h
-#pragma once
+// particle.h
+#ifndef PARTICLE_H
+#define PARTICLE_H
 
-#include <stdint.h>
-#include <stdbool.h>
-#include "vga.h"
+typedef struct {
+    float x, y;
+    float vx, vy;
+    int color;
+} Particle;
 
-struct particle {
-    int32_t x;
-    int32_t y;
-    int32_t dx;
-    int32_t dy;
-    uint8_t color;
-    bool alive;
-    uint32_t birthtick;
-};
+Particle* particle_new();
+
+#endif

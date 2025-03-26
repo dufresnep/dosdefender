@@ -3,8 +3,8 @@
 
 # Compiler and linker settings
 CC = i586-pc-msdosdjgpp-gcc
-CFLAGS = -Wall -O2 -g -I/usr/local/djgpp/i586-pc-msdosdjgpp/sys-include -Iinclude -fcommon -Wno-duplicate-decl-specifier
-LDFLAGS = -static -lalleg -lalld -lallp -m32 -L/usr/local/djgpp/i586-pc-msdosdjgpp/lib
+CFLAGS = -w -O1 -g -I/usr/local/djgpp/i586-pc-msdosdjgpp/sys-include -Iinclude -fcommon -Wno-duplicate-decl-specifier
+LDFLAGS = -static -lalleg -lalld -lallp -m32 -L/usr/local/djgpp/i586-pc-msdosdjgpp/lib -Wl,--allow-multiple-definition
 
 # Source files
 SRC = src/defender.c src/game.c src/bullet.c src/burn.c src/joystick.c src/particle.c src/powerup.c src/ship.c src/speaker.c src/time.c src/vga.c src/vga_font.c
@@ -13,7 +13,7 @@ EXE = defender.exe
 
 # Rule to create the executable
 $(EXE): $(OBJ)
-	$(CC)   -o $(EXE) $(OBJ) $(LDFLAGS)
+	$(CC) $(CFLAGS) -o $(EXE) $(OBJ) $(LDFLAGS)
 
 # Rule to create object files from C source files
 %.o: %.c

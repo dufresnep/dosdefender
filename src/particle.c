@@ -1,4 +1,17 @@
-//src/particle.c
-#include "particle.h"
+// particle.c
+#include "particle.h" // Include the header file!
+#include <stdlib.h>  // For malloc
 
-//For now, create an empty file.  Add function definitions later as needed.
+Particle* particle_new() {
+  Particle* p = (Particle*)malloc(sizeof(Particle)); // Allocate memory dynamically
+  if (p == NULL) {
+      // Handle memory allocation failure (very important!)
+      return NULL; // Or exit, or take appropriate action
+  }
+
+  p->x = 15;
+  p->y = 33;
+  p->vx = 3;
+  p->vy = -1;
+  return p; // Return the pointer to the allocated memory
+}
