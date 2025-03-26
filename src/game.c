@@ -88,42 +88,22 @@ void update_game() {
     // Update ship velocity based on arrow keys
     if (key[KEY_LEFT]) {
         player_ship.dx -= ACCELERATION;
-        if (player_ship.dx < -MAX_VELOCITY) {
-            player_ship.dx = -MAX_VELOCITY;
-        }
+         if (player_ship.dx < -MAX_VELOCITY)  player_ship.dx = -MAX_VELOCITY;
     }
 
     if (key[KEY_RIGHT]) {
         player_ship.dx += ACCELERATION;
-        if (player_ship.dx > MAX_VELOCITY) {
-            player_ship.dx = MAX_VELOCITY;
-        }
+         if (player_ship.dx > MAX_VELOCITY)  player_ship.dx = MAX_VELOCITY;
     }
 
     if (key[KEY_UP]) {
         player_ship.dy -= ACCELERATION;
-        if (player_ship.dy < -MAX_VELOCITY) {
-            player_ship.dy = -MAX_VELOCITY;
-        }
+         if (player_ship.dy < -MAX_VELOCITY)  player_ship.dy = -MAX_VELOCITY;
     }
 
     if (key[KEY_DOWN]) {
         player_ship.dy += ACCELERATION;
-        if (player_ship.dy > MAX_VELOCITY) {
-            player_ship.dy = MAX_VELOCITY;
-        }
-    }
-
-    // Damping
-    if (!key[KEY_LEFT] && !key[KEY_RIGHT])
-    {
-     if (player_ship.dx > 0) player_ship.dx-=ACCELERATION;
-     if (player_ship.dx < 0) player_ship.dx+=ACCELERATION;
-    }
-     if (!key[KEY_UP] && !key[KEY_DOWN])
-    {
-     if (player_ship.dy > 0) player_ship.dy-=ACCELERATION;
-     if (player_ship.dy < 0) player_ship.dy+=ACCELERATION;
+         if (player_ship.dy > MAX_VELOCITY)  player_ship.dy = MAX_VELOCITY;
     }
 
     // Update ship position based on velocity
