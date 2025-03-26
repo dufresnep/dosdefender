@@ -1,8 +1,7 @@
 #ifndef VGA_H
 #define VGA_H
 
-#include <stdint.h>
-#include <stdbool.h>
+#include "common.h"
 
 #define VGA_PWIDTH  320
 #define VGA_PHEIGHT 200
@@ -13,11 +12,7 @@ enum VGA_COLOR {
     YELLOW, WHITE
 };
 
-struct point {
-    int x;
-    int y;
-};
-
+void vga_on();
 void vga_pixel(struct point p, uint8_t color);
 void vga_line(struct point p1, struct point p2, uint8_t color);
 

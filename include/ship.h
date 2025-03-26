@@ -3,8 +3,6 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include <stddef.h> // for size_t
-#include "vga.h"
 #include "timemy.h"
 
 
@@ -21,10 +19,8 @@ typedef enum {
 } ai_t;
 
 struct ship {
-    int32_t x;
-    int32_t y;
-    int32_t dx;
-    int32_t dy;
+    int32_t x, y;
+    int32_t dx, dy;
     int32_t hp;      // Current hit points
     int32_t hp_max;  // Maximum hit points
     int32_t radius;
@@ -42,7 +38,7 @@ struct ship {
     struct sample *fx_fire; // Pointer to sample
 };
 
-extern size_t ships_max;
+//extern size_t ships_max;
 
 void ship_draw(int id, bool clear);
 void ship_step(int i);
@@ -50,3 +46,7 @@ void ai_player(int i);
 void ai_dummy(int i);
 void ai_seeker(int i);
 // ... other ship-related function prototypes ...
+void init_ship(struct ship *s);
+void update_ship(struct ship *s);
+void draw_ship(struct ship *s);
+// ... other ship functions ...
