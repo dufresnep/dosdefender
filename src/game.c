@@ -51,9 +51,9 @@ int init_game() {
 // Placeholder functions to resolve linker errors
 void update_game() {
     if (keypressed()){
-        int key_code = readkey() >> 8; // removes the scan code
-        printf("Ley pressed: %d\n", key_code);
-        if (key_code == KEY_ESC){
+        int key_code = readkey() & 0xFF; // removes the scan code
+        printf("Key pressed: %d\n", key_code);
+        if (key_code == 27){
            stop_game();
         }
     }
