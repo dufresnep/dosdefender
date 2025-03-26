@@ -4,8 +4,8 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <stddef.h> // for size_t
-#include "include/vga.h"
-#include "include/timemy.h"
+#include "vga.h"
+#include "timemy.h"
 
 
 #define MAX_PLAYERS 12
