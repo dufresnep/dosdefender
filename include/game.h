@@ -24,8 +24,10 @@ extern size_t powerups_max; // Keep as size_t
 extern unsigned long score; // Use unsigned long as decided before
 
 // Function prototypes
-void init_game();
+int  init_game();
 void update_game();
 void draw_game();
+
+extern volatile int game_running;
 
 #endif

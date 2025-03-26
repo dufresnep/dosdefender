@@ -3,10 +3,10 @@
 #include <conio.h>
 
 #include "../include/game.h"
+#include "../include/defender.h"
 
 #include <allegro.h>
 
-#include "../include/defender.h"
 #include "../include/timemy.h"
 
 // Global variables for game time
@@ -20,24 +20,26 @@ void increment_game_time() {
 END_OF_FUNCTION(increment_game_time);
 
 int main() {
-    printf("Starting the game...\n");
-    fflush(stdout);
-
     allegro_init();
+    set_gfx_mode(GFX_AUTODETECT, 320, 200, 0, 0); // Example mode
+
     install_keyboard();
-    install_mouse();
 
-    LOCK_FUNCTION(increment_game_time); // Lock the timer interrupt
-    install_int_ex(increment_game_time, BPS_TO_TIMER(1000));  // Install the timer to update 1/second
+    printf("Starting the game...\n");
 
-    init_game();
-
-    while (!kbhit()) {  // Use kbhit() for keyboard input
-        update_game();
-        draw_game();
-        rest(10); /* in milliseconds */
+    if (init_game() != 0) {
+        allegro_message("Error initializing game!\n");
+        allegro_exit();
+        return 1;
     }
 
+    while (is_game_running()) {
+        update_game();
+        draw_game();
+    }
+
+    shutdown_game();
+    printf("Exiting the game...\n");
     allegro_exit();
     return 0;
 }
