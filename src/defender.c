@@ -21,9 +21,9 @@ END_OF_FUNCTION(increment_game_time);
 
 int main() {
     allegro_init();
-    set_gfx_mode(GFX_AUTODETECT, 320, 200, 0, 0); // Example mode
+    //set_gfx_mode(GFX_AUTODETECT, 320, 200, 0, 0); // Example mode
 
-    install_keyboard();
+    //install_keyboard();
 
     printf("Starting the game...\n");
 

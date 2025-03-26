@@ -24,10 +24,12 @@ unsigned long score = 0;
 
 volatile int game_running = 1;
 
-void  stop_game(){
+
+// Function to set the game_running flag to 0 on key press (e.g., ESC)
+//Interrupt routine.
+void stop_game(void) {
     game_running = 0;
 }
-END_OF_FUNCTION(stop_game);
 
 int init_game() {
     // ... (allocate memory for ships, bullets, particles) ...
@@ -42,41 +44,33 @@ int init_game() {
          powerups[i].alive = false;
     }
 
-    // Install keyboard interrupt handler
-    LOCK_FUNCTION(stop_game);
-    install_int_ex(stop_game, BPS_TO_TIMER(100)); // Call stop_game function at about 100 times per second
-
+    install_keyboard();
     return 0; // Return 0 if initialization is successful
 }
 
 // Placeholder functions to resolve linker errors
 void update_game() {
-    // Implement game logic updates here later
-    // For now, just print a message and check for ESC key
-    printf("Updating game...\n");
-
-    if (keypressed()) {
-        if (key[KEY_ESC]) {
-            stop_game();
+    if (keypressed()){
+        int key_code = readkey() >> 8; // removes the scan code
+        printf("Ley pressed: %d\n", key_code);
+        if (key_code == KEY_ESC){
+           stop_game();
         }
     }
-
-    // Delay to avoid CPU hogging (adjust as needed)
-    rest(10); // Milliseconds
+    rest(10);
 }
 
 void draw_game() {
     // Implement game drawing code here later
     // For now, just print a message
-    printf("Drawing game...\n");
 }
-
 // Shutdown function (call this from main before exiting)
 void shutdown_game() {
     // Remove keyboard interrupt handler
-    remove_int(stop_game);
+    remove_keyboard();
 }
 
 int is_game_running() {
     return game_running;
 }
+
