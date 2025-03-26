@@ -9,9 +9,11 @@ struct ship {
     // Ship data members
 };
 
-struct bullet {
-    // Bullet data members
-};
+//Forward declaration of bullet
+struct bullet;
+
+//Declare bullet
+extern struct bullet *bullets;
 
 struct particle {
     // Particle data members

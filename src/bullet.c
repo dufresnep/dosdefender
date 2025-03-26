@@ -1,14 +1,14 @@
 // src/bullet.c - No ship.h
-#include <stdlib.h>
-#include "../include/rand.h"
+//#include <stdlib.h>
+//#include "../include/rand.h"
 #include "../include/bullet.h"
-#include "../include/particle.h"
-#include "../include/vga.h"
-#include "../include/game.h"
+//#include "../include/particle.h"
+//#include "../include/vga.h"
+//#include "../include/game.h"
+#include <allegro.h> // For it's drawing needs if any
 
-#define BULLET_SPEED 4
 
-void bullet_new(struct bullet *b, int32_t x, int32_t y, enum bullet_direction dir)
+void bullet_new(struct bullet *b, int32_t x, int32_t y, bullet_direction dir)
 {
         b->x = x;
         b->y = y;
@@ -16,15 +16,17 @@ void bullet_new(struct bullet *b, int32_t x, int32_t y, enum bullet_direction di
         b->active = 1;
 }
 
+#define BULLET_SPEED 5;
 void bullet_step(struct bullet *b, size_t id)
 {
         if(!b->active)
                 return;
 
-        if(b->dir == bullet_left)
+        if(b->dir == bullet_left) {
                 b->x -= BULLET_SPEED;
-        else
+        } else {
                 b->x += BULLET_SPEED;
+        }
 
         // Out of bounds?
         if (b->x < 0 || b->x > 319) {
@@ -42,7 +44,7 @@ void bullet_draw(struct bullet *b)
         return;
 
         struct point p;
-        p.x = b->x;
-        p.y = b->y;
-        vga_pixel(p, 15);
+        p.x = (int) b->x;
+        p.y = (int) b->y;
+        //vga_pixel(p, 15);
 }
