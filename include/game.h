@@ -2,40 +2,28 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include <stdint.h>  // For int32_t
+#include <stdint.h>
+#include <stddef.h> // Add this for size_t
 
-// Define the structures (if they aren't already)
-struct ship {
-    // Ship data members
-};
-
-//Forward declaration of bullet
+// Forward declare structs to avoid full includes if only pointers are needed
+struct ship;
 struct bullet;
+struct particle;
+struct powerup; // Make sure this matches the actual definition
 
-//Declare bullet
-extern struct bullet *bullets;
-
-struct particle {
-    // Particle data members
-};
-
-struct powerup {
-    // Powerup data members
-};
-
-// Declare the global variables using extern
+// Declare global variables using extern
 extern struct ship *ships;
 extern struct bullet *bullets;
 extern struct particle *particles;
-extern struct powerup *powerups;
+extern struct powerup *powerups; // Keep as pointer
 
 extern size_t bullets_max;
 extern size_t particles_max;
-extern size_t powerups_max;
+extern size_t powerups_max; // Keep as size_t
 
-extern unsigned long score;
+extern unsigned long score; // Use unsigned long as decided before
 
-// Function prototypes (existing ones)
+// Function prototypes
 void init_game();
 void update_game();
 void draw_game();

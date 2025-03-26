@@ -1,40 +1,41 @@
 // src/game.c
 #include <stdio.h>
-#include <stdlib.h>  // For malloc (if you allocate memory for these)
-#include "../include/game.h" // Include the header file!
+#include <stdlib.h>
+#include <stddef.h> // For size_t definition if needed here
+#include "../include/game.h"
+// Include other necessary headers like powerup.h, bullet.h etc.
+#include "../include/powerup.h"
+#include "../include/bullet.h"
+#include "../include/particle.h"
+#include "../include/ship.h"
+
 
 // Define global variables
-struct ship *ships = NULL;    // Initialize to NULL to be safe
-struct bullet *bullets = NULL;  // Initialize to NULL to be safe
-struct particle *particles = NULL; // Initialize to NULL to be safe
-struct powerup *powerups = NULL;   // Initialize to NULL to be safe
+struct ship *ships = NULL;
+struct bullet *bullets = NULL;
+struct particle *particles = NULL;
+struct powerup *powerups = NULL;   // Define as pointer, initialize to NULL
 
 size_t bullets_max = 100;
 size_t particles_max = 200;
-size_t powerups_max = 50;
+size_t powerups_max = 50;          // Define size here
 
-unsigned long  score = 0;
+unsigned long score = 0;
 
-// Implement your functions here (init_game, update_game, draw_game)
 void init_game() {
-    // Initialize the game
-    // Example: allocate memory for the arrays
-    ships = malloc(sizeof(struct ship) * 1); // Assuming 1 ship for now
-    bullets = malloc(sizeof(struct bullet) * bullets_max);
-    particles = malloc(sizeof(struct particle) * particles_max);
+    // ... (allocate memory for ships, bullets, particles) ...
     powerups = malloc(sizeof(struct powerup) * powerups_max);
-    if (!ships || !bullets || !particles || !powerups) {
-        // Handle memory allocation error
-        fprintf(stderr, "Memory allocation failed!\n");
+    if (!powerups) {
+        fprintf(stderr, "Memory allocation failed for powerups!\n");
         exit(1);
     }
-    //Initialize ships
+    // Initialize powerups array (e.g., set all 'alive' to false)
+    size_t i;
+    for (i = 0; i < powerups_max; ++i) {
+         powerups[i].alive = false;
+    }
+
+    // ... rest of init_game ...
 }
 
-void update_game() {
-    // Update the game state
-}
-
-void draw_game() {
-    // Draw the game on the screen
-}
+// ... update_game, draw_game ...

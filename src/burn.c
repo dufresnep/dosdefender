@@ -1,7 +1,7 @@
 // src/burn.c
-#include <stddef.h> // Added
-#include <powerup.h> // Added
-#include "../include/particle.h" //ADD THE DEPENDENCY TO THE FUNCTION
+#include <stddef.h>
+#include "../include/powerup.h"
+#include "../include/particle.h"
 
 void burn(int32_t x, int32_t y)
 {

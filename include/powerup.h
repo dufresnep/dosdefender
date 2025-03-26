@@ -1,32 +1,20 @@
+// include/powerup.h
 #ifndef POWERUP_H
 #define POWERUP_H
 
 #include <stdint.h>
 #include <stdbool.h>
-#include "include/rand.h"
-#include "include/vga.h"
-
-typedef enum {
-    POWER_NONE,
-    POWER_HEAL,
-    POWER_FIRE_DELAY_DOWN,
-    POWER_FIRE_DAMAGE_UP,
-    POWER_TELEPORT,
-    POWER_RADIUS_UP,
-    POWER_RADIUS_DOWN,
-
-} power_t;
 
 struct powerup {
-    int32_t x;
-    int32_t y;
-    uint8_t color;
+    int32_t x; // Use int32_t for consistency
+    int32_t y; // Use int32_t for consistency
+    int power;
+    int birthtick; // Consider uint32_t if it's always positive
     bool alive;
-    power_t power;
-    uint32_t birthtick;
 };
 
-extern int32_t powerups_max;
+// Function declarations
+void powerup_drop(int32_t x, int32_t y); // Use int32_t
+void update_powerup(); // Assuming this function exists
 
-int powerup_drop(int32_t x, int32_t y);
 #endif

@@ -1,7 +1,7 @@
 // include/vga_font.h
 #pragma once
 
-#include "include/vga.h" // Only vga.h is needed
+#include "vga.h" // Only vga.h is needed
 
 static const char LINES[]   = "BCDEIKOPQRSTUVYZ\\_`";
 static const char LETTERS[] =
