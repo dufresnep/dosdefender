@@ -29,6 +29,7 @@ int main() {
         return 1;
     }
 
+    set_keyboard_rate(200, 50); // 200ms initial delay, 50ms repeat speed
 
     printf("Starting the game...\n");
 

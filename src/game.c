@@ -27,12 +27,17 @@ volatile int game_running = 1;
 // Player's ship
 struct ship player_ship; // Add this line
 
+// Last pressed direction
+int last_x_direction = 0; // Add this line
+int last_y_direction = 0; // Add this line
+#define MAX_SPEED 5
+
 // Function to initialize the ship
 void init_ship(struct ship *ship) { // Add this function
     ship->x = 160;
     ship->y = 100;
-    ship->dx = 0;
-    ship->dy = 0;
+    ship->dx = 2;
+    ship->dy = 2;
     ship->hp = 100;
     ship->hp_max = 100;
     ship->radius = 5;
@@ -72,26 +77,43 @@ int init_game() {
 
 // Placeholder functions to resolve linker errors
 void update_game() {
+    // Check for key presses
+    // Check for ESC key
     if (key[KEY_ESC]) {
-       stop_game();
-    }
-    if (key[KEY_LEFT]) {
-        player_ship.x--;
+        stop_game();
     }
 
-    if (key[KEY_RIGHT]) {
-        player_ship.x++;
+    // Update ship velocity based on arrow keys
+    if (key[KEY_LEFT]) {
+        player_ship.dx = -MAX_SPEED; // Set horizontal velocity to left
+    } else if (key[KEY_RIGHT]) {
+        player_ship.dx = MAX_SPEED; // Set horizontal velocity to right
+    } else {
+        player_ship.dx = 0; // Stop horizontal movement
     }
+
     if (key[KEY_UP]) {
-        player_ship.y--;
+        player_ship.dy = -MAX_SPEED; // Set vertical velocity to up
+    } else if (key[KEY_DOWN]) {
+        player_ship.dy = MAX_SPEED; // Set vertical velocity to down
+    } else {
+        player_ship.dy = 0; // Stop vertical movement
     }
-    if (key[KEY_DOWN]) {
-        player_ship.y++;
-    }
+
+    // Update ship position based on velocity
+    player_ship.x += player_ship.dx;
+    player_ship.y += player_ship.dy;
+
     if (key[KEY_SPACE]) {
         printf("Space key pressed\n");
         // Add code to fire
     }
+
+    // Keep ship within bounds (example)
+    if (player_ship.x < 0) player_ship.x = 0;
+    if (player_ship.x > 319) player_ship.x = 319;
+    if (player_ship.y < 0) player_ship.y = 0;
+    if (player_ship.y > 199) player_ship.y = 199;
 
     // Delay to avoid CPU hogging
     rest(10);
