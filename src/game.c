@@ -29,22 +29,21 @@ struct ship player_ship; // Add this line
 
 // Function to initialize the ship
 void init_ship(struct ship *ship) { // Add this function
-    ship->x = 10;
-    ship->y = 10;
+    ship->x = 160;
+    ship->y = 100;
     ship->dx = 0;
     ship->dy = 0;
     ship->hp = 100;
     ship->hp_max = 100;
-    ship->radius = 3;
-    ship->color_a = 15; // White
-    ship->color_b = 0;  // Black
+    ship->radius = 5;
+    ship->color_a = makecol(255, 255, 255); // White
+    ship->color_b = makecol(0, 0, 0);  // Black
     ship->is_player = true;
     ship->score = 0;
     ship->fire_damage = 10;
     ship->fire_delay = 20;
     ship->drop_rate = 10;
     ship->last_fire = 0;
-    //Other non-graphic initialisation
 }
 
 // Function to set the game_running flag to 0 on key press (e.g., ESC)
@@ -99,13 +98,13 @@ void update_game() {
 }
 
 void draw_game() {
-    // Clear the screen (crude way, will be replaced by Allegro functions later)
-    clear_screen();
+    // Clear the screen
+    clear_to_color(screen, makecol(0, 0, 0)); // Black
 
-    // Draw the ship
-    gotoxy(player_ship.x, player_ship.y);
-    putchar('*');
+    // Draw the ship as a circle
+    circlefill(screen, player_ship.x, player_ship.y, player_ship.radius, player_ship.color_a);
 }
+
 // Shutdown function (call this from main before exiting)
 void shutdown_game() {
     // Remove keyboard interrupt handler
@@ -117,9 +116,5 @@ int is_game_running() {
 }
 
 void clear_screen() {
-    // This is a very basic way to clear the screen in text mode
-    for (int i = 0; i < 25; i++) {
-        printf("\n");
-    }
-    gotoxy(1,1);
+    // This is now useless
 }

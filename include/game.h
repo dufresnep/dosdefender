@@ -24,6 +24,7 @@ extern size_t particles_max;
 extern size_t powerups_max; // Keep as size_t
 
 extern unsigned long score; // Use unsigned long as decided before
+extern BITMAP *screen;
 
 // Function prototypes
 int  init_game();

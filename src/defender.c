@@ -21,9 +21,14 @@ END_OF_FUNCTION(increment_game_time);
 
 int main() {
     allegro_init();
-    //set_gfx_mode(GFX_AUTODETECT, 320, 200, 0, 0); // Example mode
+    int result = set_gfx_mode(GFX_VGA, 320, 200, 0, 0); // Initialize graphics mode
+    printf("set_gfx_mode called\n");
+    if (result != 0) {
+        allegro_message("Error setting graphics mode: %s\n", allegro_error);
+        allegro_exit();
+        return 1;
+    }
 
-    //install_keyboard();
 
     printf("Starting the game...\n");
 
