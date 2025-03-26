@@ -5,6 +5,7 @@
 #include <stdbool.h>
 #include "timemy.h"
 
+#include "common.h"
 
 #define MAX_PLAYERS 12
 #define SCALE 1000

@@ -1,7 +1,7 @@
 #ifndef TONE_H
 #define TONE_H
 
-#include "include/port.h"
+#include "port.h"
 
 static void tone_on()
 {

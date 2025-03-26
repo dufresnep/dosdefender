@@ -2,6 +2,7 @@
 #define VGA_H
 
 #include "common.h"
+#include <stdint.h>  // for uint8_t
 
 #define VGA_PWIDTH  320
 #define VGA_PHEIGHT 200

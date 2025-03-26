@@ -7,6 +7,7 @@
 #include <pc.h>    // inportb, outportb  <-- CORRECTED!
 #include "../include/vga.h"
 #include "../include/vga_font.h"
+#include <stdint.h>
 
 
 void vga_clear(uint8_t color) {
