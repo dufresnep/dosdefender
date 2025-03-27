@@ -121,6 +121,9 @@ void update_game() {
         }
     }
 
+    // Update timer
+    enemy_spawn_timer++;
+
     // Keep ship within bounds (example)
     if (player_ship.x < 0) player_ship.x = 0;
     if (player_ship.x > 319) player_ship.x = 319;
@@ -159,6 +162,17 @@ void update_game() {
                         break; // Only fire one bullet at a time
                     }
                 }
+            }
+        }
+    }
+
+    // See if has to spawn enemy
+    if (enemy_spawn_timer > ENEMY_SPAWN_RATE) {
+       for (int i = 0; i < 3; i++) {
+            if (!enemies[i].active) {
+                init_enemy(&enemies[i]);
+                enemy_spawn_timer = 0; // reset
+                break; // spawn one
             }
         }
     }
@@ -222,10 +236,11 @@ int init_game() {
     srand(time(NULL));
 
     // Initialize enemies
-    for (int i = 0; i < MAX_ENEMIES; i++) {
+    for (int i = 0; i < MIN_ENEMIES; i++) {
         init_enemy(&enemies[i]);
     }
 
+    enemy_spawn_timer = ENEMY_SPAWN_RATE;
     return 0;
 }
 
