@@ -4,7 +4,7 @@
 #include <allegro.h>
 #include <math.h>
 #include <time.h>
-#include "../include/bullet.h" // Add this line
+#include "../include/bullet.h"
 
 // Flag to control the game loop
 volatile int game_running = 1;
@@ -14,9 +14,6 @@ struct ship player_ship;
 
 // Maximum ship velocity
 #define MAX_VELOCITY 2
-
-// Bullet speed
-#define BULLET_SPEED 3
 
 // Enemy variables
 #define MAX_ENEMIES 10
@@ -53,17 +50,6 @@ void init_enemy(struct enemy *enemy) {
     enemy->fire_delay = 50;
     enemy->last_fire = 0;
     enemy->active = true;
-}
-
-// Function to initialize a bullet
-void init_bullet(struct bullet *bullet) {
-    bullet->x = 0;
-    bullet->y = 0;
-    bullet->dx = 0;
-    bullet->dy = 0;
-    bullet->damage = 10;
-    bullet->color = makecol(255, 255, 255); // White
-    bullet->active = false;
 }
 
 // Function to set the game_running flag to 0 on key press (e.g., ESC)
@@ -104,7 +90,7 @@ void update_game() {
 
     // Keep ship within bounds (example)
     if (player_ship.x < 0) player_ship.x = 0;
-    if (player_ship.x > 319) player_ship.x = 319;
+    if (player_ship.x > 319) player_ship.x = 0;
     if (player_ship.y < 0) player_ship.y = 0;
     if (player_ship.y > 199) player_ship.y = 199;
 
@@ -121,29 +107,29 @@ void update_game() {
             if (enemies[i].y < 0 || enemies[i].y > 199) {
                 enemies[i].dy = -enemies[i].dy; // Reverse vertical direction
             }
-
-             // Enemy shooting
+            // Enemy shooting
             if (rand() % 100 < 2) {
-            // Find an inactive bullet
-            for (int j = 0; j < MAX_BULLETS; j++) {
-                if (!bullets[j].active) {
-                    // Calculate the angle to the player
-                    float angle = atan2(player_ship.y - enemies[i].y, player_ship.x - enemies[i].x);
+                // Find an inactive bullet
+                for (int j = 0; j < MAX_BULLETS; j++) {
+                    if (!bullets[j].active) {
+                        // Calculate the angle to the player
+                        float angle = atan2(player_ship.y - enemies[i].y, player_ship.x - enemies[i].x);
 
-                    // Fire bullet
-                    bullets[j].active = true;
-                    bullets[j].x = enemies[i].x;
-                    bullets[j].y = enemies[i].y;
-                    bullets[j].dx = cos(angle) * BULLET_SPEED;
-                    bullets[j].dy = sin(angle) * BULLET_SPEED;
-                    break; // Only fire one bullet at a time
+                        // Fire bullet
+                        bullets[j].active = true;
+                        bullets[j].x = enemies[i].x;
+                        bullets[j].y = enemies[i].y;
+                        bullets[j].dx = cos(angle) * BULLET_SPEED;
+                        bullets[j].dy = sin(angle) * BULLET_SPEED;
+		        bullets[j].color = 10;
+                        break; // Only fire one bullet at a time
+                    }
                 }
             }
         }
-        }
     }
 
-     // Update bullets
+    // Update bullets
     for (int i = 0; i < MAX_BULLETS; i++) {
         if (bullets[i].active) {
             bullets[i].x += bullets[i].dx;
@@ -152,6 +138,20 @@ void update_game() {
             // Deactivate bullets that are out of bounds
             if (bullets[i].x < 0 || bullets[i].x > 319 || bullets[i].y < 0 || bullets[i].y > 199) {
                 bullets[i].active = false;
+            }
+            // Check for collision with player
+            float distance = sqrt(pow(player_ship.x - bullets[i].x, 2) + pow(player_ship.y - bullets[i].y, 2));
+            if (distance < (player_ship.radius + 1)) { // 1 is the bullet radius
+                // Collision detected
+                bullets[i].active = false;
+                player_ship.hp -= bullets[i].damage;
+                printf("Ship HP: %ld\n", player_ship.hp);
+
+                // Check for game over
+                if (player_ship.hp <= 0) {
+                    printf("Game Over!\n");
+                    game_running = 0;
+                }
             }
         }
     }
@@ -164,6 +164,8 @@ void draw_game() {
     // Clear the screen
     clear_to_color(screen, makecol(0, 0, 0)); // Black
 
+    if (key[KEY_1]) player_ship.color_a =  makecol(255,0,0);
+    else  player_ship.color_a =  makecol(0,0,255);
     // Draw the ship as a circle
     circlefill(screen, player_ship.x, player_ship.y, player_ship.radius, player_ship.color_a);
 
@@ -181,7 +183,6 @@ void draw_game() {
         }
     }
 }
-
 int init_game() {
     // Initialize Allegro's keyboard
     install_keyboard();
@@ -196,9 +197,9 @@ int init_game() {
     for (int i = 0; i < MAX_ENEMIES; i++) {
         init_enemy(&enemies[i]);
     }
- // Initialize bullets
+     // Initialize bullets
     for (int i = 0; i < MAX_BULLETS; i++) {
-        init_bullet(&bullets[i]);
+        
     }
 
     return 0;

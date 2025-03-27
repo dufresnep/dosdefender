@@ -1,5 +1,6 @@
 // src/bullet.c
 #include "../include/bullet.h"
+#include <allegro.h>
 
 //You should not need to declare it any more!
 //void bullet_new(struct bullet *b, int32_t x, int32_t y, bullet_direction dir);
@@ -8,6 +9,17 @@
 //We can confirm the functions work, by declaring them here first!
 
 struct bullet bullets[MAX_BULLETS];
+
+
+void init_bullet(struct bullet *bullet) {
+    bullet->x = 0;
+    bullet->y = 0;
+    bullet->dx = 0;
+    bullet->dy = 0;
+    bullet->damage = 10;
+    bullet->color = 15; // White
+    bullet->active = false;
+}
 
 /*
 void bullet_new(struct bullet *b, int32_t x, int32_t y, bullet_direction dir) {
