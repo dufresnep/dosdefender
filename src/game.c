@@ -4,6 +4,7 @@
 #include <allegro.h>
 #include <math.h>
 #include <time.h>
+#include "../include/bullet.h" // Add this line
 
 // Flag to control the game loop
 volatile int game_running = 1;
@@ -13,6 +14,9 @@ struct ship player_ship;
 
 // Maximum ship velocity
 #define MAX_VELOCITY 2
+
+// Bullet speed
+#define BULLET_SPEED 3
 
 // Enemy variables
 #define MAX_ENEMIES 10
@@ -49,6 +53,17 @@ void init_enemy(struct enemy *enemy) {
     enemy->fire_delay = 50;
     enemy->last_fire = 0;
     enemy->active = true;
+}
+
+// Function to initialize a bullet
+void init_bullet(struct bullet *bullet) {
+    bullet->x = 0;
+    bullet->y = 0;
+    bullet->dx = 0;
+    bullet->dy = 0;
+    bullet->damage = 10;
+    bullet->color = makecol(255, 255, 255); // White
+    bullet->active = false;
 }
 
 // Function to set the game_running flag to 0 on key press (e.g., ESC)
@@ -106,6 +121,38 @@ void update_game() {
             if (enemies[i].y < 0 || enemies[i].y > 199) {
                 enemies[i].dy = -enemies[i].dy; // Reverse vertical direction
             }
+
+             // Enemy shooting
+            if (rand() % 100 < 2) {
+            // Find an inactive bullet
+            for (int j = 0; j < MAX_BULLETS; j++) {
+                if (!bullets[j].active) {
+                    // Calculate the angle to the player
+                    float angle = atan2(player_ship.y - enemies[i].y, player_ship.x - enemies[i].x);
+
+                    // Fire bullet
+                    bullets[j].active = true;
+                    bullets[j].x = enemies[i].x;
+                    bullets[j].y = enemies[i].y;
+                    bullets[j].dx = cos(angle) * BULLET_SPEED;
+                    bullets[j].dy = sin(angle) * BULLET_SPEED;
+                    break; // Only fire one bullet at a time
+                }
+            }
+        }
+        }
+    }
+
+     // Update bullets
+    for (int i = 0; i < MAX_BULLETS; i++) {
+        if (bullets[i].active) {
+            bullets[i].x += bullets[i].dx;
+            bullets[i].y += bullets[i].dy;
+
+            // Deactivate bullets that are out of bounds
+            if (bullets[i].x < 0 || bullets[i].x > 319 || bullets[i].y < 0 || bullets[i].y > 199) {
+                bullets[i].active = false;
+            }
         }
     }
 
@@ -126,6 +173,13 @@ void draw_game() {
             circlefill(screen, enemies[i].x, enemies[i].y, enemies[i].radius, enemies[i].color);
         }
     }
+
+    // Draw bullets
+    for (int i = 0; i < MAX_BULLETS; i++) {
+        if (bullets[i].active) {
+            circlefill(screen, bullets[i].x, bullets[i].y, 1, bullets[i].color); // Draw bullet as a pixel
+        }
+    }
 }
 
 int init_game() {
@@ -141,6 +195,10 @@ int init_game() {
     // Initialize enemies
     for (int i = 0; i < MAX_ENEMIES; i++) {
         init_enemy(&enemies[i]);
+    }
+ // Initialize bullets
+    for (int i = 0; i < MAX_BULLETS; i++) {
+        init_bullet(&bullets[i]);
     }
 
     return 0;
