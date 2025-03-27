@@ -4,7 +4,8 @@
 #include <allegro.h>
 #include <math.h>
 #include <time.h>
-#include "../include/bullet.h" // Needs to be included
+#include "../include/bullet.h" // Add this line
+
 // Flag to control the game loop
 volatile int game_running = 1;
 
@@ -14,6 +15,8 @@ struct ship player_ship;
 // Maximum ship velocity
 #define MAX_VELOCITY 2
 
+// Bullet speed
+#define BULLET_SPEED 3
 
 // Enemy variables
 #define MAX_ENEMIES 10
@@ -59,6 +62,18 @@ void stop_game() {
 
 // Placeholder functions to resolve linker errors
 void update_game() {
+    if (key[KEY_1]) {
+        printf("Key '1' is pressed!\n");
+        for (int i = 0; i < MAX_BULLETS; i++) {
+                    printf("bullet active=%d  ",bullets[i].active);
+                    //printf("bullet.x=%d\n",bullets[i].x);
+                    //printf("bullet.y=%d\n",bullets[i].y);
+                    printf("bullet.dx=%d  ",bullets[i].dx);
+                    printf("bullet.dy=%d  ",bullets[i].dy);
+                    //printf("bullet.color=%d\n",bullets[i].color);
+        }
+    }
+
     // Check for key presses
     // Check for ESC key
     if (key[KEY_ESC]) {
@@ -83,9 +98,26 @@ void update_game() {
     player_ship.x += player_ship.dx;
     player_ship.y += player_ship.dy;
 
+    // Player shooting
     if (key[KEY_SPACE]) {
-        printf("Space key pressed\n");
-        // Add code to fire
+        // Check fire delay
+        if (true){ //(player_ship.last_fire + player_ship.fire_delay < time(NULL)) {
+            // Find an inactive bullet
+            for (int i = 0; i < MAX_BULLETS; i++) {
+                if (!bullets[i].active) {
+                    // Fire bullet
+                    bullets[i].active = true;
+                    bullets[i].x = player_ship.x + player_ship.dx * 4;
+                    bullets[i].y = player_ship.y + player_ship.dy * 4;
+                    bullets[i].dx = player_ship.dx * 1.5; // Set bullet direction to ship's direction
+                    bullets[i].dy = player_ship.dy * 1.5 ; // Add bullet speed, and reverse
+                    bullets[i].color = makecol(255, 0, 0); // Red
+
+                    player_ship.last_fire = time(NULL);
+                    break; // Only fire one bullet at a time
+                }
+            }
+        }
     }
 
     // Keep ship within bounds (example)
@@ -107,7 +139,7 @@ void update_game() {
             if (enemies[i].y < 0 || enemies[i].y > 199) {
                 enemies[i].dy = -enemies[i].dy; // Reverse vertical direction
             }
-        // Enemy shooting
+            // Enemy shooting
             if (rand() % 100 < 2) {
                 // Find an inactive bullet
                 for (int j = 0; j < MAX_BULLETS; j++) {
@@ -119,9 +151,10 @@ void update_game() {
                         bullets[j].active = true;
                         bullets[j].x = enemies[i].x;
                         bullets[j].y = enemies[i].y;
-                        bullets[j].dx = cos(angle) * 1;
-                        bullets[j].dy = sin(angle) * 1;
+                        bullets[j].dx = cos(angle) * 5;
+                        bullets[j].dy = sin(angle) * 5;
                         bullets[j].color = 15;
+                        bullets[j].damage = 10;
                         break; // Only fire one bullet at a time
                     }
                 }
@@ -129,7 +162,7 @@ void update_game() {
         }
     }
 
-  // Update bullets
+     // Update bullets
     for (int i = 0; i < MAX_BULLETS; i++) {
         update_bullet(&bullets[i], &player_ship);
     }
@@ -155,7 +188,7 @@ void draw_game() {
     // Draw bullets
     for (int i = 0; i < MAX_BULLETS; i++) {
         if (bullets[i].active) {
-            circlefill(screen, bullets[i].x, bullets[i].y, 1, 15); // Draw bullet as a pixel
+            circlefill(screen, bullets[i].x, bullets[i].y, 1, bullets[i].color); // Draw bullet as a pixel
         }
     }
 }
@@ -174,11 +207,7 @@ int init_game() {
     for (int i = 0; i < MAX_ENEMIES; i++) {
         init_enemy(&enemies[i]);
     }
-//Initialize the bullets
-  extern struct bullet bullets[MAX_BULLETS];
-    for (int i = 0; i < MAX_BULLETS; i++) {
-        init_bullet(&bullets[i]);
-    }
+
     return 0;
 }
 

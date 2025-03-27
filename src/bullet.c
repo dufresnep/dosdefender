@@ -21,7 +21,7 @@ void init_bullet(struct bullet *bullet) {
 
 void update_bullet(struct bullet *bullet, struct ship *player_ship) {
     // Update bullets
-    if (bullet->active) {
+    if (true){ //(bullet->active) {
         bullet->x += bullet->dx;
         bullet->y += bullet->dy;
 
