@@ -57,7 +57,7 @@ void update_bullet(struct bullet *bullet, struct ship *player_ship, struct enemy
                     // Collision detected
                     bullet->active = false;
                     enemies[i].hp -= bullet->damage;
-                    printf("Enemy HP: %d\n", enemies[i].hp);
+                    printf("Enemy HP: %ld\n", enemies[i].hp);
 
                     // Check for enemy death
                     if (enemies[i].hp <= 0) {

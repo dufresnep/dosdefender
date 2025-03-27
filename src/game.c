@@ -19,7 +19,7 @@ struct ship player_ship;
 #define BULLET_SPEED 3
 
 // Enemy variables
-#define MAX_ENEMIES 10
+//#define MAX_ENEMIES 10
 struct enemy enemies[MAX_ENEMIES];
 
 // Function to initialize the ship
@@ -48,6 +48,7 @@ void init_enemy(struct enemy *enemy) {
     enemy->dx = (rand() % 3) - 1; // Random horizontal direction (-1, 0, or 1)
     enemy->dy = (rand() % 3) - 1; // Random vertical direction (-1, 0, or 1)
     enemy->hp = 50;
+    enemy->max_hp = 50;
     enemy->radius = 4;
     enemy->color = makecol(100, 40, 0); // Brown
     enemy->fire_delay = 50;
@@ -112,7 +113,7 @@ void update_game() {
                     bullets[i].dx = player_ship.dx * 1.5; // Set bullet direction to ship's direction
                     bullets[i].dy = player_ship.dy * 1.5 ; // Add bullet speed, and reverse
                     bullets[i].color = makecol(255, 0, 0); // Red
-                    bullets[i].damage = 110; // Hope to destroy with 1 shot
+                    bullets[i].damage = 15; // Hope to destroy with 1 shot
                     player_ship.last_fire = time(NULL);
                     break; // Only fire one bullet at a time
                 }
@@ -181,7 +182,16 @@ void draw_game() {
     // Draw enemies
     for (int i = 0; i < MAX_ENEMIES; i++) {
         if (enemies[i].active) {
-            circlefill(screen, enemies[i].x, enemies[i].y, enemies[i].radius, enemies[i].color);
+            // Calculate HP percentage
+            float hp_percentage = (float)enemies[i].hp / enemies[i].max_hp;
+
+            // Interpolate color between brown and red
+            int red = 100 + (int)(155 * (1 - hp_percentage)); // Interpolate red component
+            int green = 40;
+            int blue = 0;
+            int color = makecol(red, green, blue);
+
+            circlefill(screen, enemies[i].x, enemies[i].y, enemies[i].radius, color);
         }
     }
 
