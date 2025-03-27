@@ -40,6 +40,7 @@ struct ship {
 };
 
 //extern size_t ships_max;
+extern struct ship ships[1];
 
 void ship_draw(int id, bool clear);
 void ship_step(int i);

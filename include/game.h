@@ -18,7 +18,7 @@ struct enemy;
 #define MAX_BULLETS 20 // Add this line
 
 // Declare global variables using extern
-extern struct ship *ships;
+//extern struct ship *ships;
 //extern struct bullet bullets[MAX_BULLETS];
 extern struct particle *particles;
 extern struct powerup *powerups; // Keep as pointer

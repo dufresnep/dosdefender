@@ -31,7 +31,7 @@ void init_ship(struct ship *ship) {
     ship->hp = 100;
     ship->hp_max = 100;
     ship->radius = 5; // Increased radius for better visibility
-    ship->color_a = makecol(255, 255, 255); // White
+    ship->color_a = makecol(0, 0, 255); // Blue
     ship->color_b = makecol(0, 0, 0);  // Black
     ship->is_player = true;
     ship->score = 0;
@@ -176,10 +176,18 @@ void draw_game() {
     // Clear the screen
     clear_to_color(screen, makecol(0, 0, 0)); // Black
 
-    // Draw the ship as a circle
-    circlefill(screen, player_ship.x, player_ship.y, player_ship.radius, player_ship.color_a);
+    // Calculate HP percentage
+    float hp_percentage = (float)player_ship.hp / player_ship.hp_max;
 
-    // Draw enemies
+    // Interpolate color between blue and red
+    int blue = (int)(255 * hp_percentage); // Interpolate blue component
+    int red = (int)(255 * (1 - hp_percentage)); // Interpolate red component
+    int color = makecol(red, 0, blue);
+
+    // Draw the ship as a circle
+    circlefill(screen, player_ship.x, player_ship.y, player_ship.radius, color);
+
+
     for (int i = 0; i < MAX_ENEMIES; i++) {
         if (enemies[i].active) {
             // Calculate HP percentage

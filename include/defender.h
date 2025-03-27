@@ -47,7 +47,7 @@ extern size_t powerups_max;
 
 extern struct bullet *bullets;
 extern struct particle *particles;
-extern struct ship *ships;
+//extern struct ship *ships;
 extern struct powerup *powerups;
 extern unsigned long score;
 

@@ -4,7 +4,7 @@
 #include "../include/vga.h"
 #include "../include/game.h"
 
-extern struct ship *ships; // Declare ships as extern
+//extern struct ship *ships; // Declare ships as extern
 
 /*
 void ship_draw(int id, bool clear)
