@@ -112,7 +112,7 @@ void update_game() {
                     bullets[i].dx = player_ship.dx * 1.5; // Set bullet direction to ship's direction
                     bullets[i].dy = player_ship.dy * 1.5 ; // Add bullet speed, and reverse
                     bullets[i].color = makecol(255, 0, 0); // Red
-
+                    bullets[i].damage = 110; // Hope to destroy with 1 shot
                     player_ship.last_fire = time(NULL);
                     break; // Only fire one bullet at a time
                 }
@@ -149,8 +149,8 @@ void update_game() {
 
                         // Fire bullet
                         bullets[j].active = true;
-                        bullets[j].x = enemies[i].x;
-                        bullets[j].y = enemies[i].y;
+                        bullets[j].x = enemies[i].x + enemies[i].dx*4; // if bullet at enemy position, bullet would hit enemy
+                        bullets[j].y = enemies[i].y + enemies[i].dy*4;
                         bullets[j].dx = cos(angle) * 5;
                         bullets[j].dy = sin(angle) * 5;
                         bullets[j].color = 15;
@@ -162,9 +162,9 @@ void update_game() {
         }
     }
 
-     // Update bullets
+// Update bullets
     for (int i = 0; i < MAX_BULLETS; i++) {
-        update_bullet(&bullets[i], &player_ship);
+        update_bullet(&bullets[i], &player_ship, enemies, MAX_ENEMIES);
     }
 
     // Delay to avoid CPU hogging

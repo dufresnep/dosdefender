@@ -3,7 +3,8 @@
 #define INT_H
 
 // Include the standard definitions
-#include <stdint.h>
+#include "allegro/platform/astdint.h"
+//#include <stdint.h>
 #include <stdbool.h>
 
 #endif

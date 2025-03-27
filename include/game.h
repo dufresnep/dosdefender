@@ -2,7 +2,7 @@
 #ifndef GAME_H
 #define GAME_H
 
-#include <stdint.h>
+//#include <stdint.h>
 #include <stddef.h> // Add this for size_t
 #include "ship.h"
 #include "enemy.h"

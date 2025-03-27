@@ -2,7 +2,7 @@
 
 # Compiler and flags
 CC = i586-pc-msdosdjgpp-gcc
-CFLAGS = -Wall -O2 -g -fcommon
+CFLAGS =  -Wall -O2 -g -fcommon -DALLEGRO_HAVE_STDINT_H
 
 # Source files
 SRCS = src/defender.c src/game.c src/bullet.c src/burn.c src/joystick.c src/particle.c src/powerup.c src/ship.c src/speaker.c src/timemy.c src/vga.c src/vga_font.c
