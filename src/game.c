@@ -33,6 +33,10 @@ int desired_dy = 0; // Add this line
 #define MAX_VELOCITY 5
 #define ACCELERATION 1
 
+// Enemy variables
+#define MAX_ENEMIES 10
+struct enemy enemies[MAX_ENEMIES];
+
 // Function to initialize the ship
 void init_ship(struct ship *ship) { // Add this function
     ship->x = 160;
@@ -52,6 +56,19 @@ void init_ship(struct ship *ship) { // Add this function
     ship->last_fire = 0;
 }
 
+// Function to initialize an enemy
+void init_enemy(struct enemy *enemy) {
+    enemy->x = rand() % 320; // Random x position
+    enemy->y = rand() % 200; // Random y position
+    enemy->dx = (rand() % 3) - 1; // Random horizontal direction (-1, 0, or 1)
+    enemy->dy = (rand() % 3) - 1; // Random vertical direction (-1, 0, or 1)
+    enemy->hp = 50;
+    enemy->radius = 4;
+    enemy->color = makecol(100, 40, 0); // Brown
+    enemy->fire_delay = 50;
+    enemy->last_fire = 0;
+    enemy->active = true;
+}
 // Function to set the game_running flag to 0 on key press (e.g., ESC)
 //Interrupt routine.
 void stop_game(void) {
@@ -73,6 +90,15 @@ int init_game() {
 
     install_keyboard();
     init_ship(&player_ship);
+
+    // Initialize random seed
+    srand(time(NULL));
+
+    // Initialize enemies
+    for (int i = 0; i < MAX_ENEMIES; i++) {
+        init_enemy(&enemies[i]);
+    }
+
     return 0; // Return 0 if initialization is successful
 }
 
@@ -121,6 +147,21 @@ void update_game() {
     if (player_ship.y < 0) player_ship.y = 0;
     if (player_ship.y > 199) player_ship.y = 199;
 
+    // Update enemies
+    for (int i = 0; i < MAX_ENEMIES; i++) {
+        if (enemies[i].active) {
+            enemies[i].x += enemies[i].dx;
+            enemies[i].y += enemies[i].dy;
+
+            // Keep enemies within bounds
+            if (enemies[i].x < 0 || enemies[i].x > 319) {
+                enemies[i].dx = -enemies[i].dx; // Reverse horizontal direction
+            }
+            if (enemies[i].y < 0 || enemies[i].y > 199) {
+                enemies[i].dy = -enemies[i].dy; // Reverse vertical direction
+            }
+        }
+    }
     // Delay to avoid CPU hogging
     rest(10);
 }
@@ -131,6 +172,13 @@ void draw_game() {
 
     // Draw the ship as a circle
     circlefill(screen, player_ship.x, player_ship.y, player_ship.radius, player_ship.color_a);
+
+    // Draw enemies
+    for (int i = 0; i < MAX_ENEMIES; i++) {
+        if (enemies[i].active) {
+            circlefill(screen, enemies[i].x, enemies[i].y, enemies[i].radius, enemies[i].color);
+        }
+    }
 }
 
 // Shutdown function (call this from main before exiting)

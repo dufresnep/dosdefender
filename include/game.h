@@ -5,6 +5,7 @@
 #include <stdint.h>
 #include <stddef.h> // Add this for size_t
 #include "ship.h"
+#include "enemy.h"
 #include <allegro.h>
 
 // Forward declare structs to avoid full includes if only pointers are needed
@@ -12,6 +13,7 @@ struct ship;
 struct bullet;
 struct particle;
 struct powerup; // Make sure this matches the actual definition
+struct enemy;
 
 // Declare global variables using extern
 extern struct ship *ships;
@@ -33,6 +35,7 @@ void draw_game();
 void shutdown_game();
 int is_game_running();
 void clear_screen();
+void init_enemy(struct enemy *enemy); // Add this line
 
 extern volatile int game_running;
 
