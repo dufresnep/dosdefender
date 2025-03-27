@@ -21,6 +21,8 @@ struct ship player_ship;
 // Enemy variables
 //#define MAX_ENEMIES 10
 struct enemy enemies[MAX_ENEMIES];
+int enemy_spawn_timer = ENEMY_SPAWN_RATE;
+int enemy_quantity = MIN_ENEMIES;
 
 // Function to initialize the ship
 void init_ship(struct ship *ship) {
@@ -168,13 +170,14 @@ void update_game() {
 
     // See if has to spawn enemy
     if (enemy_spawn_timer > ENEMY_SPAWN_RATE) {
-       for (int i = 0; i < 3; i++) {
+       enemy_spawn_timer = 0;
+       for (int i = 0; i < enemy_quantity; i++) {
             if (!enemies[i].active) {
                 init_enemy(&enemies[i]);
-                enemy_spawn_timer = 0; // reset
                 break; // spawn one
             }
         }
+        enemy_quantity = MIN (enemy_quantity+1, MAX_ENEMIES);
     }
 
 // Update bullets
@@ -222,6 +225,8 @@ void draw_game() {
         if (bullets[i].active) {
             circlefill(screen, bullets[i].x, bullets[i].y, 1, bullets[i].color); // Draw bullet as a pixel
         }
+
+    textprintf_ex(screen, font, 200, 10, makecol(255, 255, 255), -1, "Timer: %d", enemy_spawn_timer);
     }
 }
 
@@ -235,8 +240,9 @@ int init_game() {
     // Initialize random seed
     srand(time(NULL));
 
+    enemy_quantity = MIN_ENEMIES;
     // Initialize enemies
-    for (int i = 0; i < MIN_ENEMIES; i++) {
+    for (int i = 0; i < enemy_quantity; i++) {
         init_enemy(&enemies[i]);
     }
 
