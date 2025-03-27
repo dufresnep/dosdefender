@@ -1,22 +1,22 @@
-// include/bullet.h
 #ifndef BULLET_H
 #define BULLET_H
 
-#include <stdint.h>
 #include <stdbool.h>
+#include "ship.h"
 #include <allegro.h>
 
-#define MAX_BULLETS 20
-#define BULLET_SPEED 3
+#define MAX_BULLETS 20  // Define MAX_BULLETS here
 
 struct bullet {
     int x, y;
     int dx, dy;
-    int damage;
+    int32_t damage;
     int color;
     bool active;
 };
 
-extern struct bullet bullets[MAX_BULLETS];
+extern struct bullet bullets[MAX_BULLETS]; // Add this line
 void init_bullet(struct bullet *bullet);
+void update_bullet(struct bullet *bullet, struct ship *player_ship);
+
 #endif

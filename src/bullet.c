@@ -1,16 +1,14 @@
-// src/bullet.c
 #include "../include/bullet.h"
 #include <allegro.h>
+#include <math.h>
+#include <stdio.h>
+#include "../include/game.h" // needed for ship
 
-//You should not need to declare it any more!
-//void bullet_new(struct bullet *b, int32_t x, int32_t y, bullet_direction dir);
-//void bullet_step(struct bullet *b, size_t id);
-//void bullet_draw(struct bullet *b);
-//We can confirm the functions work, by declaring them here first!
+#define BULLET_SPEED 5
 
 struct bullet bullets[MAX_BULLETS];
 
-
+// Function to initialize a bullet
 void init_bullet(struct bullet *bullet) {
     bullet->x = 0;
     bullet->y = 0;
@@ -21,40 +19,31 @@ void init_bullet(struct bullet *bullet) {
     bullet->active = false;
 }
 
-/*
-void bullet_new(struct bullet *b, int32_t x, int32_t y, bullet_direction dir) {
-    b->x = x;
-    b->y = y;
-    b->dir = dir;
-    b->active = 1;
-}
-*/
+void update_bullet(struct bullet *bullet, struct ship *player_ship) {
+    // Update bullets
+    if (bullet->active) {
+        bullet->x += bullet->dx;
+        bullet->y += bullet->dy;
 
-/*
-void bullet_step(struct bullet *b, size_t id) {
-    if(!b->active)
-        return;
+        // Deactivate bullets that are out of bounds
+        if (bullet->x < 0 || bullet->x > 319 || bullet->y < 0 || bullet->y > 199) {
+            bullet->active = false;
+        }
 
-    if(b->dir == bullet_left) {  // Added curly braces
-        b->x -= 5;
-    } else {                   // Added curly braces
-        b->x += 5;
+        // Check for collision with player
+        float distance = sqrt(pow(player_ship->x - bullet->x, 2) + pow(player_ship->y - bullet->y, 2));
+        if (distance < (player_ship->radius + 1)) { // 1 is the bullet radius
+            // Collision detected
+            bullet->active = false;
+            player_ship->hp -= bullet->damage;
+            printf("Ship HP: %ld\n", player_ship->hp);
+
+            // Check for game over
+            if (player_ship->hp <= 0) {
+                extern volatile int game_running;
+                printf("Game Over!\n");
+                game_running = 0;
+            }
+        }
     }
-
-    if (b->x < 0 || b->x > 319) {
-        b->active = 0;
-    }
 }
-*/
-
-/*
-void bullet_draw(struct bullet *b) {
-    if(!b->active)
-        return;
-
-    struct point p;
-    p.x = b->x;
-    p.y = b->y;
-    // Now you would draw the thing
-}
-*/

@@ -4,8 +4,7 @@
 #include <allegro.h>
 #include <math.h>
 #include <time.h>
-#include "../include/bullet.h"
-
+#include "../include/bullet.h" // Needs to be included
 // Flag to control the game loop
 volatile int game_running = 1;
 
@@ -14,6 +13,7 @@ struct ship player_ship;
 
 // Maximum ship velocity
 #define MAX_VELOCITY 2
+
 
 // Enemy variables
 #define MAX_ENEMIES 10
@@ -90,7 +90,7 @@ void update_game() {
 
     // Keep ship within bounds (example)
     if (player_ship.x < 0) player_ship.x = 0;
-    if (player_ship.x > 319) player_ship.x = 0;
+    if (player_ship.x > 319) player_ship.x = 319;
     if (player_ship.y < 0) player_ship.y = 0;
     if (player_ship.y > 199) player_ship.y = 199;
 
@@ -107,7 +107,7 @@ void update_game() {
             if (enemies[i].y < 0 || enemies[i].y > 199) {
                 enemies[i].dy = -enemies[i].dy; // Reverse vertical direction
             }
-            // Enemy shooting
+        // Enemy shooting
             if (rand() % 100 < 2) {
                 // Find an inactive bullet
                 for (int j = 0; j < MAX_BULLETS; j++) {
@@ -119,9 +119,9 @@ void update_game() {
                         bullets[j].active = true;
                         bullets[j].x = enemies[i].x;
                         bullets[j].y = enemies[i].y;
-                        bullets[j].dx = cos(angle) * BULLET_SPEED;
-                        bullets[j].dy = sin(angle) * BULLET_SPEED;
-		        bullets[j].color = 10;
+                        bullets[j].dx = cos(angle) * 1;
+                        bullets[j].dy = sin(angle) * 1;
+                        bullets[j].color = 15;
                         break; // Only fire one bullet at a time
                     }
                 }
@@ -129,31 +129,9 @@ void update_game() {
         }
     }
 
-    // Update bullets
+  // Update bullets
     for (int i = 0; i < MAX_BULLETS; i++) {
-        if (bullets[i].active) {
-            bullets[i].x += bullets[i].dx;
-            bullets[i].y += bullets[i].dy;
-
-            // Deactivate bullets that are out of bounds
-            if (bullets[i].x < 0 || bullets[i].x > 319 || bullets[i].y < 0 || bullets[i].y > 199) {
-                bullets[i].active = false;
-            }
-            // Check for collision with player
-            float distance = sqrt(pow(player_ship.x - bullets[i].x, 2) + pow(player_ship.y - bullets[i].y, 2));
-            if (distance < (player_ship.radius + 1)) { // 1 is the bullet radius
-                // Collision detected
-                bullets[i].active = false;
-                player_ship.hp -= bullets[i].damage;
-                printf("Ship HP: %ld\n", player_ship.hp);
-
-                // Check for game over
-                if (player_ship.hp <= 0) {
-                    printf("Game Over!\n");
-                    game_running = 0;
-                }
-            }
-        }
+        update_bullet(&bullets[i], &player_ship);
     }
 
     // Delay to avoid CPU hogging
@@ -164,8 +142,6 @@ void draw_game() {
     // Clear the screen
     clear_to_color(screen, makecol(0, 0, 0)); // Black
 
-    if (key[KEY_1]) player_ship.color_a =  makecol(255,0,0);
-    else  player_ship.color_a =  makecol(0,0,255);
     // Draw the ship as a circle
     circlefill(screen, player_ship.x, player_ship.y, player_ship.radius, player_ship.color_a);
 
@@ -179,10 +155,11 @@ void draw_game() {
     // Draw bullets
     for (int i = 0; i < MAX_BULLETS; i++) {
         if (bullets[i].active) {
-            circlefill(screen, bullets[i].x, bullets[i].y, 1, bullets[i].color); // Draw bullet as a pixel
+            circlefill(screen, bullets[i].x, bullets[i].y, 1, 15); // Draw bullet as a pixel
         }
     }
 }
+
 int init_game() {
     // Initialize Allegro's keyboard
     install_keyboard();
@@ -197,11 +174,11 @@ int init_game() {
     for (int i = 0; i < MAX_ENEMIES; i++) {
         init_enemy(&enemies[i]);
     }
-     // Initialize bullets
+//Initialize the bullets
+  extern struct bullet bullets[MAX_BULLETS];
     for (int i = 0; i < MAX_BULLETS; i++) {
-        
+        init_bullet(&bullets[i]);
     }
-
     return 0;
 }
 
