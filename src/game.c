@@ -1,51 +1,32 @@
-// src/game.c
+#include "../include/game.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <stddef.h> // For size_t definition if needed here
-#include "../include/game.h"
-// Include other necessary headers like powerup.h, bullet.h etc.
-#include "../include/powerup.h"
-#include "../include/bullet.h"
-#include "../include/particle.h"
-#include "../include/ship.h"
 #include <allegro.h>
+#include <math.h>
+#include <time.h>
 
-// Define global variables
-struct ship *ships = NULL;
-struct bullet *bullets = NULL;
-struct particle *particles = NULL;
-struct powerup *powerups = NULL;   // Define as pointer, initialize to NULL
-
-size_t bullets_max = 100;
-size_t particles_max = 200;
-size_t powerups_max = 50;          // Define size here
-
-unsigned long score = 0;
-
+// Flag to control the game loop
 volatile int game_running = 1;
 
 // Player's ship
-struct ship player_ship; // Add this line
+struct ship player_ship;
 
-// Last pressed direction
-int desired_dx = 0; // Add this line
-int desired_dy = 0; // Add this line
-#define MAX_VELOCITY 5
-#define ACCELERATION 1
+// Maximum ship velocity
+#define MAX_VELOCITY 2
 
 // Enemy variables
 #define MAX_ENEMIES 10
 struct enemy enemies[MAX_ENEMIES];
 
 // Function to initialize the ship
-void init_ship(struct ship *ship) { // Add this function
-    ship->x = 160;
-    ship->y = 100;
-    ship->dx = 2;
-    ship->dy = 2;
+void init_ship(struct ship *ship) {
+    ship->x = 160; // Center of the screen
+    ship->y = 100; // Center of the screen
+    ship->dx = 0; // Initial horizontal speed
+    ship->dy = 0; // Initial vertical speed
     ship->hp = 100;
     ship->hp_max = 100;
-    ship->radius = 5;
+    ship->radius = 5; // Increased radius for better visibility
     ship->color_a = makecol(255, 255, 255); // White
     ship->color_b = makecol(0, 0, 0);  // Black
     ship->is_player = true;
@@ -69,39 +50,11 @@ void init_enemy(struct enemy *enemy) {
     enemy->last_fire = 0;
     enemy->active = true;
 }
+
 // Function to set the game_running flag to 0 on key press (e.g., ESC)
-//Interrupt routine.
-void stop_game(void) {
+void stop_game() {
     game_running = 0;
 }
-
-int init_game() {
-    // ... (allocate memory for ships, bullets, particles) ...
-    powerups = malloc(sizeof(struct powerup) * powerups_max);
-    if (!powerups) {
-        fprintf(stderr, "Memory allocation failed for powerups!\n");
-        exit(1);
-    }
-    // Initialize powerups array (e.g., set all 'alive' to false)
-    size_t i;
-    for (i = 0; i < powerups_max; ++i) {
-         powerups[i].alive = false;
-    }
-
-    install_keyboard();
-    init_ship(&player_ship);
-
-    // Initialize random seed
-    srand(time(NULL));
-
-    // Initialize enemies
-    for (int i = 0; i < MAX_ENEMIES; i++) {
-        init_enemy(&enemies[i]);
-    }
-
-    return 0; // Return 0 if initialization is successful
-}
-
 
 // Placeholder functions to resolve linker errors
 void update_game() {
@@ -113,23 +66,16 @@ void update_game() {
 
     // Update ship velocity based on arrow keys
     if (key[KEY_LEFT]) {
-        player_ship.dx -= ACCELERATION;
-         if (player_ship.dx < -MAX_VELOCITY)  player_ship.dx = -MAX_VELOCITY;
+        player_ship.dx = -MAX_VELOCITY;
     }
-
     if (key[KEY_RIGHT]) {
-        player_ship.dx += ACCELERATION;
-         if (player_ship.dx > MAX_VELOCITY)  player_ship.dx = MAX_VELOCITY;
+        player_ship.dx = MAX_VELOCITY;
     }
-
     if (key[KEY_UP]) {
-        player_ship.dy -= ACCELERATION;
-         if (player_ship.dy < -MAX_VELOCITY)  player_ship.dy = -MAX_VELOCITY;
+        player_ship.dy = -MAX_VELOCITY;
     }
-
     if (key[KEY_DOWN]) {
-        player_ship.dy += ACCELERATION;
-         if (player_ship.dy > MAX_VELOCITY)  player_ship.dy = MAX_VELOCITY;
+        player_ship.dy = MAX_VELOCITY;
     }
 
     // Update ship position based on velocity
@@ -162,6 +108,7 @@ void update_game() {
             }
         }
     }
+
     // Delay to avoid CPU hogging
     rest(10);
 }
@@ -181,9 +128,26 @@ void draw_game() {
     }
 }
 
-// Shutdown function (call this from main before exiting)
+int init_game() {
+    // Initialize Allegro's keyboard
+    install_keyboard();
+
+    // Initialize the ship
+    init_ship(&player_ship);
+
+    // Initialize random seed
+    srand(time(NULL));
+
+    // Initialize enemies
+    for (int i = 0; i < MAX_ENEMIES; i++) {
+        init_enemy(&enemies[i]);
+    }
+
+    return 0;
+}
+
 void shutdown_game() {
-    // Remove keyboard interrupt handler
+    // Remove Allegro's keyboard handler (not strictly necessary, but good practice)
     remove_keyboard();
 }
 
@@ -192,5 +156,6 @@ int is_game_running() {
 }
 
 void clear_screen() {
+    // This is a very basic way to clear the screen in text mode
     // This is now useless
 }

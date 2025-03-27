@@ -7,13 +7,18 @@
 //void bullet_draw(struct bullet *b);
 //We can confirm the functions work, by declaring them here first!
 
+struct bullet bullets[MAX_BULLETS];
+
+/*
 void bullet_new(struct bullet *b, int32_t x, int32_t y, bullet_direction dir) {
     b->x = x;
     b->y = y;
     b->dir = dir;
     b->active = 1;
 }
+*/
 
+/*
 void bullet_step(struct bullet *b, size_t id) {
     if(!b->active)
         return;
@@ -28,7 +33,9 @@ void bullet_step(struct bullet *b, size_t id) {
         b->active = 0;
     }
 }
+*/
 
+/*
 void bullet_draw(struct bullet *b) {
     if(!b->active)
         return;
@@ -38,3 +45,4 @@ void bullet_draw(struct bullet *b) {
     p.y = b->y;
     // Now you would draw the thing
 }
+*/

@@ -3,6 +3,7 @@
 #include "../include/game.h"  // Need this for the extern 'powerups' pointer and 'powerups_max'
 #include <stdlib.h> // For rand()
 
+/*
 void powerup_drop(int32_t x, int32_t y) { // Use int32_t
     size_t i; // Use size_t for indexing, consistent with powerups_max
     for(i = 0; i < powerups_max; ++i) { // Use powerups_max
@@ -19,6 +20,7 @@ void powerup_drop(int32_t x, int32_t y) { // Use int32_t
     }
     // Optional: Handle case where no free slots are found
 }
+*/
 
 void update_powerup() {
   // Implementation for updating powerups

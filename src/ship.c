@@ -6,6 +6,7 @@
 
 extern struct ship *ships; // Declare ships as extern
 
+/*
 void ship_draw(int id, bool clear)
 {
     //printf("Entering ship_draw(id: %d, clear: %d)\n", id, clear); // REMOVE THIS for final version
@@ -36,6 +37,7 @@ void ship_draw(int id, bool clear)
      vga_line(p3, p1, color);
      //printf("Exiting ship_draw()\n"); // REMOVE THIS for final version
 }
+*/
 
 void ship_step(int /*i*/) {} //TODO
 
