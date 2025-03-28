@@ -206,7 +206,7 @@ void update_game() {
        for (int i = 0; i < enemy_quantity; i++) {
             if (!enemies[i].active) {
                 init_enemy(&enemies[i]);
-                break; // spawn one
+                //break; // spawn one
             }
         }
         enemy_quantity = MIN (enemy_quantity+1, MAX_ENEMIES);
