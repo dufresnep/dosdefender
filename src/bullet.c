@@ -40,13 +40,6 @@ void update_bullet(struct bullet *bullet, struct ship *player_ship, struct enemy
             //if(player_ship->hp<0) //Is it unsigned?
             player_ship->hp -= bullet->damage;
             //printf("Ship HP: %ld\n", player_ship->hp);
-            // Check for game over
-            if (player_ship->hp <= 0) {
-                textout_centre_ex(screen, font, "Game Over!", SCREEN_W / 2, SCREEN_H / 2, makecol(255, 255, 255), -1);
-                //printf("Game Over!\n");
-                rest(1500);
-                game_running = 0;
-            }
         }
 // Check for collision with enemies
          for (int i = 0; i < max_enemies; i++) {

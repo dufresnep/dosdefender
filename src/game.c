@@ -5,6 +5,7 @@
 #include <math.h>
 #include <time.h>
 #include "../include/bullet.h" // Add this line
+#include <dos.h> // for delay (game over)
 
 // Flag to control the game loop
 volatile int game_running = 1;
@@ -145,14 +146,6 @@ void update_game() {
                 enemies[i].dx = -enemies[i].dx;
                 enemies[i].dy = -enemies[i].dy;
 
-                //printf("Ship HP: %ld\n", player_ship.hp);
-                //printf("Enemy HP: %ld\n", enemies[i].hp);
-
-                // Check for game over
-                if (player_ship.hp <= 0) {
-                    printf("Game Over!\n");
-                    game_running = 0;
-                }
                   // Check for enemy death
                 if (enemies[i].hp <= 0) {
                     enemies[i].active = false;
@@ -212,9 +205,16 @@ void update_game() {
         enemy_quantity = MIN (enemy_quantity+1, MAX_ENEMIES);
     }
 
-// Update bullets
+    // Update bullets
     for (int i = 0; i < MAX_BULLETS; i++) {
         update_bullet(&bullets[i], &player_ship, enemies, MAX_ENEMIES);
+    }
+
+    // Check for game over
+    if (player_ship.hp <= 0) {
+        textout_centre_ex(screen, font, "Game Over!", SCREEN_W / 2, SCREEN_H / 2, makecol(255, 255, 255), -1);
+        game_running = 0;
+        delay(3000);
     }
 
     // Delay to avoid CPU hogging
