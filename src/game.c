@@ -24,6 +24,8 @@ struct enemy enemies[MAX_ENEMIES];
 int enemy_spawn_timer = ENEMY_SPAWN_RATE;
 int enemy_quantity = MIN_ENEMIES;
 
+bool debug = false;  // activated by 1 key, if debug , shows timer
+
 // Function to initialize the ship
 void init_ship(struct ship *ship) {
     ship->x = 160; // Center of the screen
@@ -67,14 +69,10 @@ void stop_game() {
 void update_game() {
     if (key[KEY_1]) {
         printf("Key '1' is pressed!\n");
-        for (int i = 0; i < MAX_BULLETS; i++) {
-                    printf("bullet active=%d  ",bullets[i].active);
-                    //printf("bullet.x=%d\n",bullets[i].x);
-                    //printf("bullet.y=%d\n",bullets[i].y);
-                    printf("bullet.dx=%d  ",bullets[i].dx);
-                    printf("bullet.dy=%d  ",bullets[i].dy);
-                    //printf("bullet.color=%d\n",bullets[i].color);
-        }
+        //for (int i = 0; i < MAX_BULLETS; i++) {
+        //        
+        //}
+        debug = !debug; // Toggle debug (to show time)
     }
 
     // Check for key presses
@@ -131,6 +129,40 @@ void update_game() {
     if (player_ship.x > 319) player_ship.x = 319;
     if (player_ship.y < 0) player_ship.y = 0;
     if (player_ship.y > 199) player_ship.y = 199;
+
+// Check for collision with enemies
+    for (int i = 0; i < MAX_ENEMIES; i++) {
+        if (enemies[i].active) {
+            float distance = sqrt(pow(player_ship.x - enemies[i].x, 2) + pow(player_ship.y - enemies[i].y, 2));
+            if (distance < (player_ship.radius + enemies[i].radius)) {
+                // Collision detected
+                player_ship.hp -= 30; // Reduce player HP
+                enemies[i].hp -= 20; // Reduce enemy HP
+
+                // Bounce effect (optional)
+                player_ship.dx = -player_ship.dx;
+                player_ship.dy = -player_ship.dy;
+                enemies[i].dx = -enemies[i].dx;
+                enemies[i].dy = -enemies[i].dy;
+
+                //printf("Ship HP: %ld\n", player_ship.hp);
+                //printf("Enemy HP: %ld\n", enemies[i].hp);
+
+                // Check for game over
+                if (player_ship.hp <= 0) {
+                    printf("Game Over!\n");
+                    game_running = 0;
+                }
+                  // Check for enemy death
+                if (enemies[i].hp <= 0) {
+                    enemies[i].active = false;
+                    //printf("Enemy destroyed!\n");
+                }
+
+            }
+
+        }
+    }
 
     // Update enemies
     for (int i = 0; i < MAX_ENEMIES; i++) {
@@ -226,7 +258,7 @@ void draw_game() {
             circlefill(screen, bullets[i].x, bullets[i].y, 1, bullets[i].color); // Draw bullet as a pixel
         }
 
-    textprintf_ex(screen, font, 200, 10, makecol(255, 255, 255), -1, "Timer: %d", enemy_spawn_timer);
+    if (debug) textprintf_ex(screen, font, 200, 10, makecol(255, 255, 255), -1, "Timer: %d", enemy_spawn_timer);
     }
 }
 
