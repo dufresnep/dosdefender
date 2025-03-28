@@ -39,13 +39,11 @@ void update_bullet(struct bullet *bullet, struct ship *player_ship, struct enemy
             bullet->active = false;
             //if(player_ship->hp<0) //Is it unsigned?
             player_ship->hp -= bullet->damage;
-           // extern volatile int game_running; //Why again?
-            printf("Ship HP: %ld\n", player_ship->hp);
+            //printf("Ship HP: %ld\n", player_ship->hp);
             // Check for game over
             if (player_ship->hp <= 0) {
-                extern volatile int game_running; //WTF?
-
-                printf("Game Over!\n");
+                textout_centre_ex(screen, font, "Game Over!", SCREEN_W / 2, SCREEN_H / 2, makecol(255, 255, 255), -1);
+                //printf("Game Over!\n");
                 game_running = 0;
             }
         }
@@ -57,12 +55,12 @@ void update_bullet(struct bullet *bullet, struct ship *player_ship, struct enemy
                     // Collision detected
                     bullet->active = false;
                     enemies[i].hp -= bullet->damage;
-                    printf("Enemy HP: %ld\n", enemies[i].hp);
+                    //printf("Enemy HP: %ld\n", enemies[i].hp);
 
                     // Check for enemy death
                     if (enemies[i].hp <= 0) {
                         enemies[i].active = false;
-                        printf("Enemy destroyed!\n");
+                        //printf("Enemy destroyed!\n");
                     }
                     break; // Exit enemy loop after collision
                 }
